@@ -67,7 +67,7 @@ A strong case should connect as many of these as possible:
 
 GitHub output alone is not enough. A merged PR can still have required follow-up. Likewise, a user's positive reaction without an artifact is useful preference data but weaker engineering evidence.
 
-See [METHODOLOGY.md](METHODOLOGY.md).
+See [METHODOLOGY.md](METHODOLOGY.md). Future agents must also follow [the lessons-learned recorder skill](.agents/skills/lessons-learned-recorder/SKILL.md).
 
 ## Current high-confidence findings
 
@@ -102,7 +102,15 @@ The initial corpus reviews the user's major AI-assisted projects with sufficient
 
 Forks/reference repositories such as `awesome-llm-apps`, `build-your-own-x`, and `leaked_sys_prompts` are not treated as authored-project outcomes unless a future case specifically uses them as an input.
 
-See [projects/PROJECT_INDEX.md](projects/PROJECT_INDEX.md) for project-level evidence quality, [projects/CHATGPT_PROJECT_AUDIT.md](projects/CHATGPT_PROJECT_AUDIT.md) for the broader cross-domain ChatGPT audit, and [projects/COVERAGE_GAPS.md](projects/COVERAGE_GAPS.md) for known gaps.\n\nPrompt changes are preserved separately under [evidence/prompt-lineage](evidence/prompt-lineage/) because rejected prompts and their corrected replacements are first-class training evidence.
+See [projects/PROJECT_INDEX.md](projects/PROJECT_INDEX.md) for project-level evidence quality, [projects/CHATGPT_PROJECT_AUDIT.md](projects/CHATGPT_PROJECT_AUDIT.md) for the broader cross-domain ChatGPT audit, and [projects/COVERAGE_GAPS.md](projects/COVERAGE_GAPS.md) for known gaps. 
+
+Prompt changes are preserved separately under [evidence/prompt-lineage](evidence/prompt-lineage/) because rejected prompts and their corrected replacements are first-class training evidence.
+
+## Public priors vs. personal evidence
+
+Public benchmarks and community sentiment are tracked separately from personal results. See [benchmarks/PUBLIC_PRIORS_VS_PERSONAL_EVIDENCE.md](benchmarks/PUBLIC_PRIORS_VS_PERSONAL_EVIDENCE.md) and the dated [source registry](benchmarks/SOURCES.md).
+
+The rule is simple: public benchmarks establish a prior; the owner's observed project evidence may confirm, contradict, refine, or remain incomparable to it.
 
 ## Machine-readable corpus
 
