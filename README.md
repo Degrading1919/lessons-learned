@@ -102,7 +102,7 @@ The initial corpus reviews the user's major AI-assisted projects with sufficient
 
 Forks/reference repositories such as `awesome-llm-apps`, `build-your-own-x`, and `leaked_sys_prompts` are not treated as authored-project outcomes unless a future case specifically uses them as an input.
 
-See [projects/PROJECT_INDEX.md](projects/PROJECT_INDEX.md) for coverage and evidence quality.
+See [projects/PROJECT_INDEX.md](projects/PROJECT_INDEX.md) for project-level evidence quality, [projects/CHATGPT_PROJECT_AUDIT.md](projects/CHATGPT_PROJECT_AUDIT.md) for the broader cross-domain ChatGPT audit, and [projects/COVERAGE_GAPS.md](projects/COVERAGE_GAPS.md) for known gaps.\n\nPrompt changes are preserved separately under [evidence/prompt-lineage](evidence/prompt-lineage/) because rejected prompts and their corrected replacements are first-class training evidence.
 
 ## Machine-readable corpus
 
