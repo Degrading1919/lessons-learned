@@ -21,3 +21,4 @@ jobs:
         with:
           python-version: "3.12"
       - run: python scripts/validate_cases.py
+      - run: python scripts/validate_model_baselines.py
