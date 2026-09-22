@@ -182,7 +182,9 @@ Do not compare "Astra Low" directly to "Astra Max" as if they were the same conf
 - **adds operational nuance** — benchmark capability is confirmed, but quota, prompt shape, environment access, or human review changes the best routing;
 - **not comparable** — public evidence does not measure the observed task/configuration well enough.
 
-Public evidence belongs in `benchmarks/` or a case's benchmark-reconciliation section. It should not overwrite the personal observation.
+Public evidence belongs in `baselines/` for current provider/model priors, in `benchmarks/` for cross-model benchmark reconciliation, or in a case's benchmark-reconciliation section. It should not overwrite the personal observation.
+
+When creating or refreshing a public model baseline, also update `datasets/model_baselines.jsonl` and preserve an `as_of` date.
 
 ## 9. Use public benchmarks as priors, not labels
 
@@ -249,8 +251,10 @@ For a new substantial case, inspect whether these need changes:
 - `projects/PROJECT_INDEX.md`
 - `projects/COVERAGE_GAPS.md`
 - `evidence/prompt-lineage/`
+- `baselines/<PROVIDER>.md`
 - `benchmarks/PUBLIC_PRIORS_VS_PERSONAL_EVIDENCE.md`
 - `datasets/cases.jsonl`
+- `datasets/model_baselines.jsonl` when public-prior data changes
 
 Do not mechanically update every file when the case adds nothing to that surface.
 
