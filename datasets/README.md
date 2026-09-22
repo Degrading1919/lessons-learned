@@ -90,3 +90,18 @@ A future machine-readable file can represent:
 - user reason for revision
 
 Do not treat a prompt preference as an output preference unless both downstream outputs exist.
+
+
+## Public model baselines
+
+`model_baselines.jsonl` is a separate dataset of **researched priors**, not owner-observed cases.
+
+It records current expectations from independent benchmarks, provider documentation, and human-review sentiment. These records must carry an `as_of` date because model rankings and public opinion change quickly.
+
+A public baseline must never be mixed into `cases.jsonl` as though the owner personally observed it.
+
+Validation:
+
+```bash
+python scripts/validate_model_baselines.py
+```
