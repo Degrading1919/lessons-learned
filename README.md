@@ -106,6 +106,21 @@ See [projects/PROJECT_INDEX.md](projects/PROJECT_INDEX.md) for project-level evi
 
 Prompt changes are preserved separately under [evidence/prompt-lineage](evidence/prompt-lineage/) because rejected prompts and their corrected replacements are first-class training evidence.
 
+## Researched model baselines
+
+Current public-research priors for models the owner has not necessarily tested are maintained separately under [baselines/](baselines/README.md).
+
+Initial providers:
+
+- [OpenAI](baselines/OPENAI.md)
+- [Anthropic / Claude](baselines/ANTHROPIC.md)
+- [Google / Gemini](baselines/GOOGLE.md)
+- [Meta](baselines/META.md)
+- [DeepSeek](baselines/DEEPSEEK.md)
+- [Moonshot / Kimi](baselines/KIMI.md)
+
+These are dated, source-backed starting assumptions based on independent benchmarks, provider documentation, and forum sentiment. They are designed to be replaced or refined by the owner's own project evidence.
+
 ## Public priors vs. personal evidence
 
 Public benchmarks and community sentiment are tracked separately from personal results. See [benchmarks/PUBLIC_PRIORS_VS_PERSONAL_EVIDENCE.md](benchmarks/PUBLIC_PRIORS_VS_PERSONAL_EVIDENCE.md) and the dated [source registry](benchmarks/SOURCES.md).
@@ -114,7 +129,7 @@ The rule is simple: public benchmarks establish a prior; the owner's observed pr
 
 ## Machine-readable corpus
 
-`datasets/cases.jsonl` mirrors the prose cases in a compact machine-readable form for later analysis, retrieval, routing experiments, or preference-dataset construction.
+`datasets/cases.jsonl` mirrors owner-observed prose cases. `datasets/model_baselines.jsonl` separately stores researched public priors. Keeping these datasets separate prevents benchmark/forum expectations from being mistaken for personal evidence.
 
 The dataset intentionally records **observed outcomes and human preference signals** rather than turning them into universal model scores.
 
