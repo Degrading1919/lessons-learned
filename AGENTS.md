@@ -6,6 +6,12 @@ This repository is an evidence corpus about the project owner's real use of AI m
 
 Do not turn it into a generic AI-news, benchmark, or model-ranking repository.
 
+## Required skill
+
+Before adding, revising, auditing, or comparing substantive lessons, read and follow `.agents/skills/lessons-learned-recorder/SKILL.md`.
+
+That skill governs evidence reconstruction, prompt lineage, public-prior comparison, dataset updates, privacy, and the quality gate.
+
 ## Primary question
 
 For a real task the project owner performs:
