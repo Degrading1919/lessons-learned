@@ -49,7 +49,9 @@ Cross-model conclusions belong in `cross-model/`.
 
 Project coverage belongs in `projects/`.
 
-Machine-readable records belong in `datasets/cases.jsonl`.
+Owner-observed machine-readable cases belong in `datasets/cases.jsonl`.
+
+Researched public priors belong in `baselines/` and `datasets/model_baselines.jsonl`; they must never be presented as owner-observed cases.
 
 ## Evidence levels
 
