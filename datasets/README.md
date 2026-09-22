@@ -32,6 +32,8 @@ It is designed for:
 | `lesson` | Narrow supported conclusion |
 | `evidence_level` | A, B, or C per METHODOLOGY.md |
 
+Future cases may also add `reasoning_effort`, `agent_harness`, `autonomy_level`, `tooling`, `resource_signal`, and `public_prior_alignment` when those values are actually evidenced. Historical rows do not need fabricated values merely to satisfy a newer schema.
+
 ## Why this is not yet a conventional RLHF preference dataset
 
 Traditional pairwise preference data requires something closer to:
