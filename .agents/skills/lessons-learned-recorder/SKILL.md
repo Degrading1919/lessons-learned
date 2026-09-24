@@ -161,6 +161,38 @@ Use, in order:
 
 Do not treat community opinion as a benchmark.
 
+### Community-freshness rule
+
+When using Reddit, Hacker News, forums, or social posts:
+
+- look for repeated themes across multiple independent threads rather than one spectacular anecdote;
+- record the age of the model/release when sentiment was sampled;
+- treat upvotes as a signal that an experience resonated, not as a scientific vote;
+- account for complaint-community, fan-community, launch-day hype, and launch-day backlash bias;
+- label community conclusions as **provisional** when the model has less than roughly two weeks of public use unless unusually strong longitudinal evidence already exists;
+- preserve meaningful disagreement instead of forcing a fake consensus.
+
+A high-engagement complaint two days after launch is evidence that a failure mode deserves testing. It is not proof that the model is generally bad.
+
+### Completed-task efficiency rule
+
+Do not reduce efficiency to price per token.
+
+When evidence allows, distinguish:
+
+- input/output token price;
+- actual output/reasoning token use;
+- cache behavior;
+- first-pass task success;
+- retries and rework;
+- reviewer-model cost;
+- human steering/attention;
+- wall-clock time;
+- subscription quota or credit consumption;
+- downstream regression cost.
+
+A cheaper model can produce a more expensive completed task if correction cost dominates. An expensive model can be cheaper overall if it prevents a costly architectural error.
+
 ### Match the comparison
 
 Prefer the same:
