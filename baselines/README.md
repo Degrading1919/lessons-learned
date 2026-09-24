@@ -1,6 +1,6 @@
 # Public Model Baselines
 
-_Last researched: 2026-09-22_
+_Last researched: 2026-09-24_
 
 This directory records **research priors** for model routing before the project owner has enough direct evidence to form a personal conclusion.
 
@@ -18,7 +18,7 @@ Personal evidence is allowed to override a baseline.
 
 ## Providers covered
 
-- [OpenAI](OPENAI.md)
+- [OpenAI](OPENAI.md) — current compact baseline; see also the [2026-09-24 OpenAI Reddit/efficiency field guide](../research/openai/2026-09-24-reddit-field-guide.md)
 - [Anthropic / Claude](ANTHROPIC.md)
 - [Google / Gemini](GOOGLE.md)
 - [Meta](META.md)
@@ -33,7 +33,7 @@ The initial baseline includes models that are current enough, distinctive enough
 
 | Provider | Models / families covered |
 |---|---|
-| OpenAI | GPT-6 Astra; GPT-5.6 Sol, Terra, Luna |
+| OpenAI | GPT-6 Astra, Sol, Luna; GPT-5.6 Sol, Terra, Luna |
 | Anthropic | Claude Fable 5.1 / Mythos 5.1; Claude Opus 5.5; Claude Sonnet 5 |
 | Google | Gemini 3.8 Flash; current Pro-model availability caveat |
 | Meta | Muse Spark 1.3; Llama 4 Maverick; Llama 4 Scout |
