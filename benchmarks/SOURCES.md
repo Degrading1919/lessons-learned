@@ -133,6 +133,140 @@ https://developers.reddit.com/apps/dexterthebot
 - **Type:** concrete public application
 - **Why useful:** GPT-6 Luna High is used for structured moderation decisions, with Luna also used for OCR/image description and human-review fallback.
 
+## Current Anthropic benchmark and field-guide sources
+
+### Artificial Analysis — Claude Opus 5.5 release
+
+https://artificialanalysis.ai/models/releases/claude-opus-5-5
+
+- **Date:** 2026-09-22
+- **Type:** independent benchmark
+- **Why useful:** effort-by-effort intelligence/task-cost curve; current frontier benchmark position; coding, automation, knowledge-work and token-use evidence.
+- **Caution:** human evidence is still launch-week evidence.
+
+### Artificial Analysis — Claude Fable 5.1 release
+
+https://artificialanalysis.ai/models/releases/claude-fable-5-1
+
+- **Type:** independent benchmark
+- **Why useful:** exposes Fable's effort curve and the XHigh-vs-Max diminishing-return result.
+- **Caution:** evaluated with Anthropic's default production fallback; not a perfectly isolated base-model measurement.
+
+### Artificial Analysis — Claude Sonnet 5 release
+
+https://artificialanalysis.ai/models/releases/claude-sonnet-5
+
+- **Type:** independent benchmark
+- **Why useful:** documents Sonnet's large token/task-cost growth with effort.
+
+### Artificial Analysis — Claude Opus 5 release
+
+https://artificialanalysis.ai/models/releases/claude-opus-5
+
+- **Type:** independent benchmark
+- **Why useful:** useful benchmark counterpoint to unusually negative real-user sentiment.
+
+### Artificial Analysis — Claude Haiku 4.5
+
+https://artificialanalysis.ai/models/claude-4-5-haiku-reasoning
+
+- **Type:** independent benchmark
+- **Why useful:** current cheap-tier capability/speed/cost baseline.
+
+### Artificial Analysis — Claude Opus 4.8
+
+https://artificialanalysis.ai/models/claude-opus-4-8
+
+- **Type:** independent historical/current-performance reference
+- **Why useful:** documents the older model's benchmark/cost profile while community and owner evidence preserve its behavioral value.
+
+### Anthropic — Claude Opus 5.5
+
+https://www.anthropic.com/claude-opus-5-5
+
+- **Date:** 2026-09-22
+- **Type:** provider self-report
+- **Why useful:** price cuts, cache economics, communication goals, availability, and upcoming Sonnet/Haiku 5.5.
+- **Caution:** provider benchmark claims remain provider self-reports.
+
+### Anthropic — Claude Fable 5.1 / Mythos 5.1
+
+https://www.anthropic.com/claude-fable-and-mythos-5-1
+
+https://www.anthropic.com/claude/fable
+
+- **Type:** provider documentation
+- **Why useful:** pricing, cache discounts, access model, and trusted-access distinction.
+
+### Anthropic — Claude Sonnet 5
+
+https://www.anthropic.com/news/claude-sonnet-5
+
+- **Type:** provider documentation
+- **Why useful:** current permanent $2/$10 pricing, tokenizer caveat, and agentic positioning.
+
+### Anthropic — Claude Opus 4.8
+
+https://www.anthropic.com/news/claude-opus-4-8
+
+- **Type:** provider documentation
+- **Why useful:** price/context and intended agentic-collaboration behavior.
+
+### Anthropic — model deprecations/status
+
+https://docs.anthropic.com/en/docs/about-claude/model-deprecations
+
+- **Type:** provider documentation
+- **Why useful:** distinguishes active legacy models from retired models.
+
+### Reddit — Opus 5.5 launch field reports
+
+https://www.reddit.com/r/ClaudeAI/comments/1wnil7n/opus_55_in_claude_code_is_crazy_fast_especially/
+
+https://www.reddit.com/r/Anthropic/comments/1wnl3k8/opus_55_first_impressions/
+
+https://www.reddit.com/r/ClaudeAI/comments/1wo9lbs/opus_55_is_the_new_46/
+
+- **Observed theme:** unusually positive speed, communication, UI/debugging and coding signal.
+- **Caution:** only about two days of public use; honeymoon bias is substantial.
+
+### Reddit — Fable 5.1 field reports
+
+https://www.reddit.com/r/ClaudeAI/comments/1w5ai3j/fable_51_is_insane_and_it_burned_usage_which_is/
+
+https://www.reddit.com/r/ClaudeAI/comments/1w5pnji/fable_5_vs_fable_51_across_22022_of_my_own_api/
+
+- **Observed theme:** very strong capability/planning praise paired with severe quota complaints; cache discounts can reduce API dollars despite higher token counts.
+
+### Reddit — Opus 5 sustained criticism
+
+https://www.reddit.com/r/ClaudeCode/comments/1vbu4a7/opus_5_unreadable_jargon/
+
+https://www.reddit.com/r/ClaudeCode/comments/1vwec8t/im_done_with_opus_5/
+
+https://www.reddit.com/r/ClaudeCode/comments/1va445h/opus_5_feedback_megathread/
+
+- **Observed theme:** mature complaints about verbosity, jargon, context drift, overreach and correction burden.
+- **Caution:** negative-selection bias exists, but the theme persists across weeks and multiple high-engagement threads.
+
+### Reddit — Sonnet 5 token economics
+
+https://www.reddit.com/r/ClaudeAI/comments/1ukoszu/sonnet_5_is_a_token_monster/
+
+https://www.reddit.com/r/ClaudeAI/comments/1uk0p07/opus_45_46_48_and_sonnet_5_token_data/
+
+https://www.reddit.com/r/ClaudeAI/comments/1ukyy54/is_claude_sonnet_5_actually_worth_using_where_ive/
+
+- **Observed theme:** good thoroughness and agentic work, but high/max effort can erase the apparent mid-tier price advantage.
+
+### Reddit — Haiku 4.5 / mixed-tier workflows
+
+https://www.reddit.com/r/ClaudeCode/comments/1r84b60/haiku_for_search_review_tasks/
+
+https://www.reddit.com/r/ClaudeAI/comments/1oca664/haiku_45_is_really_really_good/
+
+- **Observed theme:** useful search/read/classify/explore worker; users escalate to stronger models for reasoning/synthesis.
+
 ## Provider sources
 
 ### OpenAI — GPT-5.6
