@@ -1,6 +1,6 @@
 # Public Priors vs. Personal Evidence
 
-_Last reviewed: 2026-09-22_
+_Last reviewed: 2026-09-24_
 
 This document records how the project's observed AI results compare with the public benchmark and community signal that would otherwise influence model selection.
 
@@ -13,6 +13,40 @@ The public evidence is a **prior**, not the authority. The personal corpus exist
 - Do not compare old and new benchmark versions as if scores are on the same scale.
 - Community posts are workflow sentiment, not statistical evidence.
 - A public benchmark can establish a reasonable prior; project evidence can confirm, contradict, or refine it.
+
+## Current OpenAI family update — 2026-09-24
+
+GPT-6 changes the public routing prior without retroactively changing the owner's historical cases.
+
+Current independent evidence says:
+
+- **GPT-6 Astra** remains the high-judgment tier; its effort curve strongly supports using Low/Medium/High before Max.
+- **GPT-6 Sol** is primarily a cost-efficiency successor to GPT-5.6 Sol rather than a dramatic raw-capability jump. Independent coding-agent results improve modestly at roughly half the task cost, while some knowledge-work evaluations regress.
+- **GPT-6 Luna** is the most interesting untested worker candidate. Its broad intelligence is roughly level with 5.6 Luna Max and its current Coding Agent Index is slightly lower, but its task cost is dramatically lower.
+- **GPT-5.6 Terra** now looks weak on pure API Pareto economics, yet the owner's Adventurer's Rise evidence still supports a human-effort advantage: it handled moderately ambiguous implementation with less prompting than a cheapest-tier worker.
+
+The current Reddit field signal adds a major caution:
+
+- Astra's capability reputation is strong, but quota burn is the dominant complaint.
+- GPT-6 Sol's first two days are unusually contested; substantial cost/usage praise coexists with high-engagement reports of under-execution and sloppy coding.
+- GPT-6 Luna is emerging as a possible high-volume underdog, especially in planner → worker workflows, but instruction-following reports remain mixed.
+
+Because Sol/Luna launched only on September 22, their community signal is explicitly **provisional**.
+
+See:
+
+- [OpenAI baseline](../baselines/OPENAI.md)
+- [2026-09-24 OpenAI Reddit/efficiency field guide](../research/openai/2026-09-24-reddit-field-guide.md)
+
+### Implication for the personal corpus
+
+The new public evidence creates three high-value experiments rather than three automatic routing changes:
+
+1. GPT-6 Sol High vs. GPT-5.6 Sol High on the same serious implementation;
+2. GPT-6 Luna High/Max vs. GPT-5.6 Terra High on the same bounded implementation;
+3. Astra Medium/High as architect/reviewer with Luna workers vs. one frontier model owning the entire task.
+
+Until those comparisons exist, the owner's proven Sol/Terra cases remain stronger evidence for the owner's workflow than launch-week public sentiment.
 
 ## 1. GPT-5.6 Sol Max / Codex
 
