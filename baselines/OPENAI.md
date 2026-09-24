@@ -1,198 +1,332 @@
 # OpenAI Baseline
 
-_Last researched: 2026-09-22_
+_Last researched: 2026-09-24_
 
-## Current routing summary
+This file is the compact routing baseline. The long-form benchmark + Reddit synthesis is:
 
-| Model | Baseline role | Strong suits | Main weaknesses / cautions |
-|---|---|---|---|
-| GPT-6 Astra | Hardest end-to-end, ambiguous, autonomous work | Frontier reasoning, long-horizon coding, computer use, professional artifacts, judgment under ambiguity | Very expensive/quota-heavy; reports of overengineering, inconsistent service quality, and poor value on ordinary tasks |
-| GPT-5.6 Sol | High-end daily engineering / integration | Strong coding, debugging, architecture, research, agentic work | Can overthink/overbuild; much more quota than Terra/Luna; now below Astra/Fable on current frontier indexes |
-| GPT-5.6 Terra | Balanced implementation workhorse | Strong bounded coding, everyday agent work, useful middle ground when prompt is imperfect | Public cost frontier is not always better than a neighboring Luna/Sol effort level; mixed forum opinion on whether the tier has a unique niche |
-| GPT-5.6 Luna | Cheap high-volume executor | Extremely low price, fast, capable on clear tasks, background/subagent work | Less reliable for ambiguous architecture and difficult integration; benefits from strong planning/review |
+[OpenAI Model Field Guide — 2026-09-24](../research/openai/2026-09-24-reddit-field-guide.md)
+
+## Current general-purpose routing set
+
+| Model | Public-prior role | Strong suits | Main cautions | Confidence |
+|---|---|---|---|---|
+| **GPT-6 Astra** | Scarce architect, integrator, final reviewer | hardest end-to-end work, ambiguity, architecture, difficult debugging, computer use, research | very high quota cost, overengineering, diminishing returns at Max | Medium-high |
+| **GPT-6 Sol** | Cost-balanced lead / serious implementer | coding-agent work, terminal tasks, automation, sustained engineering | early forum reports of sloppy execution, skill/tool misses, over-concision; only ~2 days public | Low-medium |
+| **GPT-6 Luna** | High-volume worker / subagent | clear implementation, structured tasks, tests/docs, classification, background automation | not an architect; early instruction-following reports mixed | Low-medium |
+| **GPT-5.6 Sol** | Proven legacy high-end engineer | architecture, debugging, backend, odd codebases, review | costly; loops/overwork; API economics now weak versus 6 Sol | High |
+| **GPT-5.6 Terra** | Forgiving daily implementation workhorse | moderately ambiguous coding, implicit repo context, routine implementation | squeezed between 6 Sol and Luna on API economics | High |
+| **GPT-5.6 Luna** | Legacy cheap worker | bounded bulk work and subagents | weaker planning; mostly superseded economically by 6 Luna | High |
+
+## Current API economics
+
+OpenAI's current published prices:
+
+| Model | Input / 1M | Output / 1M |
+|---|---:|---:|
+| GPT-6 Astra | $10.00 | $50.00 |
+| GPT-6 Sol | $2.00 | $10.00 |
+| GPT-6 Luna | $0.10 | $0.50 |
+| GPT-5.6 Sol | $4.00 | $20.00 |
+| GPT-5.6 Terra | $2.00 | $12.00 |
+| GPT-5.6 Luna | $0.20 | $1.20 |
+
+Sources:
+
+- https://developers.openai.com/api/docs/models
+- https://openai.com/index/introducing-gpt-6-sol-and-luna/
+
+GPT-6 Sol and Luna are priced at about half their 5.6 predecessors. That does not mean they use half as many tokens.
+
+Artificial Analysis found both use slightly **more** output tokens per Intelligence Index task than the predecessors:
+
+- 6 Sol: ~31k vs 5.6 Sol ~29k;
+- 6 Luna: ~51k vs 5.6 Luna ~41k.
+
+The lower task cost is driven mainly by lower token prices.
+
+Source:
+
+- https://artificialanalysis.ai/articles/gpt-6-sol-and-luna-push-the-cost-efficiency-frontier
+
+## Reasoning-effort economics
+
+### GPT-6 Astra
+
+| Effort | Intelligence Index | AA cost/task |
+|---|---:|---:|
+| Low | 46 | $0.82 |
+| Medium | 50 | $1.54 |
+| High | 51 | $1.73 |
+| XHigh | 52 | $2.31 |
+| Max | 53 | $3.26 |
+
+**Prior:** Medium/High captures most of the capability. Max should be reserved for cases where the final few points matter.
+
+### GPT-6 Sol
+
+| Effort | Intelligence Index | AA cost/task |
+|---|---:|---:|
+| Low | 34 | $0.13 |
+| Medium | 40 | $0.25 |
+| High | 43 | $0.37 |
+| XHigh | 44 | $0.53 |
+| Max | 48 | $1.06 |
+
+**Prior:** High currently looks like the most attractive general engineering setting. Max is much more defensible for difficult terminal/integration work than routine implementation.
+
+### GPT-6 Luna
+
+| Effort | Intelligence Index | AA cost/task |
+|---|---:|---:|
+| Low | 21 | $0.0045 |
+| Medium | 29 | $0.02 |
+| High | 32 | $0.03 |
+| XHigh | 34 | $0.04 |
+| Max | 37 | $0.07 |
+
+**Prior:** High/XHigh is an extraordinary worker tier. Max remains cheap enough to use on bounded jobs, but extra reasoning does not make Luna a substitute for an architect.
+
+Independent sources:
+
+- https://artificialanalysis.ai/models/releases/gpt-6-astra
+- https://artificialanalysis.ai/models/releases/gpt-6-sol
+- https://artificialanalysis.ai/models/releases/gpt-6-luna
 
 ## GPT-6 Astra
 
-### Independent benchmark signal
+### Benchmark signal
 
-Artificial Analysis currently places Astra at the frontier. On Intelligence Index v4.3 it scores **53**, tied with Claude Fable 5.1 and ahead of GPT-5.6 Sol at 47. Artificial Analysis also reports Astra on much of the intelligence-vs-cost-per-task Pareto frontier and says it ties Fable 5.1 on its Coding Agent Index at lower measured task cost.
+Astra Max scores 53 on Artificial Analysis v4.3.2.
 
-Sources:
+The more important routing fact is the effort curve: Astra High scores 51 at ~$1.73/task versus Max at 53 and ~$3.26/task.
 
-- https://artificialanalysis.ai/articles/artificial-analysis-intelligence-index-v4-3
-- https://artificialanalysis.ai/articles/benchmarking-gpt-6-astra
+### Reddit consensus
 
-### Provider signal
+Strong recurring positives:
 
-OpenAI positions Astra as its hardest-work model: coding, computer use, browsing, professional work, research, science, and high-judgment autonomous execution.
+- unusually good end-to-end persistence;
+- architecture/orchestration;
+- difficult debugging;
+- repository-wide reasoning;
+- computer use;
+- research/source work;
+- UI/visual judgment.
 
-Notable reported comparisons include:
+Strong recurring negatives:
 
-- OSWorld 2.0: 72.6 vs Sol 65.7
-- AutomationBench: 41.4 vs Sol 18.1
-- BenchCAD: 95.9 vs Sol 83.3
-- ExploitBench: 100 vs Sol 78.5
+- subscription quota can disappear extremely quickly;
+- routine work can become overengineered;
+- some users prefer 5.6 Sol's practical intuition on straightforward engineering;
+- creative writing is polarized: excellent continuity/style reports coexist with strong guardrail/sanitization complaints.
 
-Astra has a 1.05M-token context window and API pricing of $10/M input and $50/M output.
+### Routing prior
 
-Sources:
+**Use when the cost of a wrong global decision exceeds the model cost.**
 
-- https://openai.com/index/gpt-6-astra/
-- https://developers.openai.com/api/docs/models/gpt-6-astra
+Prefer Low/Medium first. Do not use Max as a prestige default.
 
-### Human-review signal
+## GPT-6 Sol
 
-Reddit sentiment is unusually consistent on one point: **Astra can be exceptional, but it burns allowance aggressively**.
+### Benchmark signal
 
-Recurring positive themes:
+Artificial Analysis Max:
 
-- better at taking a vague “figure it out” task all the way through;
-- stronger persistence and autonomous debugging;
-- useful as architect/orchestrator on difficult work.
+- Intelligence Index: 48 vs 5.6 Sol 47;
+- Coding Agent Index: 57 vs 55;
+- cost/task: ~$1.06 vs ~$1.99.
 
-Recurring negative themes:
+This is primarily a cost-efficiency upgrade.
 
-- quota can disappear extremely quickly in Codex;
-- polling/subagent orchestration can create huge context burn;
-- some users report overengineering small tasks;
-- some report periods of degraded behavior where the model prematurely stops or handles only part of a specification.
+Independent testing also found regressions in some knowledge-work evaluations, often from shorter deliverables that omitted rubric elements.
 
-Representative threads:
+### Reddit consensus
 
-- https://www.reddit.com/r/codex/comments/1wciwc1/gpt6_astra_burns_quota_4_times_faster_than_gpt56/
-- https://www.reddit.com/r/codex/comments/1wa9c9d/i_investigated_why_gpt6_astra_burns_quota_so_fast/
-- https://www.reddit.com/r/codex/comments/1w8kj40/astra_is_amazing_but_truly_unaffordable_at/
-- https://www.reddit.com/r/codex/comments/1whcb1h/gpt6_astra_seems_to_spend_most_of_the_time_in_a/
+**Provisional and unusually contested.**
 
-### Baseline prior
+Positive:
 
-Use Astra when **failure to integrate the whole problem is more expensive than model usage**.
+- much better allowance longevity than Astra;
+- compelling API economics;
+- likely strong default for sustained agent/coding work;
+- some users now run Sol all day and reserve Astra for blockers.
 
-Do not default to Astra for routine feature work simply because it is the strongest OpenAI model.
+Negative:
 
----
+- multiple high-engagement r/codex threads report sloppy code;
+- more handholding than 5.6 Sol;
+- confusing/undoing its own fixes;
+- unexpected commits/actions;
+- missed skills/tools;
+- simple-task failures;
+- "improved Terra" is a common early characterization.
+
+This evidence is only about two days old and should not be treated as settled.
+
+### Routing prior
+
+**Test as the new normal serious-engineering model, preferably Medium/High.**
+
+Keep 5.6 Sol as a behavior fallback until personal evidence proves 6 Sol is better in the owner's actual repositories.
+
+## GPT-6 Luna
+
+### Benchmark signal
+
+Luna Max stays at Intelligence Index 37, equal to 5.6 Luna Max, while AA task cost falls from ~$0.18 to ~$0.07.
+
+The Coding Agent Index actually falls two points, so Luna is not an across-the-board capability upgrade.
+
+### Reddit consensus
+
+Early positive signal:
+
+- much less self-directed verbosity than 5.6 Luna;
+- impressive bounded coding when given a detailed plan;
+- extremely low quota consumption;
+- useful worker beneath Sol/Astra;
+- real public use in r/codex's Dexter moderator app for classification, strict JSON, OCR, and image interpretation.
+
+Early negative signal:
+
+- some users report instruction misses;
+- infrastructure/refactor loops;
+- more handholding than 5.6;
+- project progress slowing despite cheap usage.
+
+### Routing prior
+
+**Current strongest underdog / efficiency experiment.**
+
+Use for work that is:
+
+- clear;
+- bounded;
+- cheap to test;
+- safe to retry.
+
+Do not infer architecture quality from low cost.
 
 ## GPT-5.6 Sol
 
-### Benchmark/provider signal
+Artificial Analysis now treats this as superseded by 6 Sol, but it remains useful because its behavior is known.
 
-At launch, Sol led the then-current coding-agent benchmark with a reported score of 80. Under the newer v4.3 Intelligence Index it scores 47; that lower number is primarily a benchmark-version change, not evidence that the model literally lost 33 points of ability.
+Stable public + owner evidence supports:
 
-OpenAI positions Sol as the GPT-5.6 flagship for complex coding, knowledge work, cyber, and science.
+- architecture;
+- difficult debugging;
+- backend;
+- optimization;
+- unusual/large codebases;
+- orchestration.
 
-Sources:
+Stable complaints:
 
-- https://openai.com/index/gpt-5-6/
-- https://artificialanalysis.ai/articles/artificial-analysis-intelligence-index-v4-3
+- quota;
+- validation loops;
+- overengineering;
+- occasional over-broad actions.
 
-### Human-review signal
+### Routing prior
 
-Strong reports emphasize:
+**Known-behavior fallback and proven high-end engineer.**
 
-- good ownership of well-structured repository work;
-- strong complex debugging and architecture;
-- usefulness as supervisor/orchestrator.
-
-Negative reports emphasize:
-
-- overthinking and enterprise-grade overengineering on small tasks;
-- quota use at high reasoning;
-- stronger need for repository ownership boundaries than older models;
-- occasional claims of completion that require scrutiny.
-
-Representative threads:
-
-- https://www.reddit.com/r/codex/comments/1utzi5w/gpt56_sol_vs_terra_vs_luna_my_early_guide_to/
-- https://www.reddit.com/r/codex/comments/1uysgci/i_have_never_been_gaslighted_this_much_by_any/
-- https://www.reddit.com/r/codex/comments/1v5norf/gpt56_in_codex_may_have_the_same_token_pricing/
-
-### Baseline prior
-
-Strong default for difficult engineering when Astra is unnecessary or too expensive.
-
-Best results should be expected when the repo has clear authority, ownership, and completion criteria.
-
----
+Do not pay 5.6 API pricing merely from habit if 6 Sol performs equivalently on the target task.
 
 ## GPT-5.6 Terra
 
-### Independent benchmark signal
+Terra remains unusually important because there is no GPT-6 Terra.
 
-On current Artificial Analysis v4.3, Terra Max scores **42**. At current public API pricing it is $2/M input and $12/M output.
+On public API economics, GPT-6 Sol makes Terra look weak.
 
-Artificial Analysis reports Terra Max around $1.40 per Intelligence Index task, though adjacent model/effort combinations can be more cost-efficient.
+But the recurring human argument for Terra is not raw price. It is **prompt convenience**:
 
-Sources:
+> Terra can infer enough from a coherent repository that the user does not need to specify every mechanical detail, without paying Sol/Astra cost.
 
-- https://artificialanalysis.ai/models/gpt-5-6-terra
-- https://openai.com/index/advancing-the-price-performance-frontier-with-gpt-5-6/
+The owner's Adventurer's Rise evidence strongly supports this.
 
-### Human-review signal
+### Routing prior
 
-Forum opinion is split in an informative way.
+**5.6 underdog for moderately ambiguous routine implementation.**
 
-Positive reports call Terra a strong daily coding driver, especially when the work is not perfectly specified and Luna would need a more carefully written handoff.
-
-Critics argue that Terra can fall into an awkward middle: Luna at higher effort handles routine work more cheaply, while Sol at lower/medium effort handles hard work more reliably.
-
-Representative threads:
-
-- https://www.reddit.com/r/codex/comments/1vf3i0r/after_researching_gpt56_models_heres_the_simple/
-- https://www.reddit.com/r/codex/comments/1v21pa4/does_anyone_even_use_gpt_56_terra/
-- https://www.reddit.com/r/codex/comments/1us5y77/gpt_56_terra_a_record_for_future_degradations/
-
-### Baseline prior
-
-Tentative **daily implementation workhorse**, especially for moderately ambiguous tasks where Luna would require more planning overhead.
-
-This is one model where the owner's own future evidence should matter more than generic Pareto charts.
-
----
+Compare it directly against 6 Sol Medium and 6 Luna Max rather than deleting it from the routing set because of a benchmark chart.
 
 ## GPT-5.6 Luna
 
-### Independent benchmark signal
+Established the high-volume worker role.
 
-Artificial Analysis currently reports:
+Strengths:
 
-- Luna Max: Intelligence Index **37**
-- Luna High: around 32
-- Luna Max output speed around 159 t/s
-- current API price: $0.20/M input, $1.20/M output
+- bounded implementation;
+- background/subagent work;
+- transformations;
+- cheap review/fix loops.
 
-That makes Luna unusually capable for its token price.
+Weaknesses:
 
-Sources:
+- architecture;
+- implicit intent;
+- general-chat depth;
+- instruction mistakes.
 
-- https://artificialanalysis.ai/models/gpt-5-6-luna
-- https://openai.com/index/advancing-the-price-performance-frontier-with-gpt-5-6/
+### Routing prior
 
-### Human-review signal
+**Legacy behavior fallback.**
 
-Community reports increasingly treat Luna as more than a trivial-task model.
+Prefer 6 Luna when it performs equivalently; retain 5.6 when direct evidence says the newer model is less reliable on the task.
 
-Positive themes:
+## Current underdogs
 
-- enormous subscription mileage after OpenAI's July quota/pricing change;
-- capable of long unattended execution from a high-quality handoff;
-- useful for review-fix loops and clearly defined implementation;
-- excellent background/subagent economics.
+### 1. GPT-6 Luna
 
-Weakness themes:
+The strongest current cost/quality underdog.
 
-- needs a better plan than Sol/Astra for ambiguous tasks;
-- not the first choice for architecture or difficult cross-system judgment.
+Not because it is secretly a frontier architect, but because a huge share of software work is clear, testable execution.
 
-Representative threads:
+### 2. GPT-5.6 Terra
 
-- https://www.reddit.com/r/codex/comments/1vcqiwq/opus_5_approves_gpt_56_lunas_max_work/
-- https://www.reddit.com/r/codex/comments/1vb12jt/chatgpt_codex_quota_update/
-- https://www.reddit.com/r/codex/comments/1utzi5w/gpt56_sol_vs_terra_vs_luna_my_early_guide_to/
+Its API Pareto position is weak, but its human-effort position can still be good.
 
-### Baseline prior
+### 3. Astra Low/Medium
 
-Use aggressively for **well-specified implementation, bulk work, subagents, monitors, review-fix loops, and tasks with cheap verification**.
+Astra's cheaper effort settings are easy to overlook. They retain much of the model's judgment without Max-level burn.
 
-A particularly promising pattern is:
+## Current waste traps
 
-> strong model plans/reviews → Luna executes.
+A "waste trap" is a routing choice, not a universal model verdict.
+
+- Astra High/Max for routine mechanical implementation.
+- Sol Max when High already resolves the task.
+- 5.6 Sol API use when 6 Sol is behaviorally equivalent.
+- 5.6 Luna API use when 6 Luna is behaviorally equivalent.
+- Luna on vague architecture where reviewer/rework cost erases token savings.
+- one frontier model acting as architect + coder + reviewer + tester for hours when the work can be split by role.
+
+## Efficiency rule
+
+Do not evaluate "token spinach" using price/token alone.
+
+Track:
+
+1. first-pass acceptance;
+2. retries;
+3. reviewer cost;
+4. human steering;
+5. context/cache churn;
+6. wall time;
+7. regression/rework;
+8. subscription quota consumed.
+
+The cheapest token can produce the most expensive finished task.
+
+The expensive model can be cheapest when it prevents an expensive architectural mistake.
+
+## Current provisional routing
+
+- **Astra Medium/High:** architecture, integration, final review.
+- **6 Sol Medium/High:** serious daily coding/agent work, pending personal validation.
+- **6 Luna High/XHigh:** bulk worker/subagent.
+- **5.6 Sol:** proven fallback for difficult engineering where 6 Sol behavior disappoints.
+- **5.6 Terra High:** moderately ambiguous routine implementation and low-prompt-overhead work.
+- **5.6 Luna:** fallback when 6 Luna's instruction following is worse on a known workflow.
+
+Public evidence does not replace the owner's case corpus.
