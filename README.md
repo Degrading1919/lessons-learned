@@ -126,6 +126,18 @@ For the current OpenAI family, see the [2026-09-24 OpenAI Reddit/efficiency fiel
 
 For Anthropic, see the [2026-09-24 Anthropic Reddit/efficiency field guide](research/anthropic/2026-09-24-reddit-field-guide.md), which covers Opus 5.5, Fable 5.1, Opus 5, Sonnet 5, Opus 4.8, Haiku 4.5, and Mythos 5.1.
 
+## Harness efficiency research
+
+Model choice and harness choice are tracked separately.
+
+See:
+
+- [Harness baseline](baselines/HARNESSES.md)
+- [2026-09-24 Harness Efficiency Field Guide](research/harnesses/2026-09-24-token-and-window-efficiency.md)
+- [Harness A/B Test Protocol](research/harnesses/HARNESS_AB_TEST_PROTOCOL.md)
+
+The harness research compares native Codex and Claude surfaces with Cline, OpenCode, Cursor, and custom API agents. It treats five-hour allowance, API dollars, prompt caching, tool/MCP overhead, subagents, compaction, wall time, and human correction burden as separate variables.
+
 ## Public priors vs. personal evidence
 
 Public benchmarks and community sentiment are tracked separately from personal results. See [benchmarks/PUBLIC_PRIORS_VS_PERSONAL_EVIDENCE.md](benchmarks/PUBLIC_PRIORS_VS_PERSONAL_EVIDENCE.md) and the dated [source registry](benchmarks/SOURCES.md).
@@ -134,7 +146,7 @@ The rule is simple: public benchmarks establish a prior; the owner's observed pr
 
 ## Machine-readable corpus
 
-`datasets/cases.jsonl` mirrors owner-observed prose cases. `datasets/model_baselines.jsonl` separately stores researched public priors. Keeping these datasets separate prevents benchmark/forum expectations from being mistaken for personal evidence.
+`datasets/cases.jsonl` mirrors owner-observed prose cases. `datasets/model_baselines.jsonl` stores researched model priors. `datasets/harness_baselines.jsonl` separately stores researched harness priors. Keeping these datasets separate prevents benchmark/forum expectations from being mistaken for personal evidence.
 
 The dataset intentionally records **observed outcomes and human preference signals** rather than turning them into universal model scores.
 
