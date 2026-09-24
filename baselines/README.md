@@ -19,7 +19,7 @@ Personal evidence is allowed to override a baseline.
 ## Providers covered
 
 - [OpenAI](OPENAI.md) — current compact baseline; see also the [2026-09-24 OpenAI Reddit/efficiency field guide](../research/openai/2026-09-24-reddit-field-guide.md)
-- [Anthropic / Claude](ANTHROPIC.md)
+- [Anthropic / Claude](ANTHROPIC.md) — current compact baseline; see also the [2026-09-24 Anthropic Reddit/efficiency field guide](../research/anthropic/2026-09-24-reddit-field-guide.md)
 - [Google / Gemini](GOOGLE.md)
 - [Meta](META.md)
 - [DeepSeek](DEEPSEEK.md)
@@ -34,7 +34,7 @@ The initial baseline includes models that are current enough, distinctive enough
 | Provider | Models / families covered |
 |---|---|
 | OpenAI | GPT-6 Astra, Sol, Luna; GPT-5.6 Sol, Terra, Luna |
-| Anthropic | Claude Fable 5.1 / Mythos 5.1; Claude Opus 5.5; Claude Sonnet 5 |
+| Anthropic | Claude Opus 5.5, Fable 5.1, Opus 5, Sonnet 5, Opus 4.8, Haiku 4.5, Mythos 5.1 |
 | Google | Gemini 3.8 Flash; current Pro-model availability caveat |
 | Meta | Muse Spark 1.3; Llama 4 Maverick; Llama 4 Scout |
 | DeepSeek | DeepSeek V4.1 Flash; V4 Pro as an outgoing/reference tier |
