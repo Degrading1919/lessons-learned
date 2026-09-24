@@ -5,6 +5,7 @@ on:
     paths:
       - "datasets/**"
       - "scripts/validate_cases.py"
+      - "scripts/validate_harness_baselines.py"
       - ".github/workflows/validate-corpus.yml"
   pull_request:
     paths:
@@ -22,3 +23,4 @@ jobs:
           python-version: "3.12"
       - run: python scripts/validate_cases.py
       - run: python scripts/validate_model_baselines.py
+      - run: python scripts/validate_harness_baselines.py
