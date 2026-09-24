@@ -70,3 +70,19 @@ Codex output must be judged by what survived:
 Margins PR #42 is especially important: substantial automated verification existed, yet owner playtesting still surfaced zero-sale deadlocks, closing/customer lifecycle issues, developer-facing setup UX, prompt verbosity, checkout problems, and unsaved-progress concerns.
 
 **Lesson:** green tests are necessary evidence, not product acceptance.
+
+
+## Current public model prior — 2026-09-24
+
+The owner-observed cases above remain the primary evidence for this repository.
+
+For the newly released GPT-6 family and current OpenAI model economics, use the [2026-09-24 OpenAI model field guide](../../research/openai/2026-09-24-reddit-field-guide.md) as a **public prior only**.
+
+The current research hypothesis is:
+
+- Astra for scarce architectural/integration judgment;
+- GPT-6 Sol Medium/High as the serious-work candidate, pending personal validation;
+- GPT-6 Luna High/XHigh for bounded bulk execution with cheap verification;
+- GPT-5.6 Sol and Terra retained as behavioral fallbacks until matched tests justify replacing them.
+
+Do not rewrite historical GPT-5.6 cases as GPT-6 conclusions.
