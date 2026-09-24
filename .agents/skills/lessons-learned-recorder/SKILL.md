@@ -193,6 +193,30 @@ When evidence allows, distinguish:
 
 A cheaper model can produce a more expensive completed task if correction cost dominates. An expensive model can be cheaper overall if it prevents a costly architectural error.
 
+### Harness-efficiency rule
+
+When the outcome involves an agent harness, record model and harness separately.
+
+Do not attribute high token/quota use to the model until checking:
+
+- native subscription vs API billing;
+- starting/fixed context;
+- prompt-cache read/write behavior;
+- tool and MCP schema size;
+- tool-result accumulation;
+- skills/plugins;
+- subagent count and actual subagent model/effort;
+- compactions;
+- retries and rereads;
+- provider adapter or proxy route;
+- human correction burden.
+
+Use `baselines/HARNESSES.md` and `research/harnesses/2026-09-24-token-and-window-efficiency.md` as the current public harness prior.
+
+For matched owner experiments follow `research/harnesses/HARNESS_AB_TEST_PROTOCOL.md`.
+
+A harness result should optimize **accepted work per scarce resource**, not merely tokens per request.
+
 ### Match the comparison
 
 Prefer the same:
@@ -286,7 +310,9 @@ For a new substantial case, inspect whether these need changes:
 - `baselines/<PROVIDER>.md`
 - `benchmarks/PUBLIC_PRIORS_VS_PERSONAL_EVIDENCE.md`
 - `datasets/cases.jsonl`
-- `datasets/model_baselines.jsonl` when public-prior data changes
+- `datasets/model_baselines.jsonl` when public-model data changes
+- `datasets/harness_baselines.jsonl` when public harness research changes
+- `datasets/harness_runs.jsonl` only after real owner measurements exist
 
 Do not mechanically update every file when the case adds nothing to that surface.
 
