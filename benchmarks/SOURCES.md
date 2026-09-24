@@ -267,6 +267,98 @@ https://www.reddit.com/r/ClaudeAI/comments/1oca664/haiku_45_is_really_really_goo
 
 - **Observed theme:** useful search/read/classify/explore worker; users escalate to stronger models for reasoning/synthesis.
 
+## Harness efficiency sources
+
+### OpenAI — prompt caching
+
+https://developers.openai.com/api/docs/guides/prompt-caching
+
+- **Type:** provider engineering documentation
+- **Why useful:** exact-prefix caching, cache-affecting settings, tool-schema stability, compaction effects, and cached-input economics.
+
+### OpenAI — Agents API observability
+
+https://developers.openai.com/api/docs/guides/agents-api/observability
+
+- **Type:** provider engineering documentation
+- **Why useful:** explicitly requires counting root-agent, subagent, retry, tool and cached-input usage.
+
+### OpenAI — tool search
+
+https://developers.openai.com/api/docs/guides/tools-tool-search
+
+- **Type:** provider engineering documentation
+- **Why useful:** deferred tool discovery and cache-preserving tool loading.
+
+### OpenAI Developer Community — Codex Desktop vs CLI context comparison
+
+https://community.openai.com/t/how-are-people-managing-context-in-codex/1393098
+
+- **Date:** 2026-09-13 controlled sample
+- **Type:** community experiment
+- **Observed result:** Desktop reported roughly 8k–10k more startup context tokens than CLI across Astra, Sol, and Luna.
+- **Caution:** three readings per model/surface; percentage-display discrepancy; not a billing measurement.
+
+### Anthropic — optimizing for cost and intelligence
+
+https://platform.claude.com/docs/en/about-claude/models/optimizing-for-cost-and-intelligence
+
+- **Type:** provider engineering research
+- **Why useful:** quadratic uncached agent-loop growth, real cache-read distributions, 2.7–5.3x caching savings, tool-schema cost, effort/retry strategies, and completed-task economics.
+
+### Anthropic — Economic Index: Cadences
+
+https://www.anthropic.com/research/economic-index-june-2026-report
+
+- **Type:** provider usage research
+- **Why useful:** same-model Claude Code sessions are more autonomous than Chat/Cowork; autonomy and token usage correlate.
+
+### Anthropic — Claude Code cache postmortem
+
+https://www.anthropic.com/engineering/april-23-postmortem
+
+- **Type:** provider incident analysis
+- **Why useful:** demonstrates that harness cache/context behavior can look like model degradation while the underlying API remains unaffected.
+
+### Cline — task management and context
+
+https://docs.cline.bot/core-workflows/task-management
+
+- **Type:** harness documentation
+- **Why useful:** documents context accumulation, auto-compaction, task boundaries, cost tracking, and .clineignore.
+
+### Cline — cache-control/provider-route issue
+
+https://github.com/cline/cline/issues/13667
+
+https://github.com/cline/cline/issues/12913
+
+https://github.com/cline/cline/issues/14328
+
+- **Type:** implementation issue evidence
+- **Why useful:** demonstrates route-specific failures where prompt caching or compaction broke and token cost exploded.
+- **Caution:** bugs are version/route specific, not universal Cline behavior.
+
+### OpenCode — providers and compaction
+
+https://opencode.ai/docs/providers
+
+https://opencode.ai/v2/docs/compaction
+
+- **Type:** harness documentation
+- **Why useful:** ChatGPT subscription connector, Anthropic consumer-subscription prohibition, API/local providers, and context compaction behavior.
+
+### Cursor — models, pricing, usage
+
+https://cursor.com/docs/models-and-pricing
+
+https://prod.cursor.com/help/models-and-usage/usage-limits
+
+https://prod.cursor.com/help/models-and-usage/api-keys
+
+- **Type:** harness/provider documentation
+- **Why useful:** distinguishes Cursor's monthly usage pools, third-party API-price accounting, BYOK, and first-party models.
+
 ## Provider sources
 
 ### OpenAI — GPT-5.6
