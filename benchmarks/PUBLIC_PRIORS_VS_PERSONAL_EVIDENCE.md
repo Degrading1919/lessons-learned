@@ -48,6 +48,36 @@ The new public evidence creates three high-value experiments rather than three a
 
 Until those comparisons exist, the owner's proven Sol/Terra cases remain stronger evidence for the owner's workflow than launch-week public sentiment.
 
+## Current Anthropic family update — 2026-09-24
+
+The Anthropic public prior changed materially with Opus 5.5.
+
+Current independent/public evidence suggests:
+
+- **Opus 5.5** is now Anthropic's strongest broad model and is substantially better priced/cached than Opus 5.
+- **Fable 5.1** remains an unusually strong planning/review model, but its cost and quota make it a scarce resource; XHigh currently matches Max's broad benchmark score at lower task cost.
+- **Opus 5** is a major benchmark-vs-human-experience mismatch: strong independent benchmark numbers coexist with weeks of complaints about verbosity, jargon, overreach, context drift, and correction burden.
+- **Sonnet 5** demonstrates that lower token price does not guarantee lower task cost; Max effort can consume enough reasoning/output tokens to exceed older Opus task economics.
+- **Opus 4.8** remains behaviorally relevant because users repeatedly return to it for practical Claude Code judgment.
+- **Haiku 4.5** has a clear search/read/classify/explore role, but Anthropic does not currently have a low-cost worker with the same 2026 price/capability profile as GPT-6 Luna.
+
+### Relationship to personal evidence
+
+The owner's strongest Claude Code case used **Opus 4.8 High + Roblox Studio MCP** successfully on a live environment-integration task.
+
+The new public data does **not** justify rewriting that conclusion as "use Opus 5.5 instead."
+
+It creates a controlled experiment:
+
+> same repository snapshot + same MCP/tool access + same task class + Opus 5.5 High vs Opus 4.8 High.
+
+The owner's Bible governance case also remains consistent with the public signal that frontier Claude models are especially valuable for authority design, semantic risk, orchestration, and review.
+
+See:
+
+- [Anthropic baseline](../baselines/ANTHROPIC.md)
+- [2026-09-24 Anthropic Reddit/efficiency field guide](../research/anthropic/2026-09-24-reddit-field-guide.md)
+
 ## 1. GPT-5.6 Sol Max / Codex
 
 ### Public prior I would have adopted
