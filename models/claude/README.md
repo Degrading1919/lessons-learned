@@ -49,3 +49,21 @@ The full external Claude transcripts are not available in this corpus. Claude ca
 4. later review results
 
 See the Claude Code section for the strongest concrete implementation example.
+
+
+## Current public model prior — 2026-09-24
+
+Owner-observed Claude cases remain the primary evidence.
+
+For current Anthropic model economics and Reddit consensus, use the [2026-09-24 Anthropic model field guide](../../research/anthropic/2026-09-24-reddit-field-guide.md) as a **public prior only**.
+
+Current research hypothesis:
+
+- **Opus 5.5 Medium/High:** new high-end daily Claude candidate;
+- **Fable 5.1 High/XHigh:** scarce architecture/orchestration/review resource;
+- **Opus 4.8:** proven behavioral fallback;
+- **Sonnet 5 controlled effort:** bounded implementation/knowledge work;
+- **Haiku 4.5:** search/read/classify/explore utility worker;
+- **Opus 5:** avoid as normal author unless a specific workflow proves otherwise.
+
+Do not rewrite historical Opus 4.8/Fable cases as conclusions about Opus 5.5.
