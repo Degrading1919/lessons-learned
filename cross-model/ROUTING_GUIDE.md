@@ -37,6 +37,29 @@ Important:
 - GPT-6 Sol/Luna had only about two days of public use when this overlay was written, so Reddit consensus remains provisional.
 - Keep 5.6 models routable until matched owner tests demonstrate that the GPT-6 replacement is behaviorally better on the relevant workflow.
 
+## Anthropic public-prior overlay — 2026-09-24
+
+This subsection is **research guidance, not owner-observed evidence**. See `research/anthropic/2026-09-24-reddit-field-guide.md`.
+
+| Bottleneck | Current Anthropic prior | Confidence |
+|---|---|---|
+| Serious daily Claude Code | Opus 5.5 Medium/High | Provisional; very strong launch signal |
+| Architecture / orchestration | Fable 5.1 High/XHigh or Opus 5.5 High | Medium-high |
+| Known-behavior repo implementation | Opus 4.8 | High behavioral confidence |
+| Bounded normal implementation | Sonnet 5 Low/Medium/High | High, with strict effort control |
+| Search/read/classify/explore | Haiku 4.5 | High utility-role confidence |
+| Adversarial QA | Opus 5 can have niche value | Medium; poor authoring prior |
+| Restricted high-risk research | Mythos 5.1 / verified Opus access | Access-dependent |
+
+Important:
+
+- Opus 5.5 is currently the strongest public-prior Claude default, but it is only days old.
+- Fable 5.1 is best treated as scarce judgment/review, not bulk implementation.
+- Opus 5 is the strongest Claude waste-trap candidate because human correction/readability costs undermine its benchmark strength.
+- Sonnet 5 is not automatically cheap; Max effort can cost more per finished benchmark task than older Opus.
+- Haiku 4.5 is useful inside Claude Code for retrieval/exploration, but Anthropic currently lacks an obvious equivalent to GPT-6 Luna's modern low-cost worker economics.
+- Opus 4.8 remains routable because mature human and owner evidence supports its practical judgment.
+
 ## The routing pattern that appears most efficient
 
 ### Build
