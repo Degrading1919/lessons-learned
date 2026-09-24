@@ -5,12 +5,15 @@ on:
     paths:
       - "datasets/**"
       - "scripts/validate_cases.py"
+      - "scripts/validate_model_baselines.py"
       - "scripts/validate_harness_baselines.py"
       - ".github/workflows/validate-corpus.yml"
   pull_request:
     paths:
       - "datasets/**"
       - "scripts/validate_cases.py"
+      - "scripts/validate_model_baselines.py"
+      - "scripts/validate_harness_baselines.py"
       - ".github/workflows/validate-corpus.yml"
 
 jobs:
