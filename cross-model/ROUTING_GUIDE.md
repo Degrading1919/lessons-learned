@@ -16,6 +16,27 @@ This is a current routing heuristic derived from the user's own project evidence
 | Deterministic formatting/validation | Code/scripts, not an LLM |
 | Final product acceptance | Human playtest/use |
 
+## OpenAI public-prior overlay — 2026-09-24
+
+This subsection is **research guidance, not owner-observed evidence**. See `research/openai/2026-09-24-reddit-field-guide.md`.
+
+| Bottleneck | Current OpenAI prior | Confidence |
+|---|---|---|
+| Ambiguous architecture / difficult integration | GPT-6 Astra Medium/High | Medium-high |
+| Serious daily coding / agentic work | GPT-6 Sol Medium/High | Provisional; launch-week behavior is contested |
+| Bounded bulk implementation from a clear plan | GPT-6 Luna High/XHigh | Provisional; strongest cost-efficiency candidate |
+| Known difficult engineering where GPT-6 Sol misbehaves | GPT-5.6 Sol | High as a behavioral fallback |
+| Moderately ambiguous routine repo work | GPT-5.6 Terra High | High owner evidence; public API economics are weaker |
+| Legacy cheap-worker behavior | GPT-5.6 Luna | High as a fallback, not the economic default |
+
+Important:
+
+- GPT-6 Sol/Luna are primarily **cost-efficiency** releases so far, not clean across-the-board quality wins over 5.6.
+- Astra Max is not the default. Independent benchmarks show strong diminishing returns above Medium/High.
+- Luna is cheap only when verification is cheap. Retry/reviewer cost can erase token savings.
+- GPT-6 Sol/Luna had only about two days of public use when this overlay was written, so Reddit consensus remains provisional.
+- Keep 5.6 models routable until matched owner tests demonstrate that the GPT-6 replacement is behaviorally better on the relevant workflow.
+
 ## The routing pattern that appears most efficient
 
 ### Build
@@ -54,6 +75,8 @@ This loop repeatedly appears more useful than trying to make one giant prompt el
 The corpus contains multiple warnings against "always use the biggest model":
 
 - Terra High produced strong bounded implementation at attractive cost.
+- GPT-6 Luna is now the strongest public-prior worker candidate, but its launch-week instruction-following evidence is mixed.
+- GPT-6 Astra effort selection matters: Medium/High captures most benchmark capability before Max-level cost.
 - Astra Low appeared more economically useful in reviewer/orchestrator roles than as the owner of an enormous implementation wave.
 - deterministic transformations should be scripts.
 - Tripo is useful for raw geometry but cannot guarantee production readiness.
