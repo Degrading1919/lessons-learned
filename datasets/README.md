@@ -105,3 +105,18 @@ Validation:
 ```bash
 python scripts/validate_model_baselines.py
 ```
+
+
+## Public harness baselines
+
+`harness_baselines.jsonl` stores researched priors about harness billing, context overhead, cache behavior, tool/MCP overhead, and likely role fit.
+
+It is separate from model baselines because the same model can have very different economics under Codex CLI, Claude Code, Cline, OpenCode, Cursor, or a custom API agent.
+
+Validation:
+
+```bash
+python scripts/validate_harness_baselines.py
+```
+
+Future personal matched tests should be stored in `datasets/harness_runs.jsonl` only after real measurements exist. See `research/harnesses/HARNESS_AB_TEST_PROTOCOL.md`. Do not fabricate historical quota/token measurements.
