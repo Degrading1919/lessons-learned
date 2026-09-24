@@ -1,6 +1,6 @@
 # Benchmark and Public-Prior Sources
 
-_Last reviewed: 2026-09-22_
+_Last reviewed: 2026-09-24_
 
 These sources are used only to establish public priors and context. They do not override the project owner's direct evidence.
 
@@ -36,6 +36,102 @@ https://artificialanalysis.ai/agents/coding-agents/comparisons/claude-code-vs-co
 
 - **Type:** independent comparative benchmark
 - **Why useful:** explicitly demonstrates that the harness is part of the evaluated system.
+
+## Current OpenAI benchmark and field-guide sources
+
+### Artificial Analysis — GPT-6 Astra release
+
+https://artificialanalysis.ai/models/releases/gpt-6-astra
+
+- **Type:** independent benchmark
+- **Why useful:** effort-by-effort intelligence, speed and cost; exposes Astra's diminishing returns from High to Max.
+
+### Artificial Analysis — GPT-6 Sol release
+
+https://artificialanalysis.ai/models/releases/gpt-6-sol
+
+- **Type:** independent benchmark
+- **Why useful:** effort-by-effort intelligence and task-cost baseline for the new Sol tier.
+
+### Artificial Analysis — GPT-6 Luna release
+
+https://artificialanalysis.ai/models/releases/gpt-6-luna
+
+- **Type:** independent benchmark
+- **Why useful:** effort-by-effort intelligence and task-cost baseline for the high-volume tier.
+
+### Artificial Analysis — GPT-6 Sol/Luna vs GPT-5.6
+
+https://artificialanalysis.ai/articles/gpt-6-sol-and-luna-push-the-cost-efficiency-frontier
+
+- **Date:** 2026-09-22
+- **Type:** independent benchmark analysis
+- **Why useful:** shows that lower GPT-6 task cost is primarily price-driven; both new models used slightly more output tokens than their predecessors. Also records coding-agent gains/regressions, hallucination behavior, and knowledge-work regressions.
+
+### OpenAI — GPT-6 model catalog
+
+https://developers.openai.com/api/docs/models
+
+- **Type:** provider documentation
+- **Why useful:** current flagship routing, exact model IDs, prices, context, reasoning options, and tools.
+
+### OpenAI — GPT-6 Sol and Luna launch
+
+https://openai.com/index/introducing-gpt-6-sol-and-luna/
+
+- **Date:** 2026-09-22
+- **Type:** provider self-report
+- **Why useful:** launch pricing, official role split, provider coding/computer-use evaluations, availability, and caching changes.
+- **Caution:** provider evaluation claims remain provider self-reports.
+
+### OpenAI — GPT-6 caching
+
+https://openai.com/index/better-prompt-caching-for-gpt-6/
+
+- **Type:** provider engineering documentation
+- **Why useful:** explains why persistent-agent context economics can differ from raw input-token totals.
+
+### Reddit — GPT-6 Astra quota and role fit
+
+https://www.reddit.com/r/ChatGPTPro/comments/1w8rqbt/gpt6_astra_usage/
+
+https://www.reddit.com/r/ChatGPTPro/comments/1w9isu9/gpt6_astra_is_not_a_model_for_plus_users/
+
+https://www.reddit.com/r/ChatGPTPro/comments/1wbs9cq/what_is_everyones_opinion_on_chatgpt6_astra_so_far/
+
+- **Observed theme:** powerful end-to-end/research model with exceptionally strong quota-burn complaints.
+- **Caution:** self-selected subscription users.
+
+### Reddit — GPT-6 Sol early field reports
+
+https://www.reddit.com/r/codex/comments/1wnto0j/sol_6_is_a_slop_fest/
+
+https://www.reddit.com/r/codex/comments/1woiw95/something_is_wrong_with_gpt_6_sol/
+
+https://www.reddit.com/r/codex/comments/1woa9fk/codex_usage_feels_brutally_much_better/
+
+https://www.reddit.com/r/codex/comments/1woc006/new_model_drops_users_declare_it_sucks_within_37/
+
+- **Observed theme:** major usage/value enthusiasm coexists with unusually strong early complaints about coding consistency and under-execution.
+- **Caution:** only about two days of public history; launch-day backlash/honeymoon effects are substantial.
+
+### Reddit — GPT-6 Luna early field reports
+
+https://www.reddit.com/r/codex/comments/1wo11fj/gpt6_luna_review_after_3_hours_coding_on_a_big/
+
+https://www.reddit.com/r/codex/comments/1wnmhnq/gpt56_luna_fans_how_does_gpt6_luna_feel_so_far/
+
+https://www.reddit.com/r/codex/comments/1wox48m/luna_6_vs_luna_56/
+
+- **Observed theme:** strongest enthusiasm is for bulk-worker economics; instruction-following and coding-quality reports are mixed.
+- **Caution:** only about two days of public history.
+
+### Reddit Devvit — r/codex Dexter
+
+https://developers.reddit.com/apps/dexterthebot
+
+- **Type:** concrete public application
+- **Why useful:** GPT-6 Luna High is used for structured moderation decisions, with Luna also used for OCR/image description and human-review fallback.
 
 ## Provider sources
 
