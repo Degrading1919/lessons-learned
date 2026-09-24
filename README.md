@@ -124,6 +124,8 @@ These are dated, source-backed starting assumptions based on independent benchma
 
 For the current OpenAI family, see the [2026-09-24 OpenAI Reddit/efficiency field guide](research/openai/2026-09-24-reddit-field-guide.md), which separates task fit, failure modes, reasoning-effort economics, subscription/API cost, and early GPT-6 launch confidence.
 
+For Anthropic, see the [2026-09-24 Anthropic Reddit/efficiency field guide](research/anthropic/2026-09-24-reddit-field-guide.md), which covers Opus 5.5, Fable 5.1, Opus 5, Sonnet 5, Opus 4.8, Haiku 4.5, and Mythos 5.1.
+
 ## Public priors vs. personal evidence
 
 Public benchmarks and community sentiment are tracked separately from personal results. See [benchmarks/PUBLIC_PRIORS_VS_PERSONAL_EVIDENCE.md](benchmarks/PUBLIC_PRIORS_VS_PERSONAL_EVIDENCE.md) and the dated [source registry](benchmarks/SOURCES.md).
