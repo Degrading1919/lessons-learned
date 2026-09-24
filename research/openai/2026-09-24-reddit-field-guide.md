@@ -34,7 +34,18 @@ The general-purpose OpenAI models currently worth routing between are:
 
 GPT-6 Pro in Chat is powered by Astra rather than being treated here as a separate base model.
 
-OpenAI also offers specialized models such as GPT-5.6 Cyber / Daybreak Red, GPT-Live-1, and image-generation models. Those are not compared in this general coding/reasoning efficiency matrix because their job is different.
+OpenAI also currently lists purpose-built models that should **not** be forced into this general reasoning/coding comparison:
+
+- GPT-5.6 Cyber / Daybreak Red / Daybreak Blue — cybersecurity access tiers;
+- GPT-Rosalind — approved life-sciences research;
+- GPT-Image-2.5 Sunburst / Flare — image generation and editing;
+- GPT-Live-1 and GPT-Realtime-2.1 / Mini / related realtime models — voice/realtime interaction;
+- transcription and speech-generation models.
+
+The official catalog is the authority for this specialized set:
+https://developers.openai.com/api/docs/models
+
+These models should receive their own task-specific baselines when the owner actually needs to route work between alternatives in that domain. Comparing their token cost or benchmark score directly against Astra/Sol/Luna would be misleading.
 
 GPT-5.5 and older models remain relevant as historical or compatibility references, but they are no longer the main routing set.
 
@@ -46,7 +57,7 @@ OpenAI's current API guidance is explicit:
 - **Sol:** balance intelligence and cost;
 - **Luna:** focused, cost-sensitive, high-volume work.
 
-GPT-6 Sol and Luna launched on 2026-09-22. They are available in ChatGPT Work and Codex and through the API; at launch they are separate from the models in ordinary Chat.
+GPT-6 Sol and Luna launched on 2026-09-22. OpenAI's current release notes say they are available in ChatGPT Work and Codex and through the API, and are **separate from the models available in ordinary Chat**. Free and Go users can also try GPT-6 Luna in the desktop app.
 
 GPT-5.6 Terra has no direct GPT-6 Terra successor. That matters because Terra still occupies a behavior niche that some users prefer even though its API economics are less compelling after GPT-6.
 
