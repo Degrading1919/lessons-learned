@@ -35,6 +35,7 @@ models/
   tripo-3d/
 cross-model/
 projects/
+research/
 datasets/
 templates/
 ```
@@ -120,6 +121,8 @@ Initial providers:
 - [Moonshot / Kimi](baselines/KIMI.md)
 
 These are dated, source-backed starting assumptions based on independent benchmarks, provider documentation, and forum sentiment. They are designed to be replaced or refined by the owner's own project evidence.
+
+For the current OpenAI family, see the [2026-09-24 OpenAI Reddit/efficiency field guide](research/openai/2026-09-24-reddit-field-guide.md), which separates task fit, failure modes, reasoning-effort economics, subscription/API cost, and early GPT-6 launch confidence.
 
 ## Public priors vs. personal evidence
 
