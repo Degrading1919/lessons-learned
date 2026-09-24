@@ -60,6 +60,31 @@ Important:
 - Haiku 4.5 is useful inside Claude Code for retrieval/exploration, but Anthropic currently lacks an obvious equivalent to GPT-6 Luna's modern low-cost worker economics.
 - Opus 4.8 remains routable because mature human and owner evidence supports its practical judgment.
 
+## Harness-efficiency overlay — 2026-09-24
+
+This subsection is a researched prior, not owner-observed proof. See `research/harnesses/2026-09-24-token-and-window-efficiency.md`.
+
+| Goal | Current harness prior |
+|---|---|
+| Maximize OpenAI subscription coding allowance | Codex CLI with a minimal tool/MCP surface |
+| Maximize Claude subscription coding allowance | Claude Code CLI with healthy caching and constrained tools/subagents |
+| Non-agentic Claude writing/research | Claude Chat/Desktop rather than a coding-agent loop |
+| Desktop/app-integrated Claude work | Cowork when environment interaction is the reason to use it |
+| Cross-provider/API overflow | Cline or OpenCode with verified prompt caching |
+| IDE + first-party subsidized models | Cursor |
+| Maximum production control | Direct API/Agents SDK with explicit cache/tool/context management |
+
+Important:
+
+- a native subscription harness can be economically superior even when it consumes more visible tokens because the subscription subsidizes inference;
+- a third-party API harness can be cheaper per accepted task only if caching, context, tools, and retries are well controlled;
+- tool/MCP bloat can materially increase cost;
+- subagents multiply model calls and should be used for real parallelism;
+- compaction can save context while simultaneously breaking cache reuse;
+- the target metric is accepted work per scarce resource, not prompts or raw tokens.
+
+Priority owner experiments are Codex CLI vs Desktop, Claude Code vs Desktop/Cowork where tasks are comparable, minimal vs full MCP/tool catalogs, and native subscription vs Cline direct API.
+
 ## The routing pattern that appears most efficient
 
 ### Build
