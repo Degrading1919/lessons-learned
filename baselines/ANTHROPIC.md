@@ -1,182 +1,247 @@
 # Anthropic / Claude Baseline
 
-_Last researched: 2026-09-22_
+_Last researched: 2026-09-24_
+
+This is the compact routing baseline.
+
+For the long-form benchmark + Reddit synthesis, see:
+
+[Anthropic Model Field Guide — 2026-09-24](../research/anthropic/2026-09-24-reddit-field-guide.md)
 
 ## Current routing summary
 
-| Model | Baseline role | Strong suits | Main weaknesses / cautions |
-|---|---|---|---|
-| Claude Fable 5.1 | Frontier knowledge/coding/research | Deep difficult coding, long-running research, low-level reasoning, professional knowledge work | Very expensive; safeguard fallback complicates comparisons; some users report partial completion/laziness |
-| Claude Opus 5.5 | New high-end daily frontier candidate | Agentic coding and knowledge work near/above Fable-class at materially lower price; faster/clearer than Opus 5 | Released today: independent/user evidence is immature; honeymoon bias likely |
-| Claude Sonnet 5 | Mid/high-tier agentic workhorse | Thorough large-codebase work, multimodal, cheaper per token than Opus/Fable | Very high token consumption at higher effort; cost per completed task can erase per-token savings |
-| Claude Mythos 5.1 | Restricted high-risk research tier | Same underlying intelligence as Fable 5.1 with safeguards tuned for trusted cyber/life-science use | Not a normal general-routing option; trusted-access restrictions |
+| Model | Public-prior role | Strong suits | Main cautions | Confidence |
+|---|---|---|---|---|
+| **Claude Opus 5.5** | New flagship / high-end daily model | coding, UI/debugging, agentic knowledge work, clearer collaboration | only two days public; still expensive; minor bugs/sloppiness remain | Low-medium |
+| **Claude Fable 5.1** | Scarce planner / deep reviewer | architecture, orchestration, low-level code, research, difficult debugging | very expensive; quota burn; production fallback complicates pure-model comparison | Medium-high |
+| **Claude Opus 5** | Transition / adversarial-QA niche | benchmark-strong reasoning | mature complaints about verbosity, jargon, overreach, context drift and correction burden | High |
+| **Claude Sonnet 5** | Thorough mid-tier agent | bounded coding, knowledge work, tool use, architecture exploration | max effort is a token monster; weaker task economics than sticker price suggests | High |
+| **Claude Opus 4.8** | Proven behavioral fallback | practical coding judgment, Claude Code execution, long-context work | older and relatively expensive | High |
+| **Claude Haiku 4.5** | Utility worker / subagent | search, read, classify, explore, quick prototypes | weak deep reasoning and modern terminal/automation performance | High |
+| **Claude Mythos 5.1** | Restricted trusted-access specialist | authorized high-risk cyber/life-science workflows | not a normal routing tier | Medium |
 
-## Claude Fable 5.1
+Anthropic says Sonnet 5.5 and Haiku 5.5 will follow Opus 5.5 in the coming weeks. Do not create routing conclusions for them until they exist.
 
-### Independent benchmark signal
+## Current API economics
 
-Artificial Analysis's September 1 evaluation put Fable 5.1 at the top of the then-current Intelligence Index. Under the newer v4.3 rebasing, Fable 5.1 and GPT-6 Astra are tied at **53**.
+| Model | Input / 1M | Output / 1M | Cache read / 1M |
+|---|---:|---:|---:|
+| Opus 5.5 | $4.00 | $20.00 | $0.20 |
+| Fable 5.1 | $10.00 | $50.00 | $0.25 |
+| Opus 5 | $5.00 | $25.00 | $0.50 |
+| Sonnet 5 | $2.00 | $10.00 | $0.20 |
+| Opus 4.8 | $5.00 | $25.00 | $0.50 |
+| Haiku 4.5 | $1.00 | $5.00 | $0.10 |
 
-Fable 5.1 also showed exceptionally strong Terminal-Bench, SciCode, and knowledge-work performance.
+Important: Sonnet 5's lower token price does not automatically mean lower completed-task cost because it can use dramatically more reasoning/output tokens at high/max effort.
 
-Important caveat: Artificial Analysis evaluated Fable 5.1 with Anthropic's production fallback system. Safety-flagged requests were sometimes routed to Opus-family models, accounting for a small share of output tokens. This makes "Fable 5.1" partly a production-system result rather than a pure isolated-base-model result.
+## Opus 5.5 effort economics
 
-Sources:
+Artificial Analysis v4.3.2:
 
-- https://artificialanalysis.ai/articles/claude-fable-5-1
-- https://artificialanalysis.ai/articles/artificial-analysis-intelligence-index-v4-3
+| Effort | Intelligence | AA cost/task |
+|---|---:|---:|
+| Low | 42 | $0.55 |
+| Medium | 51 | $1.34 |
+| High | 54 | $1.82 |
+| XHigh | 56 | $3.46 |
+| Max | 58 | $5.98 |
 
-### Provider signal
+**Prior:** Medium/High is the likely high-value zone. Max is reserved for cases where the final quality margin matters.
 
-Anthropic markets Fable 5.1 as its most capable generally available model for coding and knowledge work.
+## Fable 5.1 effort economics
 
-Pricing:
+| Effort | Intelligence | AA cost/task |
+|---|---:|---:|
+| Low | 47 | $2.37 |
+| Medium | 49 | $2.98 |
+| High | 51 | $3.91 |
+| XHigh | 53 | $5.98 |
+| Max | 53 | $7.63 |
 
-- $10/M input
-- $50/M output
-- heavily discounted cache reads
+**Prior:** XHigh dominates Max on the current broad benchmark. Do not default to Max.
 
-Source:
+## Sonnet 5 effort economics
 
-- https://www.anthropic.com/claude/fable
+| Effort | Intelligence | AA cost/task |
+|---|---:|---:|
+| Low | 25 | $0.51 |
+| Medium | 28 | $1.00 |
+| High | 32 | $1.79 |
+| Max | 38 | $5.09 |
 
-### Human-review signal
+High→Max roughly triples task cost and reasoning/output-token use for six index points.
 
-Positive forum themes:
-
-- especially strong on low-level programming such as Rust/C/C++/assembly;
-- excellent on difficult debugging and deep repository analysis;
-- stronger than aggregate charts can convey for some expert workflows.
-
-Negative themes:
-
-- premium price is difficult to justify when cheaper models/harness routing can do most of the work;
-- some users preferred Fable 5 over 5.1 because 5.1 appeared more willing to stop early, create follow-up issues, or ask obvious questions;
-- heavy use can be prohibitively expensive.
-
-Representative threads:
-
-- https://www.reddit.com/r/ClaudeAI/comments/1w4k4pz/claude_fable_51/
-- https://www.reddit.com/r/ClaudeAI/comments/1w4za9d/fable_51_vs_claude_code_model_routing/
-
-### Baseline prior
-
-Use when **deep judgment or correctness dominates cost**: difficult architecture, low-level code, deep review, research, and high-stakes knowledge work.
-
-Do not use as the default implementer solely because it tops a benchmark.
-
----
+**Prior:** Low/Medium/High preserves Sonnet's mid-tier economic role. Max often destroys it.
 
 ## Claude Opus 5.5
 
-### Current evidence status
+Early independent results place it at the current frontier:
 
-Released **2026-09-22**, so this is a provisional baseline.
+- Intelligence Index 58
+- strong agentic knowledge work
+- strong coding/terminal/automation results
+- lower list price and much cheaper cache reads than Opus 5
 
-Reuters reports Anthropic positions Opus 5.5 near Fable 5.1 on most tasks at substantially lower operating cost than Opus 5.
+Early Reddit themes:
 
-Reported API pricing:
+- much clearer, more natural communication;
+- fast coding;
+- strong UI bug finding;
+- former Opus 5/Codex users considering a return;
+- still some bugs and minor sloppiness;
+- subscription usage can still burn quickly.
 
-- $4/M input
-- $20/M output
+**Routing prior:** current high-end default candidate for Claude Code, especially Medium/High, but preserve launch-week uncertainty.
 
-Anthropic says it is faster, clearer, uses fewer tokens per task, and leads its reported agentic-coding / real-world knowledge-work evaluations.
+## Claude Fable 5.1
 
-Sources:
+Repeated strengths:
 
-- https://www.reuters.com/business/anthropic-unveils-claude-opus-55-2026-09-22/
-- https://www.reddit.com/r/Anthropic/comments/1wnecjb/introducing_claude_opus_55_the_first_model_in_our/
+- planning;
+- architecture;
+- orchestration;
+- deep debugging;
+- low-level systems work;
+- difficult research;
+- repository-wide review.
 
-### Human-review signal
+Repeated weakness:
 
-Day-one impressions are positive but extremely low confidence.
+- quota and dollar cost.
 
-Early reports emphasize:
+A measured 22,022-call Reddit comparison found more tokens per prompt than Fable 5 but lower API cost per prompt because cache-read pricing dropped sharply.
 
-- much faster than Opus 5;
-- clearer/plain-language output;
-- strong UI bug finding and practical coding;
-- better apparent subscription mileage.
+**Routing prior:** scarce thinking/review resource, not bulk implementation. Prefer XHigh over Max absent contrary task-specific evidence.
 
-Cautions:
+## Claude Opus 5
 
-- it still produces bugs;
-- some users notice residual over-verification/delegation behavior;
-- all first-day enthusiasm should be treated as honeymoon evidence.
+The benchmark numbers are strong.
 
-Representative threads:
+The human signal is much worse.
 
-- https://www.reddit.com/r/ClaudeAI/comments/1wnil7n/opus_55_in_claude_code_is_crazy_fast_especially/
-- https://www.reddit.com/r/Anthropic/comments/1wnl3k8/opus_55_first_impressions/
-- https://www.reddit.com/r/ClaudeAI/comments/1wnl999/claudemd_for_opus_55_based_on_anthropics_official/
+Recurring complaints:
 
-### Baseline prior
+- jargon;
+- walls of text;
+- unnecessary code comments;
+- unrelated refactors;
+- assumptions before verification;
+- context drift;
+- instruction misses;
+- expensive correction loops.
 
-**High-priority model to test personally.**
+There is a possible niche as adversarial QA/reviewer.
 
-If the launch claims hold up, Opus 5.5 may become a more rational daily high-end Claude choice than Fable 5.1 because its performance is close while its economics are much better.
-
-Confidence: **low until several weeks of external use data accumulate.**
-
----
+**Routing prior:** do not use as the normal author when 5.5/4.8 are available.
 
 ## Claude Sonnet 5
 
-### Independent benchmark signal
+Useful for:
 
-Current Artificial Analysis v4.3:
+- bounded implementation;
+- normal web/devops work;
+- knowledge work;
+- tool use;
+- architecture exploration at controlled effort.
 
-- Sonnet 5 Max: Intelligence Index **38**
-- ~1M context
-- around 75–80 t/s
-- very high total output-token use on the evaluation
+Problem:
 
-Sources:
+- Max is extraordinarily verbose/token-hungry.
 
-- https://artificialanalysis.ai/models/claude-sonnet-5
-- https://artificialanalysis.ai/models/releases/claude-sonnet-5
+Artificial Analysis Max:
+- ~118k output tokens/task
+- ~88k reasoning tokens/task
+- ~$5.09/task
 
-### Human-review signal
+High:
+- ~44k output
+- ~28k reasoning
+- ~$1.79/task
 
-This is one of the clearest examples where "cheaper per token" and "cheaper per task" can diverge.
+**Routing prior:** use controlled effort; do not assume "Sonnet" means cheap.
 
-Positive reports:
+## Claude Opus 4.8
 
-- unusually thorough;
-- explores multiple possibilities before committing;
-- valuable for complex architecture in large codebases;
-- some users prefer the extra checking because late architecture mistakes are expensive.
+Still a strong behavioral fallback.
 
-Negative reports:
+Community + owner evidence supports:
 
-- repeatedly described as a "token monster";
-- reports of 3–5x token use versus Sonnet 4.6 on similar work;
-- some teams report it slower and more expensive per completed task than Opus 4.8;
-- additional thinking does not always translate into better output.
+- practical judgment;
+- implementation;
+- long-context coding;
+- environment/MCP integration;
+- fewer collaboration problems than Opus 5.
 
-Representative threads:
+**Routing prior:** keep routable until Opus 5.5 proves equal/better in the owner's own work.
 
-- https://www.reddit.com/r/ClaudeAI/comments/1ukoszu/sonnet_5_is_a_token_monster/
-- https://www.reddit.com/r/ClaudeCode/comments/1uzyuwr/anyone_else_think_sonnet_5_is_a_joke/
+## Claude Haiku 4.5
 
-### Baseline prior
+Best role:
 
-Good candidate for **thorough architecture/review and complex bounded engineering**, but monitor task-level cost rather than token price.
+- search;
+- read;
+- classify;
+- retrieve;
+- explore;
+- quick prototypes;
+- repeated rubric-based judgments.
 
-Use max effort selectively.
+Artificial Analysis reasoning variant:
+- index 17
+- ~$0.21/task
+- ~109 t/s
+- 200k context
 
----
+It is fast, but in 2026 it is not globally cheap/capable compared with newer external worker models.
 
-## Claude Mythos 5.1
+**Routing prior:** Anthropic-native utility subagent, not serious architecture or difficult implementation.
 
-Anthropic states Fable 5.1 and Mythos 5.1 are the same underlying model with different safeguards. Fable is generally available; Mythos is for trusted-access programs in cybersecurity and life sciences.
+## Current underdogs
 
-Source:
+1. **Opus 4.8** — older but trusted behavioral fallback.
+2. **Haiku 4.5** — useful retrieval/classification/explore worker inside Claude Code.
+3. **Opus 5.5 Medium/High** — much better effort economics than reflexive Max.
+4. **Sonnet 5 Low/Medium/High** — can still be useful when Max is avoided.
 
-- https://www.anthropic.com/claude-fable-and-mythos-5-1
+## Current waste traps
 
-### Baseline prior
+- Opus 5 as the default implementation author.
+- Sonnet 5 Max used because Sonnet is assumed to be the economical tier.
+- Fable 5.1 Max when XHigh scores the same on the current broad benchmark.
+- Opus 5.5 Max by default.
+- Haiku on vague architecture or difficult coding.
+- one premium Claude performing all search, implementation, test, review and summarization when tasks can be delegated by cognitive difficulty.
 
-Do not treat Mythos as an ordinary model-routing alternative.
+## Completed-task efficiency rule
 
-Document it when evaluating authorized high-risk scientific/security workflows where its access tier is actually available.
+Claude economics should track:
+
+- token price;
+- actual reasoning/output tokens;
+- cache reads;
+- first-pass acceptance;
+- user corrections;
+- subagent fanout;
+- wall time;
+- subscription quota;
+- reviewer cost;
+- regressions.
+
+The family contains examples in both directions:
+
+- **Sonnet 5:** cheaper tokens, expensive task because it thinks a lot.
+- **Fable 5.1:** more tokens than predecessor, cheaper API prompt because cache reads are cheaper.
+- **Opus 5:** strong benchmark ability, poor human-attention economics because communication/rework is expensive.
+
+## Current provisional routing
+
+- **Opus 5.5 Medium/High:** serious daily Claude Code.
+- **Fable 5.1 High/XHigh:** architecture, orchestration, hard research/review.
+- **Opus 4.8:** known-behavior implementation fallback.
+- **Sonnet 5 Low/Medium/High:** bounded normal work.
+- **Haiku 4.5:** search/read/classify/explore.
+- **Opus 5:** adversarial-QA niche only unless personal evidence says otherwise.
+- **Mythos 5.1:** authorized trusted-access specialist work.
+
+Public evidence does not replace the owner's case corpus.
