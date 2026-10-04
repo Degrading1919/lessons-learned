@@ -1,6 +1,6 @@
 # Public Model Baselines
 
-_Last researched: 2026-09-24_
+_Last researched: 2026-10-04_
 
 This directory records **research priors** for model routing before the project owner has enough direct evidence to form a personal conclusion.
 
@@ -33,9 +33,9 @@ The initial baseline includes models that are current enough, distinctive enough
 
 | Provider | Models / families covered |
 |---|---|
-| OpenAI | GPT-6 Astra, Sol, Luna; GPT-5.6 Sol, Terra, Luna |
-| Anthropic | Claude Opus 5.5, Fable 5.1, Opus 5, Sonnet 5, Opus 4.8, Haiku 4.5, Mythos 5.1 |
-| Google | Gemini 3.8 Flash; current Pro-model availability caveat |
+| OpenAI | GPT-6 Astra, GPT-6.1 Sol, GPT-6 Luna; historical GPT-6/5.6 tiers |
+| Anthropic | Claude Opus 5.5, Sonnet 5.5, Fable 5.1, Opus 4.8, Haiku 4.5; historical/specialized tiers |
+| Google | Gemini 4 Argon (restricted watchlist); Gemini 3.8 Flash |
 | Meta | Muse Spark 1.3; Llama 4 Maverick; Llama 4 Scout |
 | DeepSeek | DeepSeek V4.1 Flash; V4 Pro as an outgoing/reference tier |
 | Moonshot / Kimi | Kimi K3; Kimi K2.7 Code |
