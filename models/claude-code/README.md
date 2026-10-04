@@ -71,3 +71,20 @@ Public research now creates a testable successor hypothesis rather than invalida
 See [Anthropic Model Field Guide — 2026-09-24](../../research/anthropic/2026-09-24-reddit-field-guide.md).
 
 A priority future comparison is **Opus 5.5 High vs Opus 4.8 High on the same environment-integrated task**, preserving identical repository state, MCP access, acceptance criteria, and verification.
+
+
+## Public-prior update — 2026-10-04
+
+Claude Sonnet 5.5 released September 28 and materially changes the worker tier.
+
+Current public hypothesis:
+
+- Opus 5.5 Medium/High for ambiguity, architecture, final review, and premium collaboration;
+- Sonnet 5.5 Medium/High for well-scoped implementation, bug fixing, and fast iteration;
+- Opus 4.8 remains the owner-proven behavioral fallback;
+- Fable 5.1 remains scarce deep planning/review;
+- Haiku 4.5 remains retrieval/explore until Haiku 5.5 actually releases.
+
+Avoid treating Sonnet 5.5 Max as the economical worker setting; independent testing shows extreme token use there.
+
+See [2026-10-04 model release update](../../research/models/2026-10-04-new-model-release-update.md).
