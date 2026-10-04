@@ -60,6 +60,34 @@ Important:
 - Haiku 4.5 is useful inside Claude Code for retrieval/exploration, but Anthropic currently lacks an obvious equivalent to GPT-6 Luna's modern low-cost worker economics.
 - Opus 4.8 remains routable because mature human and owner evidence supports its practical judgment.
 
+## October 2026 model-release overlay
+
+This is current **public-prior research**, not owner-observed evidence. See `research/models/2026-10-04-new-model-release-update.md`.
+
+| Bottleneck | Current public prior | Confidence |
+|---|---|---|
+| Highest-judgment architecture / ambiguous integration | Claude Opus 5.5 High or GPT-6 Astra Medium/High | Medium-high |
+| Serious daily OpenAI coding | GPT-6.1 Sol High/XHigh | Medium-high |
+| Well-scoped Claude implementation | Claude Sonnet 5.5 Medium/High | Medium-high |
+| Cheapest bounded worker | GPT-6 Luna High/XHigh | Medium-high |
+| Owner-proven Claude Code fallback | Opus 4.8 High | High personal evidence |
+| Frontier Google option | Gemini 4 Argon | Low until broad access |
+
+Changes from the September 24 prior:
+
+- **GPT-6.1 Sol supersedes GPT-6 Sol.** Independent evidence now puts it close to Astra at much lower task cost; the main community complaint is wall-clock speed.
+- **Claude Sonnet 5.5 supersedes Sonnet 5.** It is now the strongest Anthropic worker prior at Medium/High effort.
+- **Sonnet 5.5 Max is a waste-risk.** It reaches frontier quality partly by spending extraordinary output/reasoning tokens.
+- **Gemini 4 Argon is watchlist-only.** Its benchmark profile is frontier-class, but access is too restricted for mature human evidence.
+- **Haiku 5.5 and DeepSeek V4.1 Pro remain unreleased/watchlist items.** Do not route work to them yet.
+
+Priority owner comparisons:
+
+1. GPT-6.1 Sol High/XHigh vs Opus 5.5 High on the same serious repository task.
+2. Sonnet 5.5 High vs GPT-6.1 Sol High on a well-scoped implementation.
+3. Sonnet 5.5 High vs Opus 5.5 High in Claude Code.
+4. Argon vs the above only after broad access exists.
+
 ## Harness-efficiency overlay — 2026-09-24
 
 This subsection is a researched prior, not owner-observed proof. See `research/harnesses/2026-09-24-token-and-window-efficiency.md`.
