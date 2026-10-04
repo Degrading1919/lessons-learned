@@ -1,6 +1,6 @@
 # Public Priors vs. Personal Evidence
 
-_Last reviewed: 2026-09-24_
+_Last reviewed: 2026-10-04_
 
 This document records how the project's observed AI results compare with the public benchmark and community signal that would otherwise influence model selection.
 
@@ -13,6 +13,30 @@ The public evidence is a **prior**, not the authority. The personal corpus exist
 - Do not compare old and new benchmark versions as if scores are on the same scale.
 - Community posts are workflow sentiment, not statistical evidence.
 - A public benchmark can establish a reasonable prior; project evidence can confirm, contradict, or refine it.
+
+## October 2026 release reconciliation
+
+Three new releases materially change the public prior without changing any historical personal case.
+
+### GPT-6.1 Sol
+
+GPT-6.1 Sol replaced GPT-6 Sol after seven days. Independent benchmarks put it near Astra while community reports strongly praise work-per-quota and strongly criticize wall-clock speed.
+
+**Relationship to personal evidence:** no matched owner run yet. The Agentic AI GPT-5.6 Sol Max result remains the strongest owner-observed long-horizon OpenAI case.
+
+### Claude Sonnet 5.5
+
+Sonnet 5.5 is now the strongest Anthropic implementation-worker public prior at Medium/High effort. Max can consume enough tokens to reverse the apparent price advantage.
+
+**Relationship to personal evidence:** the owner's Opus 4.8 + Studio MCP case remains the known-good Claude Code anchor. Sonnet 5.5 creates a worker comparison, not a reason to rewrite that case.
+
+### Gemini 4 Argon
+
+Argon's independent/provider results are frontier-class, but restricted access prevents meaningful community validation.
+
+**Relationship to personal evidence:** not comparable; no owner use and no broad public-use base yet.
+
+See [2026-10-04 model release update](../research/models/2026-10-04-new-model-release-update.md).
 
 ## Current OpenAI family update — 2026-09-24
 
