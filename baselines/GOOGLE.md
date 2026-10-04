@@ -1,115 +1,104 @@
 # Google / Gemini Baseline
 
-_Last researched: 2026-09-22_
+_Last researched: 2026-10-04_
+
+For the latest release delta, see [2026-10-04 model release update](../research/models/2026-10-04-new-model-release-update.md).
 
 ## Current routing summary
 
-| Model | Baseline role | Strong suits | Main weaknesses / cautions |
-|---|---|---|---|
-| Gemini 3.8 Flash | Fast, inexpensive multimodal worker / coding executor | Excellent DeepSWE result, very high throughput, 1M context, broad multimodal/tool support, strong finance/legal benchmark results | General intelligence trails frontier flagships; community reports instruction drift, shortcuts, context issues, and weaker browser/execution harness behavior |
-| Gemini Pro line | No stable current baseline | Historically intended as Google's higher-capability tier | 3.5 Pro was delayed; do not assume unreleased/future Pro performance from Flash results |
+| Model | Public-prior role | Strong suits | Main cautions | Confidence |
+|---|---|---|---|---|
+| **Gemini 4 Argon** | Restricted frontier watchlist | long-horizon coding, automation, multimodal professional work, cyber, low hallucination tendency | restricted rollout; little genuine user evidence | Low |
+| **Gemini 3.8 Flash** | Generally available fast worker | high throughput, multimodal work, inexpensive coding/execution | below frontier broad intelligence; instruction/harness complaints | High |
 
-## Gemini 3.8 Flash
+## Gemini 4 Argon
+
+Announced September 30.
+
+### Availability
+
+Argon is **not yet broadly available**.
+
+Google initially rolled it out to trusted cyber defenders and selected testers through Fairwind and says broader release will begin with paid API customers and Google AI Ultra subscribers.
+
+This severely limits community evidence.
+
+Official source:
+
+- https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-4-argon/
+
+### Provider position
+
+Google targets:
+
+- long-horizon coding;
+- enterprise knowledge work including legal/finance;
+- autonomous cybersecurity defense;
+- multimodal professional tasks.
+
+Launch specifications include:
+
+- 1M context;
+- extended long output via continuation;
+- text/image/video/speech input;
+- introductory $2/M input, $10/M output;
+- 95% cached-input discount;
+- later standard pricing $4/M input, $20/M output.
+
+Google reports DeepSWE 77.9%, AutomationBench 51.3%, LVBench 91.7%, and CWE-bench v1 68%. These are provider claims.
 
 ### Independent benchmark signal
 
-Current Artificial Analysis v4.3 reports:
+Artificial Analysis reports Argon High at approximately **53** on its broad Intelligence Index, in the Astra-class range.
 
-- High: Intelligence Index **41**
-- Medium: 40
-- Low: 34
-- High throughput roughly 260–330 output t/s depending measurement point
-- High estimated cost per Intelligence Index task around $1.24
+Important characteristics:
 
-This is strong but materially below the current 53-point Astra/Fable frontier on broad intelligence.
+- very strong automation;
+- solid terminal performance;
+- roughly 62k output tokens/task versus ~27k for Astra Max in the cited evaluation;
+- launch cost efficiency is heavily price-driven;
+- unusually low hallucination rate among leading models, but lower factual answer accuracy than Astra.
 
-Source:
+Interpretation:
 
-- https://artificialanalysis.ai/models/releases/gemini-3-8-flash
+> Argon may be more willing to abstain rather than confidently guess.
 
-### Provider signal
+That could be valuable for research/review, but it is not the same thing as knowing more.
 
-Google's model card shows unusually strong task-specific results for a Flash model:
+### Community consensus
 
-- DeepSWE v1.1: **73.7%**
-- Claude Opus 5 on the same table: 74.0%
-- GPT-5.6 Sol: 72.7%
-- GPT-5.6 Terra: 69.6%
-- Finance Agent v2: 61.4%
-- Harvey Legal Agent all-pass: 10.0%
+There is no mature quality consensus yet.
 
-It has:
+The strongest repeated user reaction is simply:
 
-- 1,048,576 input context
-- 65,536 output limit
-- text/image/video/audio/PDF input
-- code execution
-- computer use preview
-- function calling
-- search/Maps grounding
-- structured outputs
-- low/medium/high thinking
+> **"Why can't we access it?"**
 
-Sources:
+Users criticize the restricted Fairwind/Ultra rollout and are skeptical of launch benchmarks until normal developers can test it.
 
-- https://deepmind.google/models/model-cards/gemini-3-8-flash/
-- https://ai.google.dev/gemini-api/docs/models/gemini-3.8-flash
+Limited first-impression discussion is mixed: impressive demos, but some users see agent/coding behavior closer to GPT-6.1 Sol/Sonnet 5.5 than a runaway new leader.
 
-### Human-review signal
+### Routing prior
 
-Community opinion is sharply split between **"astonishing value"** and **"fast but needs supervision."**
+**Watchlist only.**
 
-Positive themes:
+Do not make Argon a default until real access and real-user evidence exist.
 
-- very fast;
-- strong frontend/design and debugging examples;
-- good enough to pair with an expensive planner/reviewer;
-- surprisingly strong large-codebase exploration;
-- excellent subscription/API value.
+When accessible, priority owner tests:
 
-Negative themes:
+1. Argon vs GPT-6.1 Sol on long-horizon coding.
+2. Argon vs Opus/Sonnet 5.5 on terminal/agent work.
+3. Argon vs Astra on research where hallucination avoidance matters.
+4. Argon on multimodal long-context tasks.
 
-- ignores parts of long prompts;
-- can take shortcuts or drift from rules;
-- some users report hallucination, context loss, or dangerous repository edits;
-- Antigravity/browser integration can be weaker than Codex/Claude Code even when the underlying answer quality is good;
-- speed makes a wrong direction dangerous because the model can modify a lot quickly.
+## Gemini 3.8 Flash
 
-Representative threads:
+Remains the generally available Google worker baseline.
 
-- https://www.reddit.com/r/GeminiAI/comments/1wjmz5x/actually_gemini_38_flash_is_a_beast/
-- https://www.reddit.com/r/opencode/comments/1w5yi10/gemini_38_flash_is_actually_quite_good/
-- https://www.reddit.com/r/codex/comments/1w9t5ge/luna_max_vs_gemini_38_flash_high_which_one_is/
-- https://www.reddit.com/r/GoogleGemini/comments/1w6yo7t/whats_your_coding_workflow_using_gemini_38_flash/
-- https://www.reddit.com/r/Bard/comments/1wflr28/gemini38flash_is_pretty_good/
+Its role is unchanged:
 
-### Baseline prior
+- fast multimodal execution;
+- cheap coding worker;
+- debugging/second opinion;
+- high-volume processing with supervision.
 
-Strong candidate for:
-
-- inexpensive implementation from a well-defined plan;
-- multimodal analysis;
-- debugging as a second opinion;
-- high-volume code generation with review;
-- finance/legal workflows where the task-specific benchmark profile is relevant.
-
-Do **not** make it an unsupervised primary on a valuable repository until personal evidence establishes that its rule-following and cleanup behavior are reliable in the chosen harness.
-
-A promising routing pattern from community reports is:
-
-> Astra/Fable/Opus/Sol plans or reviews → Gemini 3.8 Flash executes.
-
----
-
-## Current Pro-tier caveat
-
-At Google I/O 2026, Google said Gemini 3.5 Pro was expected the following month. By July, Google instead said it remained in partner testing and would be broadly available "as soon as it's ready."
-
-Sources:
-
-- https://blog.google/innovation-and-ai/technology/ai/google-io-2026-all-our-announcements/
-- https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-6-flash-3-5-flash-lite-3-5-flash-cyber/
-
-As of this baseline, do not invent a Gemini 3.5/4 Pro routing recommendation from unreleased performance.
-
-The current public evidence supports evaluating **3.8 Flash on its own merits** rather than assuming it predicts the next Pro model.
+Argon does not obsolete 3.8 Flash until Argon is actually broadly accessible and its economics/quality are validated.
