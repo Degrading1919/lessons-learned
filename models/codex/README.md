@@ -86,3 +86,20 @@ The current research hypothesis is:
 - GPT-5.6 Sol and Terra retained as behavioral fallbacks until matched tests justify replacing them.
 
 Do not rewrite historical GPT-5.6 cases as GPT-6 conclusions.
+
+
+## Public-prior update — 2026-10-04
+
+GPT-6.1 Sol superseded GPT-6 Sol on September 29.
+
+Current public hypothesis:
+
+- Astra Medium/High for the hardest architecture/judgment;
+- GPT-6.1 Sol High/XHigh for serious daily engineering;
+- GPT-6 Luna High/XHigh for bounded worker tasks.
+
+GPT-6.1 Sol's main public tradeoff is unusual: very strong work-per-quota but poor wall-clock speed. This should be measured as a separate resource rather than interpreted as free efficiency.
+
+See [2026-10-04 model release update](../../research/models/2026-10-04-new-model-release-update.md).
+
+Historical GPT-5.6 cases remain owner evidence and must not be relabeled.
