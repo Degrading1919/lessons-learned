@@ -1,8 +1,83 @@
 # Benchmark and Public-Prior Sources
 
-_Last reviewed: 2026-09-24_
+_Last reviewed: 2026-10-04_
 
 These sources are used only to establish public priors and context. They do not override the project owner's direct evidence.
+
+## October 2026 release-update sources
+
+### OpenAI — GPT-6.1 Sol
+
+https://developers.openai.com/api/docs/models/gpt-6.1-sol
+
+https://developers.openai.com/api/docs/changelog
+
+- **Release:** 2026-09-29
+- **Type:** provider documentation
+- **Why useful:** confirms GPT-6.1 Sol as the current Sol tier, $2/$10 pricing, $0.10 cached input, 1.05M context, tool support, and multi-agent beta.
+
+### Artificial Analysis — GPT-6.1 Sol
+
+https://artificialanalysis.ai/articles/gpt-6-1-sol-replaces-gpt-6-sol-after-just-7-days-with-near-astra-intelligence/
+
+- **Type:** independent benchmark
+- **Why useful:** near-Astra intelligence, effort/cost curve, token use, hallucination changes, coding-agent comparisons, and the fact that GPT-6.1 replaced GPT-6 Sol after seven days.
+
+### Reddit — GPT-6.1 Sol field reports
+
+https://www.reddit.com/r/codex/comments/1wu2mnp/gpt_61_is_great_value_but_very_slow_after_10/
+
+https://www.reddit.com/r/codex/comments/1wu4p5x/sol_61_is_very_good_and_consumes_very_little/
+
+https://www.reddit.com/r/codex/comments/1wuatzt/gpt61_sol_feels_unlimited_because_it_runs_at_20/
+
+- **Observed theme:** strong quality/quota-value praise paired with an unusually consistent complaint about very slow generation.
+- **Caution:** only days of public history; launch capacity appears to affect latency.
+
+### Anthropic — Claude Sonnet 5.5
+
+https://www.anthropic.com/claude-sonnet-5-5
+
+- **Release:** 2026-09-28
+- **Type:** provider documentation
+- **Why useful:** confirms current Sonnet tier, same $2/$10 pricing, 30%+ faster provider claim, task positioning, and that Haiku 5.5 is still forthcoming.
+
+### Artificial Analysis — Claude Sonnet 5.5
+
+https://artificialanalysis.ai/articles/claude-sonnet-5-5/
+
+https://artificialanalysis.ai/models/releases/claude-sonnet-5-5
+
+- **Type:** independent benchmark
+- **Why useful:** Intelligence Index 56 at Max, exceptional terminal results, and extreme Max token/task cost.
+
+### Reddit — Claude Sonnet 5.5 field reports
+
+https://www.reddit.com/r/ClaudeAI/comments/1wsqp51/sonnet_55_vs_opus_55_vs_sonnet_5_in_claude_code/
+
+https://www.reddit.com/r/ClaudeCode/comments/1wsly42/introducing_claude_sonnet_55_the_second_model_in/
+
+- **Observed theme:** strong worker/implementation reputation and frequent Opus-plans → Sonnet-implements routing.
+- **Caution:** less than two weeks of public history.
+
+### Google — Gemini 4 Argon
+
+https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-4-argon/
+
+- **Release announcement:** 2026-09-30
+- **Type:** provider documentation
+- **Why useful:** confirms frontier positioning, 1M context, restricted Fairwind rollout, long-horizon coding/cyber focus, and broader access plan.
+
+### Reddit — Gemini 4 Argon access / early impressions
+
+https://www.reddit.com/r/GeminiAI/comments/1wufc6s/gemini_4_argon_release/
+
+https://www.reddit.com/r/GeminiAI/comments/1wut7fb/gemini_4_argon_rolling_out/
+
+https://www.reddit.com/r/Bard/comments/1wuskma/gemini_4_argon_first_impressions/
+
+- **Observed theme:** access frustration dominates; real-user quality consensus is not mature.
+- **Caution:** restricted availability makes forum comparison especially weak.
 
 ## Coding-agent benchmarks
 
