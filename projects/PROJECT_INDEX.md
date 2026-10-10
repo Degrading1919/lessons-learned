@@ -5,7 +5,7 @@ This index separates authored AI-assisted projects from reference/fork repositor
 | Project | Repository / location | Primary AI usage | Evidence strength | Current use in corpus |
 |---|---|---|---|---|
 | Agentic AI | https://github.com/Degrading1919/agentic-ai | ChatGPT task design, Codex end-to-end implementation | **A** | Core autonomy/prompt-shape case |
-| Modular CRM | https://github.com/Degrading1919/modular-crm | ChatGPT product definition, Codex-oriented task design | **A** | Shows transfer of Agentic AI lesson into durable repo guidance |
+| Modular CRM | https://github.com/Degrading1919/modular-crm | ChatGPT product definition, Codex-oriented task design, Codex (GPT-6.1 Sol) implementation audited and orchestrated by Claude | **A** | Shows transfer of Agentic AI lesson into durable repo guidance; core cross-model build/review loop case |
 | Adventurer's Rise | https://github.com/Degrading1919/adventurers-rise | Codex/Terra implementation, ChatGPT review, Claude Code/Opus + Roblox Studio MCP, Tripo workflow | **A** | Core cross-model implementation/integration cases |
 | Margins | https://github.com/Degrading1919/margins | Codex implementation, ChatGPT review/orchestration, Claude Code/Blender MCP, Tripo 3D | **A** | Core cost, playtest, skill, 3D, and reviewer-role cases |
 | The Bible Video Game | https://github.com/Degrading1919/The_Bible_Video_Game | Multi-model research, skill/governance design | **A/B** | Core model-judgment and skill-governance case |
@@ -41,6 +41,13 @@ The Agentic AI result was explicitly converted into project doctrine:
 - `438b960` — simplified autonomous Codex build task
 - `fabb6d4` — durable autonomous-tasking guidance
 - `84e911a` — decision log records mission-oriented build prompts
+
+2026-10-04 to 10-10 cross-model build/review loop (see [loop lessons](../cross-model/2026-10-10-modular-crm-build-review-loop.md)):
+
+- PR #3 — Claude debugging pass via Remote Control; external review corrected Claude's own fix
+- PR #5, #6 — Claude independent audits of Codex PRs, one fix round each
+- PRs #7–#19, #21–#30 — Codex (GPT-6.1 Sol) slices, each independently audited by Claude
+- PR #21 — roll-up after stacked PR bases sent 11 of 12 merges to intermediate branches
 
 ### Adventurer's Rise
 

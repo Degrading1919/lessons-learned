@@ -103,3 +103,14 @@ GPT-6.1 Sol's main public tradeoff is unusual: very strong work-per-quota but po
 See [2026-10-04 model release update](../../research/models/2026-10-04-new-model-release-update.md).
 
 Historical GPT-5.6 cases remain owner evidence and must not be relabeled.
+
+
+## Case: GPT-6.1 Sol in a Claude-audited loop — Modular CRM, 2026-10-05 to 10-08
+
+[cases/2026-10-05-to-10-08-modular-crm-sol-review-loop.md](cases/2026-10-05-to-10-08-modular-crm-sol-review-loop.md)
+
+- Results: 22 PRs in about 74h, and every REQUEST CHANGES round was resolved in one pass. The Codex review bot found real defects after Claude's approvals.
+- The binding constraint was availability, not quality. Codex had no cloud environment, so it depended on the owner's app session and was hitting usage limits. It idled 13h, 4h, and then more than 60h.
+- Codex's habit of stacking PRs (the result of a kickoff rule) stranded work twice.
+
+**Lesson:** give Codex an always-on runtime, base its PRs on main, and keep loop rules in the repo doc rather than in comments.

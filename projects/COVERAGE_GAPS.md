@@ -27,6 +27,13 @@ https://github.com/Degrading1919/transfertoVM
 
 The repository is visible to the connected GitHub account, but this audit did not retrieve enough ChatGPT project history tying it to an AI task/outcome. Do not classify it further without evidence.
 
+## Modular CRM build/review loop (2026-10-04 to 10-10)
+
+- The model and effort for the Remote Control sessions (debugging pass, PR #5/#6 audits) were not recorded. Only the loop thread's `claude-opus-5-5` / medium is platform-confirmed.
+- Codex-side transcripts, effort and quota use are unavailable. Idle periods are known from PR timestamps; their causes come from bot replies and are partly inferred.
+- The ~$167 figure is the platform's metered usage for the loop thread, not a billed amount. The split between audit work and idle polling is not measured.
+- No owner playtest has happened yet. The breadth-first strategy's effect on cycle time is unmeasured, because the implementer stalled after two PRs.
+
 ## Reference/fork repositories
 
 These are visible but should not be treated as authored outcome evidence unless a specific case shows how they were used:
