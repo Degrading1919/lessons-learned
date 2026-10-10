@@ -57,3 +57,8 @@ When new evidence becomes available, prefer closing these gaps by linking:
 3. repository commit/PR or local artifact
 4. verification
 5. user's post-run reaction
+
+
+## Forge Frenzy Studio sessions
+
+The Studio-owning Claude Code sessions ran through Remote Control on the owner's PC. Their transcripts, usage figures and in-session helper-subagent models are not retrievable from the cloud session records. The cloud coordinator and worker threads are fully recorded, and the Studio work is reconstructed from thread replies, status checklists, commits and docs/24–25. To fill the gap, ask future Studio sessions to report helper models and `/usage` at the end of each pass.

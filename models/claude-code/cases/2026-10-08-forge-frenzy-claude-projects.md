@@ -4,7 +4,7 @@
 - **Project:** Forge Frenzy (Roblox blacksmithing incremental)
 - **Repository/artifact:** https://github.com/Degrading1919/forge-frenzy — PRs [#1](https://github.com/Degrading1919/forge-frenzy/pull/1)–[#5](https://github.com/Degrading1919/forge-frenzy/pull/5), merge commit `eec062a`
 - **Model/tool:** Claude Projects (claude.ai) with a coordinator session, cloud thread sessions and Claude Code Remote Control sessions on the owner's PC; Roblox Studio MCP; in-session helper subagents
-- **Exact model/effort label:** commits carry `Co-Authored-By: Claude Opus 5.5 (1M context)` (25 commits on `main`). Effort level not recorded. The models used by in-session helper subagents were not recorded; the first brief asked for Sonnet 5.5 workers and Haiku-class exploration, but that routing is not confirmed.
+- **Exact model/effort label (from session records):** every cloud session ran `claude-opus-5-5[1m]`. Coordinators ran at **high** effort; the three parallel build threads (Tripo manifest, core economy, companions) ran at **medium**. Commits carry `Co-Authored-By: Claude Opus 5.5 (1M context)` (25 commits on `main`). The first brief asked for Sonnet 5.5 for bounded implementation and Haiku-class models for search, but **no thread ran on Sonnet or Haiku**. The Studio sessions ran on the owner's PC; their records and their in-session helper subagents' models could not be retrieved from the cloud.
 - **Other models in the chain:** GPT-6.1 Sol High continuation between Claude passes (label from the owner's brief); an independent GPT-6 review of PR #5.
 - **Task categories:** end-to-end implementation, agent orchestration, Blender/Studio integration (Roblox Studio), playtest remediation, code review remediation, repository governance
 - **Evidence:** Level A for episodes 3–4 (prompt, artifact, Studio verification, direct owner signal, downstream rule change); Level B for episodes 1–2 (the owner's playtest judged the combined Claude + GPT 1.0, so the signal is not Claude-only).
@@ -63,6 +63,27 @@ Follow-up briefs 3 and 4 and a mid-pass correction were routed by the coordinato
 - The Lune CI workflow could not go live: the GitHub token lacked the `workflow` scope. It is staged at `tools/ci/lune.yml`.
 - Weekly Claude usage ran out on 2026-10-10 ~03:00 UTC; ChatGPT took over the project.
 
+## Measured session usage
+
+The platform's session records give per-session token counts and a `cost_usd` figure. That figure is the platform's API-equivalent estimate; it is not what the owner paid, since the work ran on a subscription. The Studio sessions on the owner's PC are not in the cloud records.
+
+| Session | Model / effort | Output tokens | Cache-read tokens | Cache-write tokens | Reported cost_usd | Delivered |
+|---|---|---:|---:|---:|---:|---|
+| Core forging and economy thread | Opus 5.5 / medium | 125.6k | 20.7M | 558k | 11.12 | PR #3 (44 → 110 tests) |
+| Companions, eggs and rebirth thread | Opus 5.5 / medium | 100.0k | 12.8M | 463k | 8.27 | PRs #2 and #4 (64 tests) |
+| Tripo asset manifest thread | Opus 5.5 / medium | 40.4k | 3.1M | 294k | 3.78 | PR #1 (101-asset docs/JSON) |
+| Coordinator, first build | Opus 5.5 / high | 10.2k | 2.8M | 86k | 1.45 | routing only |
+| Coordinator, remediation start | Opus 5.5 / high | 6.7k | 1.9M | 120k | 1.49 | routing only |
+| Coordinator, review + consolidation | Opus 5.5 / high | 12.6k | 3.6M | 109k | 1.83 | routing only |
+
+What the numbers show:
+
+- **Context re-reads dominate.** The core-economy thread read 20.7M cached tokens to write 126k, about 165 read tokens per output token. At the corpus's recorded Opus 5.5 prices ($0.20/M cache read, $20/M output), cache reads were about 37% of that session's figure and output about 23%. Long sessions that keep a 300k+ context (the core thread ended at 329k of 500k) pay for that context on every turn.
+- **Switching these workers to Sonnet 5.5 would have saved less than the price table suggests.** Sonnet 5.5's recorded cache-read price is the same $0.20/M, so only output, input and cache writes get cheaper. A rough estimate, assuming cache writes scale with the input price, puts the core thread around 30% cheaper on Sonnet, not 50%. Shorter sessions and smaller contexts matter as much as the model choice.
+- **A docs-only task ran on Opus.** The Tripo manifest needed no code and no tools beyond the repo, yet cost about a third as much as the full core-economy thread.
+- **Coordinators were cheap.** Each coordinator stint was about $1.5–1.8; the expense was in the workers.
+- The weekly allowance warning (`seven_day: allowed_warning`) was already showing on 2026-10-08 23:07 UTC, about 28 hours before the weekly limit stopped Claude work.
+
 ## Human signal
 
 - The owner proposed parallelization, then accepted the coordinator's single-Studio-owner split.
@@ -79,6 +100,8 @@ Follow-up briefs 3 and 4 and a mid-pass correction were routed by the coordinato
 - Stale cross-session messages after a usage reset caused one wasted verification task and one outdated "send continue" instruction to the owner.
 - A direct owner preference was relayed as an open design question and briefly re-litigated.
 - Remote Control's folder restriction produced one wrong-folder approval card.
+- The brief's model routing was not carried out. All three bounded worker threads ran on Opus 5.5, including the docs-only manifest.
+- A worker thread that hit the usage limit kept retrying for about 4h20m, then resumed and posted its PR #3 status as if it were new. That message is the stale 05:22 report that misdirected the next session.
 
 ## Downstream consequence
 
@@ -86,6 +109,14 @@ Follow-up briefs 3 and 4 and a mid-pass correction were routed by the coordinato
 - Later briefs told sessions to use helpers sparingly because of usage limits.
 - `docs/25` records evidence as verified in Studio / mocked / still needs a human, and `CLAUDE.md` makes that the standard.
 - The practices are collected in [the Claude Projects playbook](../CLAUDE_PROJECTS_PLAYBOOK.md).
+
+## Public-prior reconciliation
+
+The corpus's 2026-10-04 Anthropic prior is "Opus 5.5 plans/reviews → Sonnet 5.5 implements" (`baselines/ANTHROPIC.md`).
+
+- **Opus 5.5 as architect and reviewer: confirms the prior.** The review-remediation pass reproduced all seven findings, and the owner's next brief called the result a substantial resolution.
+- **Opus 5.5 as bounded worker: adds operational nuance.** The Opus medium workers produced mergeable, well-tested PRs and caught two integration mismatches themselves. However, the intended Sonnet routing never happened, so this case cannot say whether Sonnet would have matched them. It does show that cache re-reads, which cost the same on both models, were the largest single cost.
+- **Harness: adds operational nuance.** Routing advice written into a brief did not change which model the platform started threads on. The model has to be set explicitly per thread.
 
 ## Supported lesson
 
@@ -95,7 +126,7 @@ With a mature design repository, a single machine session that owns Studio and i
 
 - That Opus 5.5 is better than GPT-6.1 Sol: the two worked on different phases with different briefs, so this is not a matched comparison.
 - That parallel threads are generally worth it: here the speed came at a heavy quota cost on a limited plan.
-- That helper subagents were Sonnet or Haiku: their models were not recorded.
+- Anything about Sonnet 5.5 or Haiku as workers: none ran.
 - That the v1 UX problems were Claude's alone: GPT polished the same UI before the playtest.
 
 ## Dataset tags
@@ -103,7 +134,7 @@ With a mature design repository, a single machine session that owns Studio and i
 ```yaml
 task_types: [end-to-end implementation, agent orchestration, Roblox Studio integration, playtest remediation, code review remediation, repository governance]
 model_family: Anthropic/Claude
-model_label: Claude Opus 5.5 (1M context) per commit trailers; helper models unknown
+model_label: claude-opus-5-5[1m] (coordinators high effort, worker threads medium); Studio-session helper models unknown
 tooling: [Claude Projects coordinator, cloud thread sessions, Claude Code Remote Control, Roblox Studio MCP, Lune, GitHub]
 artifact_type: PRs #1-#5, merge eec062a
 verification: [Lune suites, Studio spec runner, two-client Studio acceptance, real-DataStore recovery test, economy simulations, owner playtest]

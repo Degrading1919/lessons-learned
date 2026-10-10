@@ -23,7 +23,7 @@ Practical guidance for the owner's next Claude Projects build. It is derived mai
 
 1. **Orchestration decided late.** The coordinator started one monolithic session, and the owner had to propose the split. The integrator had already begun the work being split off, and the owner had to paste the stop message manually.
 2. **Contract after workers.** The code-layout contract landed about seven minutes after the cloud threads started, so they rewrote code to fit it. One mismatch (numeric vs text forge session ids) would have dropped every hammer click if a worker had not caught it during merge.
-3. **Usage burn from fan-out.** Four sessions plus helpers hit the five-hour limit about 45 minutes after the first brief. Save/rejoin, multi-player and mobile checks were left undone.
+3. **Usage burn from fan-out, on the wrong model.** Four sessions plus helpers hit the five-hour limit about 45 minutes after the first brief. All three workers ran on Opus 5.5 although the brief asked for Sonnet 5.5, and the cloud workers alone reported about $23 API-equivalent. Save/rejoin, multi-player and mobile checks were left undone.
 4. **Green tests, wrong product.** v1 passed 106 Studio checks and was still judged "developer-facing" and like "AI-generated productivity software" in the owner playtest. GPT's polish pass had touched the same UI.
 5. **Green tests, broken input path.** Every real steal failed because ProximityPrompt fires "hold ended" before "triggered". All earlier tests called the server directly. Driving the real prompt from Studio clients found the bug.
 6. **Re-litigating a clear owner preference.** The owner said stolen weapons should keep their value. The relay framed it as "rethink the rule", and the thread began designing a compromise, until the owner replied "that is all."
@@ -44,7 +44,9 @@ Practical guidance for the owner's next Claude Projects build. It is derived mai
 
 - **On a limited plan, default to one strong session plus few helpers.** Fan out to parallel threads only when the five-hour window is fresh and the work is truly independent. Tell the sessions the budget; later briefs that said "use helpers sparingly" ran a full review, reliability and consolidation pass in one evening without hitting the limit.
 - **Front-load what needs the session that is about to run out.** In v1, save/rejoin, two-player and mobile checks were last and got cut. Ask for persistence and multi-client checks before polish.
-- **Record helper models.** Ask sessions to report which models their helpers ran on. This case cannot say whether Sonnet or Haiku was used, which blocks routing conclusions.
+- **Name the model for every thread yourself, in your own words.** The first brief said "prefer Sonnet 5.5 for bounded work", but every thread still started on Opus 5.5, including a docs-only manifest that cost about $3.78 in API-equivalent terms. Say it per thread when you approve a split, for example "start the manifest and both logic threads on Sonnet 5.5, medium effort". The platform only switches models when you ask explicitly.
+- **Keep worker sessions short.** The core-economy worker read 20.7M cached tokens to write 126k. Re-reads cost the same on Sonnet and Opus, so one PR per thread, closed when merged, saves more than switching models alone. Don't keep using a finished worker for follow-ups.
+- **Watch the weekly allowance, not just the five-hour window.** The weekly warning appeared about 28 hours before Claude work stopped for the week. When it shows, finish and merge in-flight work rather than starting new passes.
 
 ### Steering mid-flight
 
@@ -64,8 +66,39 @@ Practical guidance for the owner's next Claude Projects build. It is derived mai
 - **Keep an independent reviewer from another model before merge.** The GPT review found seven real issues that Claude's own suites had passed.
 - **Require the verified / mocked / needs-a-human split** in every completion report.
 
+## Ready-to-paste brief skeleton
+
+Use this shape for the next big Claude Projects build. Keep it short and let the repository carry the detail.
+
+```markdown
+Mission: <one sentence, the finished outcome>.
+Source of truth: <repo path>; read README/CLAUDE.md/docs first. LOCKED decisions there are final.
+
+Owner decisions (do not reopen):
+- <decision 1>
+- <decision 2>
+
+Open for you to decide (give options before building): <list, or "none">
+
+Split (decide now, before any session starts):
+- Studio/integration owner: one Remote Control session in <path>, model Opus 5.5 high.
+- Parallel cloud threads, model Sonnet 5.5 medium, one PR each, then close:
+  - <thread A: files it owns>
+  - <thread B: files it owns>
+- Integrator's first push: the code contract (layout, service API, id types). Workers start after it lands.
+
+Acceptance:
+- Drive every player-facing mechanic through the real client input path in Studio, not server calls.
+- Persistence and multi-client checks before polish.
+- Report verified in Studio / mocked / needs a human separately.
+
+Autonomy: work without asking after the precondition checks; stop only for purchases, publishing, paid generation, credentials or irreversible changes.
+Budget: my plan is limited; use helpers sparingly and say which model each helper ran on.
+```
+
 ## Open questions to test
 
+- Opus 5.5 vs Sonnet 5.5 as a bounded cloud worker on the same kind of thread (no Sonnet thread ran here), measured by accepted PRs and cache-read tokens per PR.
 - Opus 5.5 vs Sonnet 5.5 as the Studio integrator on a bounded remediation, with identical brief and verification (quota per accepted fix).
 - One session with sparse helpers vs coordinator fan-out on the same build, measured by accepted features per five-hour window.
 - Whether a pre-written contract in the repo removes the rework seen in episode 1.

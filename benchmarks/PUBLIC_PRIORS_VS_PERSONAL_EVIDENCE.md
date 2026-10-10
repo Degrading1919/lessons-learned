@@ -350,3 +350,24 @@ Public benchmarks move quickly. Future agents should reverify:
 - current Tripo generation/retopology documentation.
 
 Do not preserve numeric leaderboard claims indefinitely without a date and benchmark version.
+
+
+## Claude Opus 5.5 / Claude Projects — Forge Frenzy (2026-10-08 to 2026-10-10)
+
+### Public prior I would have adopted
+
+Per the 2026-10-04 update: Opus 5.5 for planning, architecture and review, with Sonnet 5.5 Medium/High as the implementation worker.
+
+### Personal evidence
+
+- Opus 5.5 (high-effort coordinators, Remote Control Studio sessions) carried integration, owner-playtest remediation and an independent-review remediation that reproduced and fixed all seven findings.
+- The bounded worker threads also ran on Opus 5.5, at medium effort, despite the brief's Sonnet routing. They produced mergeable, tested PRs and caught two integration mismatches.
+- Cache re-reads were the largest cost component in the workers (20.7M cache-read tokens for 126k output in one thread), and they are priced the same for Opus 5.5 and Sonnet 5.5.
+
+See [the case](../models/claude-code/cases/2026-10-08-forge-frenzy-claude-projects.md).
+
+### Relationship
+
+- **Confirms** the prior for Opus 5.5 as integrator and reviewer.
+- **Adds operational nuance** for the worker tier: routing intent did not reach the harness, and context re-reads limit the savings a Sonnet switch can deliver.
+- **Not comparable** for Sonnet 5.5 quality, since no Sonnet worker ran.

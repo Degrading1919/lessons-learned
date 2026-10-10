@@ -92,7 +92,7 @@ See [2026-10-04 model release update](../../research/models/2026-10-04-new-model
 
 ## Case: Forge Frenzy — Claude Projects coordinator + threads (2026-10-08 to 2026-10-10)
 
-- **Model:** Claude Opus 5.5 (1M context) per commit trailers; effort and helper-subagent models not recorded
+- **Model:** `claude-opus-5-5[1m]` everywhere. Coordinators ran at high effort and worker threads at medium. No Sonnet or Haiku session ran, although the brief asked for them.
 - **Tooling:** Claude Projects coordinator, cloud thread sessions, Claude Code Remote Control on the owner's PC, Roblox Studio MCP
 - **Repository:** https://github.com/Degrading1919/forge-frenzy (PRs #1–#5, merge `eec062a`)
 
@@ -107,5 +107,7 @@ The two failures that mattered got past green suites. The owner playtest rejecte
 - Write owner decisions as LOCKED.
 - Require verification through the real player input path.
 - On a limited plan, prefer one strong session with sparse helpers.
+- Name each thread's model explicitly when you approve a split.
+- Keep worker sessions short: re-reads of a large context (20.7M cache-read tokens for 126k output in one worker) were the biggest cost, and they cost the same on Sonnet.
 
 See the [case](cases/2026-10-08-forge-frenzy-claude-projects.md) and the [Claude Projects playbook](CLAUDE_PROJECTS_PLAYBOOK.md).
