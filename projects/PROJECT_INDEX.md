@@ -46,7 +46,7 @@ The Agentic AI result was explicitly converted into project doctrine:
 
 - PR #3 — Claude debugging pass via Remote Control; external review corrected Claude's own fix
 - PR #5, #6 — Claude independent audits of Codex PRs, one fix round each
-- PRs #7–#19, #21–#30 — Codex (GPT-6.1 Sol) slices, each independently audited by Claude
+- PRs #7–#19, #22–#30 — Codex (GPT-6.1 Sol) slices, each independently audited by Claude
 - PR #21 — roll-up after stacked PR bases sent 11 of 12 merges to intermediate branches
 
 ### Adventurer's Rise

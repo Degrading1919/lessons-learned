@@ -155,6 +155,8 @@ The Modular CRM loop (2026-10-05 to 10-08) ran this pattern unattended through G
 - keep two reviewers on money and auth changes;
 - back off polling when idle.
 
+A proposed, not yet executed, v2 kickoff prompt and setup checklist is in [BUILD_REVIEW_LOOP_V2.md](BUILD_REVIEW_LOOP_V2.md).
+
 ## Do not route by prestige
 
 The corpus contains multiple warnings against "always use the biggest model":

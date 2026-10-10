@@ -2,7 +2,7 @@
 
 - **Date:** 2026-10-04 to 2026-10-10
 - **Project:** Modular CRM
-- **Repository/artifact:** https://github.com/Degrading1919/modular-crm (PRs #3, #5, #6, #7–#19, #21–#30)
+- **Repository/artifact:** https://github.com/Degrading1919/modular-crm (PRs #3, #5, #6; Codex PRs #7–#19 and #22–#30; Claude's roll-up PR #21)
 - **Model/tool:** Claude in a claude.ai Project: one coordinator session in the project chat, task-specific thread sessions in the cloud, Claude Code sessions on the owner's Windows machine via Remote Control, and Agent-tool subagents inside threads
 - **Exact model/effort label:** loop thread recorded by the platform as `claude-opus-5-5`, effort `medium`, permission mode `auto`. The owner called the workflow "Sol → Opus". The model and effort for the Remote Control sessions (debugging pass, PR #5/#6 audits) were not recorded.
 - **Task categories:** debugging, code review, orchestration, task design, release management, UX audit
@@ -51,10 +51,10 @@ There were three phases:
   - #5: seeded Office could create business locations, and the Payments rows linked to a guaranteed 404;
   - #6: mileage overtook a failed clock-in in the offline queue, and re-publishing a route with a canceled stop was a dead end.
   - Both were approved after one fix round.
-- **Overnight loop, 2026-10-05 03:24Z → 2026-10-08 05:22Z.** 22 Codex PRs (#7–#19, #21–#30) were audited. For each one Claude pulled the head and ran lint, typecheck, unit tests, build and Postgres Playwright itself, and often wrote a scratch reproduction. Verdicts were posted as `@codex` comments with the next task attached.
+- **Overnight loop, 2026-10-05 03:24Z → 2026-10-08 05:22Z.** 22 Codex PRs (#7–#19, #22–#30) were audited. For each one Claude pulled the head and ran lint, typecheck, unit tests, build and Postgres Playwright itself, and often wrote a scratch reproduction. Verdicts were posted as `@codex` comments with the next task attached.
   - Defects Claude's audits caught before merge included:
     - an `X-Forwarded-For` spoof that allowed unlimited password guessing (#25 BLOCKER);
-    - double collection when staff recorded a payment while a hosted checkout was open (#16);
+    - double collection when staff recorded a payment while a hosted checkout was open (#16). This was approved with the SHOULD FIX open and fixed in #17, before either PR reached main;
     - newly activated automations firing on old events (#24 BLOCKER, pre-existing but exposed);
     - a WAF rule that would have 403'd any large estimate or invoice (#27);
     - most invoices getting no due date, so overdue reminders never fired (#23);
@@ -63,6 +63,16 @@ There were three phases:
 - **Release management.** When the owner's merges of stacked PRs #8–#18 landed on each other's branches instead of main, Claude detected it from main's history and opened roll-up [PR #21](https://github.com/Degrading1919/modular-crm/pull/21). It then retargeted #22–#28 to main mid-sequence while the owner merged; #19's changes reached main through #22. Main's final tip contained the audited #28 head.
 - **1.0 plan (2026-10-07 19:05Z → 19:15Z).** Five parallel code audits (Agent subagents, one per product area) produced `PLAN_1_0.md`: 9 BLOCKERs with `file:line` evidence and a 14–18 PR wave plan, in about 10 minutes of wall time.
 - **Communication artifacts.** Every PR outcome was mirrored to a state file (`LOOP_STATE.md`) and morning summaries (`MORNING_SUMMARY.md`), written in plain business language for the owner.
+
+## Measured review performance
+
+From GitHub data across the 22 Codex PRs ([review table](../../../evidence/review-logs/2026-10-10-modular-crm-pr-review-table.md)):
+- **Speed:** median 0.74h from PR opened to Claude's first verdict, and 1.02h to final approval.
+- **Findings:** 3 BLOCKERs and 18 SHOULD FIXes. 11 of the SHOULD FIXes were Claude's own; 7 were bot findings Claude verified and adopted.
+- **Reversals:**
+  - Claude reversed one approval after bot findings (#26).
+  - It downgraded one approval after Codex pointed out the verdict contradicted itself (#19).
+- **Bot findings after a standing Claude approval:** 10, on #7, #26, #27 and #29. Claude treated 8 as real and ruled 1 latent. The #7 finding was never acknowledged again.
 
 ## Verification
 
@@ -74,7 +84,7 @@ There were three phases:
 
 - PR #3 was approved by the owner's independent reviewer after one correction round, and merged.
 - Overnight trust: "Do everything in your power to assure this CRM becomes the next best CRM since jobber... just a display in how much confident I have in you guys."
-- The owner merged every PR Claude approved (#7–#19, #21–#28). This shows adoption, not correctness; see "What this does not prove".
+- The owner merged every Codex PR Claude approved through #28 (#7–#19, #22–#28), plus Claude's roll-up #21. This shows adoption, not correctness; see "What this does not prove".
 - On 2026-10-07 he wrote that the "Sol → Opus workflow has been effective at producing increasingly robust code, but it has also encouraged deep hardening of individual slices and repeated expansion into adjacent edge cases". He then replaced the review philosophy (see the prompt lineage) and promoted Claude from auditor to lead orchestrator.
 
 ## Failures / corrections
@@ -94,7 +104,14 @@ There were three phases:
    - The thread then spent hours waiting on the Claude plan's five-hour and seven-day usage limits. Retry notices filled the project chat from 2026-10-10 03:27Z to 15:31Z.
    - A five-hour-limit wait delayed the #30 re-review by about 4 hours.
    - The platform reports a cumulative metered figure of about $167 for the loop thread (output ≈ 0.73M tokens, cache reads ≈ 400M tokens). That is the platform's usage figure for the whole thread, not a billed amount, and how much of it the idle polls account for is not measured.
-6. **Overclaiming was avoided but not perfect.** Claude told the owner up front that it could not promise an AWS-ready CRM overnight. It flagged a suspicious 22.8k-line PR as "I haven't checked that"; the size later turned out to be mostly a generated Drizzle snapshot. The first morning summary still said "Merge them oldest first" without the base-branch caveat (item 2).
+6. **Claude did not always follow its own protocol.**
+   - It approved with an open SHOULD FIX (#16, #28).
+   - It approved with red CI that it judged pre-existing (#9).
+   - It posted a verdict 76 seconds before Codex's "Ready" signal (#11).
+   - It appended the next task to a verdict (#24). Codex asked for it to be reposted.
+   - It dropped the literal `VERDICT:` line from #24 onward.
+7. **A follow-up was lost.** The bot's P2 on #7 (zero-balance currency buckets) was logged as "fold into a later slice", and no later comment, doc or commit references it again.
+8. **Overclaiming was avoided but not perfect.** Claude told the owner up front that it could not promise an AWS-ready CRM overnight. It flagged a suspicious 22.8k-line PR as "I haven't checked that"; the size later turned out to be mostly a generated Drizzle snapshot. The first morning summary still said "Merge them oldest first" without the base-branch caveat (item 2).
 
 ## Downstream consequence
 
@@ -115,6 +132,16 @@ There were three phases:
 **When Claude has its own execution surface (real Postgres, containers, browser tests) and an explicit "don't trust the author" mandate, it is an effective independent gate for a Codex implementer.** It reproduced and blocked several security and money defects that green CI and the author's report had passed. It is not a sufficient gate on its own: a second reviewer (Codex's review bot, or the owner's external reviewer) caught real defects after Claude's approvals, and an external reviewer caught a gap in Claude's own fix.
 
 **Claude was weaker at release mechanics it had designed itself than at code review.** The stacked-base rule and the "merge oldest first" advice caused the only incident that needed recovery work.
+
+## Public-prior reconciliation
+
+- **Prior:** [baselines/ANTHROPIC.md](../../../baselines/ANTHROPIC.md) positions Opus 5.5 as a "high-judgment architect / reviewer", with Medium/High effort for final review.
+- **This case adds operational nuance.** At medium effort the review role held up: it caught BLOCKERs that CI and the author missed, at a median 0.74h per first verdict.
+- **What the prior doesn't capture:**
+  - protocol consistency over many review rounds;
+  - release mechanics;
+  - quota drain from continuous orchestration polling.
+- **No matched comparison exists.** Nothing here compares Opus 5.5 with Opus 4.8, Fable 5.1 or Sonnet 5.5 in the same reviewer role.
 
 ## What this does not prove
 

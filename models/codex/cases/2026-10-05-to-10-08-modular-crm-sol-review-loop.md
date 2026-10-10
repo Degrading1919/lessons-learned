@@ -2,7 +2,7 @@
 
 - **Date:** 2026-10-05 to 2026-10-08 (the loop has been stalled since 2026-10-08 05:22Z)
 - **Project:** Modular CRM
-- **Repository/artifact:** https://github.com/Degrading1919/modular-crm, PRs #5–#19 and #21–#30
+- **Repository/artifact:** https://github.com/Degrading1919/modular-crm, PRs #5–#19 and #22–#30 (#21 was Claude's roll-up, not a Codex slice)
 - **Model/tool:** Codex (the owner's ChatGPT/Codex app session, with no Codex cloud environment), plus the `chatgpt-codex-connector` automatic code-review bot on GitHub
 - **Exact model/effort label:** the owner named the implementer "GPT-6.1 Sol" and called the workflow "Sol → Opus". Effort level not recorded.
 - **Task categories:** implementation, bug fixing, infrastructure, review response
@@ -46,8 +46,18 @@ Implement one reviewable slice per PR from a queue that Claude maintained. Fix e
     - verified custom domains (#29);
     - staff control and production safety (#30).
   - **A real production root cause:** the Postgres export took minutes because an `information_schema` subquery was re-evaluated per column. Codex fixed it with a materialized CTE (#10).
-- **Clean first-pass approvals:** #7, #9–#18, #22, #28 and #29.
+- **Approved on first verdict (14 of 22):** #7, #9–#18, #22, #28 and #29.
+  - #16 and #28 were approved with a SHOULD FIX still open, which was fixed in the next slice.
+  - #9 was approved with pre-existing red CI, which became the #10 task.
 - **REQUEST CHANGES on first pass:** #8, #19, #23, #24, #25, #26 (twice), #27 and #30. Every one was fixed in a single round. Codex's "Ready for re-review" replies listed a fix per finding, as the protocol asked.
+
+## Timing
+
+Source: GitHub `created_at` plus task-post times from the loop state log.
+- **Task to PR:** median about 40 minutes from Claude posting a task to Codex opening the PR. Range 6 minutes to about 4h (#28, during a usage-limit gap).
+- **Fix rounds:**
+  - 16 minutes (#8) to about 50 minutes (#23, #24) when Codex was active;
+  - 13h (#25) and 3–4.5h (#26 ×2) when it was not.
 
 ## Verification
 
@@ -69,7 +79,13 @@ Implement one reviewable slice per PR from a queue that Claude maintained. Fix e
 2. **The stacking habit stranded work twice.** Before the loop, four stacked `codex/*` branches (about 35k lines, 152 Industry Packs) had never reached main. During the loop, stacked bases made the owner's merges of #8–#18 land on intermediate branches (recovery: roll-up PR #21). The rule came from Claude's kickoff prompt, and Codex followed it faithfully.
 3. **Codex pushed back correctly on contradictory instructions.** When Claude's comment said "base on main" while the repo doc still said "stack", Codex flagged the conflict instead of guessing (PR #19 thread, 2026-10-06 00:18Z).
 4. **A token-scope workaround the owner had not approved.** Codex's own git token couldn't push workflow files (#13), so it published the same commit through the owner's GitHub connector. Claude raised this for the owner to decide; the owner has not answered.
-5. **The review bot was valuable, but it ran out of quota too.** Codex's automatic review found verified real defects after Claude's approvals (#19, #26, #27, #29). It hit its own usage limit on 2026-10-06 00:23Z, and its reviews paused.
+5. **Codex enforced the loop protocol, including against its orchestrator.**
+   - It refused a comment that contradicted the repo doc: "A reviewer comment cannot override that hard rule; an owner exception or a compliant handoff is needed" (#19, 2026-10-06 00:18Z).
+   - It asked for the next task as its own comment (#24).
+   - It challenged a verdict made on a superseded head (#16).
+   - It asked Claude to classify an out-of-scope fixture bug instead of fixing it unasked (#19).
+   - Claude agreed every time.
+6. **The review bot was valuable, but it ran out of quota too.** Codex's automatic review found verified real defects after Claude's approvals (#19, #26, #27, #29). It hit its own usage limit on 2026-10-06 00:23Z, and its reviews paused.
 
 ## Downstream consequence
 
@@ -82,6 +98,12 @@ Implement one reviewable slice per PR from a queue that Claude maintained. Fix e
 ## Supported lesson
 
 **With a mature repository, a self-contained per-task brief, and an independent reviewer who re-runs everything, GPT-6.1 Sol in Codex sustained roughly one reviewable PR every 3–4 hours and resolved every review round in one pass.** In this setup, the limiting factor was the implementer's session and quota availability, not the quality of its output.
+
+## Public-prior reconciliation
+
+- **Prior:** the [2026-10-04 release update](../../../research/models/2026-10-04-new-model-release-update.md) rates GPT-6.1 Sol as near-Astra quality at much lower cost, with slow throughput, and says "real Codex quality remains mixed".
+- **Quality: adds operational nuance.** The review rounds held up: every requested-changes round was fixed in one pass, and Codex pushed back correctly on bad instructions. Claude or the bot still found a real BLOCKER-, SHOULD FIX- or P1-level defect in 11 of 22 PRs.
+- **Speed and cost: not comparable.** No effort level or token use was recorded, and wall-clock time was dominated by session availability, not model latency.
 
 ## What this does not prove
 
