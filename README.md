@@ -83,6 +83,7 @@ Other recurring findings:
 - Repository-local skills and durable instructions are most valuable when they encode repeatable procedures, authority boundaries, and verification, not when they merely repeat project documentation.
 - Human playtesting catches classes of failure that green tests do not.
 - For generated 3D assets, prompts should optimize for downstream cleanup and reuse rather than pretending text prompts can guarantee topology, rigging, or production readiness.
+- In an unattended cross-model loop, reviewer quality was not the bottleneck. The implementer's runtime availability and the merge mechanics (stacked PR bases) decided throughput; see the [Modular CRM loop lessons](cross-model/2026-10-10-modular-crm-build-review-loop.md).
 - A model's successful output is evidence about the complete system — model + prompt + repository + tools + verification loop — not about the model in isolation.
 
 ## Project coverage

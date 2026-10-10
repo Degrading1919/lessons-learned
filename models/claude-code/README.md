@@ -88,3 +88,18 @@ Current public hypothesis:
 Avoid treating Sonnet 5.5 Max as the economical worker setting; independent testing shows extreme token use there.
 
 See [2026-10-04 model release update](../../research/models/2026-10-04-new-model-release-update.md).
+
+
+## Case: Modular CRM auditor and orchestrator — 2026-10-04 to 10-10
+
+- **Model:** `claude-opus-5-5`, effort medium for the loop thread. Remote Control session labels were not recorded.
+- **Tooling:** claude.ai Projects (a coordinator plus thread sessions), Remote Control onto the owner's machine, GitHub MCP, hourly routines, Agent subagents.
+- **Case:** [cases/2026-10-04-to-10-10-modular-crm-auditor-orchestrator.md](cases/2026-10-04-to-10-10-modular-crm-auditor-orchestrator.md)
+
+What happened:
+
+- As an independent gate with its own Postgres, Docker and Playwright surface, Claude blocked several security and money defects in Codex PRs that CI and the author's report had passed.
+- It also made mistakes: it was weaker at the release mechanics it had designed itself (the stacked-base merge accident), and one of its own fixes needed external correction.
+- It kept polling while the implementer sat idle, which used up Claude plan limits *(cost inferred)*.
+
+**Lesson:** use Claude as the reviewer/orchestrator with its own execution environment and a second reviewer alongside it. Keep loop policy in the repo, and back off polling when nothing is moving.
