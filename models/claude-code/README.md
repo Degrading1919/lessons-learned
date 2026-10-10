@@ -88,3 +88,26 @@ Current public hypothesis:
 Avoid treating Sonnet 5.5 Max as the economical worker setting; independent testing shows extreme token use there.
 
 See [2026-10-04 model release update](../../research/models/2026-10-04-new-model-release-update.md).
+
+
+## Case: Forge Frenzy — Claude Projects coordinator + threads (2026-10-08 to 2026-10-10)
+
+- **Model:** `claude-opus-5-5[1m]` everywhere. Coordinators ran at high effort and worker threads at medium. No Sonnet or Haiku session ran, although the brief asked for them.
+- **Tooling:** Claude Projects coordinator, cloud thread sessions, Claude Code Remote Control on the owner's PC, Roblox Studio MCP
+- **Repository:** https://github.com/Degrading1919/forge-frenzy (PRs #1–#5, merge `eec062a`)
+
+A single Studio-owning machine session plus three cloud threads writing pure Luau/docs produced a playable build and four PRs in under an hour. It also exhausted the five-hour window about 45 minutes after the brief. Later, one long-lived thread reproduced and fixed all seven findings from an independent GPT-6 review and consolidated the repo onto `main`.
+
+The two failures that mattered got past green suites. The owner playtest rejected the 1.0 UX as "developer-facing", and every real steal failed through the actual ProximityPrompt until the agent drove real client input. The owner also had to override a stolen-weapon value cap twice.
+
+**Lessons:**
+
+- Decide the parallel split and publish the code contract *before* spawning workers.
+- Keep one Studio owner.
+- Write owner decisions as LOCKED.
+- Require verification through the real player input path.
+- On a limited plan, prefer one strong session with sparse helpers.
+- Name each thread's model explicitly when you approve a split.
+- Keep worker sessions short: re-reads of a large context (20.7M cache-read tokens for 126k output in one worker) were the biggest cost, and they cost the same on Sonnet.
+
+See the [case](cases/2026-10-08-forge-frenzy-claude-projects.md) and the [Claude Projects playbook](CLAUDE_PROJECTS_PLAYBOOK.md).
