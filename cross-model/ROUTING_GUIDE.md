@@ -185,3 +185,12 @@ Prescriptive prompts are still useful when:
 - executing a high-risk operation where freedom is undesirable
 
 The Agentic AI lesson is not "always be vague." It is "match task freedom to task maturity."
+
+
+## Forge Frenzy owner evidence — 2026-10-10
+
+Owner-observed, from the [Forge Frenzy case](../models/claude-code/cases/2026-10-08-forge-frenzy-claude-projects.md):
+
+- **Independent pre-merge review by another vendor's model, then remediation by the agent with live Studio access**, worked well. A GPT-6 review found seven real issues, and Claude (Opus 5.5, Remote Control + Studio MCP) reproduced and fixed all of them in one pass.
+- **Claude Projects fan-out (coordinator + parallel threads)** fits off-Studio work against a published contract. On a quota-limited plan it exhausted a five-hour window in about 45 minutes; default to one Studio-owning session with sparse helpers unless speed matters more than quota.
+- Neither model's suites caught the real input-path failure or the UX rejection. Human playtest and client-driven acceptance remain the final gate.
