@@ -2,6 +2,19 @@
 
 This is a current routing heuristic derived from the user's own project evidence. It is not a permanent ranking.
 
+## Caelmor writing / narrative public-prior overlay — 2026-11-01
+
+This is **public research, not an owner-tested Caelmor model choice**. [Evidence and discrepancies](../research/writing/2026-11-01-caelmor-creative-writing-model-baseline.md); [matched evaluation](../research/writing/CAELMOR_NARRATIVE_EVAL_PROTOCOL.md).
+
+| Narrative bottleneck | First candidate and challenger |
+|---|---|
+| Atmospheric lore prose, NPC dialogue | **Claude Opus 5.5 High** first, **GPT-6 Astra High** independent challenger |
+| Constrained story structure / longer arcs | **Claude Fable 5.1 High / Opus 5** if accessible; compare with Opus 5.5 |
+| Independent canon review | Separate grounded reviewer with source citations; no model alone is canon authority |
+| Bulk conversational variants | Test Sonnet 5.5 / 6.1 Sol only after cheaper-output quality is demonstrated on Caelmor tasks |
+
+Public benchmarks disagree. Human Arena favors Opus 5.5; EQ-Bench short favors Astra; constrained short-form favors Fable/Opus. **Canon accuracy must be a hard gate**, and model + harness + effort need separate records. No local model fine-tuning decision follows from these public ranks.
+
 ## Route by bottleneck
 
 | Task bottleneck | Current best-supported role |

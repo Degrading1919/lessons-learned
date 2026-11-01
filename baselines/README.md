@@ -16,6 +16,10 @@ A personal case answers:
 
 Personal evidence is allowed to override a baseline.
 
+## Task-specific public priors
+
+- [Caelmor creative writing, lore, and dialogue baseline](../research/writing/2026-11-01-caelmor-creative-writing-model-baseline.md) — 2026-11-01 research across human Arena, short/long LLM-judged writing tests and mixed first-person reviews. Canon adherence requires a separate [matched Caelmor bake-off](../research/writing/CAELMOR_NARRATIVE_EVAL_PROTOCOL.md). Not an owner-observed case.
+
 ## Providers covered
 
 - [OpenAI](OPENAI.md) — current compact baseline; see also the [2026-09-24 OpenAI Reddit/efficiency field guide](../research/openai/2026-09-24-reddit-field-guide.md)

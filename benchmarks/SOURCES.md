@@ -542,3 +542,19 @@ When a future agent writes a public-prior comparison:
 3. label provider self-report vs independent benchmark vs community anecdote;
 4. compare only sufficiently similar model/harness/task conditions;
 5. state whether the personal case confirms, contradicts, adds operational nuance, or is not comparable.
+
+
+## November 2026 creative writing / Caelmor narrative baseline
+
+**Snapshot taken 2026-11-01. Public priors only; no owner-run Caelmor comparison yet.** See [full creative baseline](../research/writing/2026-11-01-caelmor-creative-writing-model-baseline.md).
+
+- [Arena Creative Writing category](https://arena.ai/leaderboard/chat/text/creative-writing) — **human blind pairwise preferences**, snapshot 2026-10-27. Exact model and effort; confidence intervals and per-model vote counts. Does not test canonical world documents.
+- [Lech Mazur creative short-story benchmark](https://github.com/lechmazur/writing) — matched 10-element short briefs; LLM pairwise judging, bootstrap intervals, order reversal; retrieved 2026-11-01. Not a human preference study.
+- [EQ-Bench Creative Writing v3](https://eqbench.com/creative_writing.html) and [methodology](https://eqbench.com/about.html) — LLM-judged rubric/pairwise ranking; as of 2026-10-25 judge updates, potential self/style/length biases. Do not conflate with human Arena.
+- [EQ-Bench Longform Writing](https://eqbench.com/creative_writing_longform.html) — eight-turn plan/revise/story task, LLM-judged, useful but not canonical lore fidelity.
+- [Astra writing report](https://www.reddit.com/r/WritingWithAI/comments/1wbfc18/chatgpt6_astra_high_on_creative_writing/) — first-person positive report, 2026-09-09.
+- [Opus 5.5 story continuity report](https://www.reddit.com/r/ClaudeAIJailbreak/comments/1wnmbfx/opus_55_writing_is_peak_surpassing_46/) — early positive field report, 2026-09-22.
+- [Opus 5.5 style rules and lore constraints discussion](https://www.reddit.com/r/claudexplorers/comments/1wxhppk/it_just_occurred_to_me_that_opus_55_actually/) — positive original report and Fable 5.1 counterexample, 2026-10-04.
+- [Fable 5.1 contrasted writing/editing reports](https://www.reddit.com/r/ClaudeAI/comments/1w6gtgx/fable_vs_fable_51_for_creative_writing/) — mutually contradictory individual experiences, 2026-09-03.
+- [Sonnet 5.5 scene-logic criticism](https://www.reddit.com/r/claudexplorers/comments/1x67arn/sonnet_55s_writing/) — negative human report plus disagreement, 2026-10-15.
+- [Opus 5.5 Hacker News discussion](https://news.ycombinator.com/item?id=49803892) — community writing/style opinions and disagreement; anecdotal.
