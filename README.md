@@ -148,6 +148,8 @@ The rule is simple: public benchmarks establish a prior; the owner's observed pr
 
 ## Machine-readable corpus
 
+For procedural 3D generators, start with the [Caelmor development retrospective](models/codex/cases/2026-11-02-caelmor-procedural-architecture.md) and [reusable procedural asset baseline](research/procedural-assets/PROCEDURAL_ASSET_BASELINE.md). They separate geometry validity, Blender/package verification, actual visual quality and resource accounting.
+
 `datasets/cases.jsonl` mirrors owner-observed prose cases. `datasets/model_baselines.jsonl` stores researched model priors. `datasets/harness_baselines.jsonl` separately stores researched harness priors. Keeping these datasets separate prevents benchmark/forum expectations from being mistaken for personal evidence.
 
 The dataset intentionally records **observed outcomes and human preference signals** rather than turning them into universal model scores.

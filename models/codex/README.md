@@ -58,6 +58,12 @@ The Modular CRM repository permanently adopted this after the Agentic AI result.
 
 ## Verification lessons
 
+### Caelmor procedural architecture — 2026-11-02–03
+
+[PR #85 retrospective](cases/2026-11-02-caelmor-procedural-architecture.md) documents `gpt-6.1-sol` High with 15 actual `gpt-6-luna` High worker sessions. Bounded geometry/backend/tests/research were delegable, but roof/frame collisions, regional sameness and weak wealth readability required integration review, real renders and owner correction. Technical matrices and geometry hashes did not establish artistic acceptance.
+
+The recovered logs include a usage-limit termination and extensive cached/repeated context; they do **not** establish API cost or a matched model-efficiency winner. Use the [reusable procedural asset baseline](../../research/procedural-assets/PROCEDURAL_ASSET_BASELINE.md) for adaptive geometry/Blender/render/human gates and controlled routing experiments. Historical observations above retain their original model labels.
+
 Codex output must be judged by what survived:
 
 - tests

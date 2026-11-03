@@ -17,6 +17,8 @@ Public benchmarks disagree. Human Arena favors Opus 5.5; EQ-Bench short favors A
 
 ## Route by bottleneck
 
+For procedural 3D work, the [Caelmor owner-observed case](../models/codex/cases/2026-11-02-caelmor-procedural-architecture.md) supports guarded delegation, not a cost ranking: Luna High handled bounded geometry, backend/UI, research and QA under a Sol High integrator. No Medium-vs-High or single-lead control was run. Use scripts for deterministic checks/manifests; retain stronger judgment for global construction/access contracts and actual visual review. Require neutral function/region/status comparisons and human artistic acceptance after technical checks. See the [procedural asset baseline](../research/procedural-assets/PROCEDURAL_ASSET_BASELINE.md) for routing experiments and the validation ladder.
+
 | Task bottleneck | Current best-supported role |
 |---|---|
 | Product definition / task shaping | ChatGPT |

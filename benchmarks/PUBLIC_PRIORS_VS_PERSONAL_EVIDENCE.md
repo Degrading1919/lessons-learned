@@ -6,6 +6,10 @@ This document records how the project's observed AI results compare with the pub
 
 The public evidence is a **prior**, not the authority. The personal corpus exists precisely because benchmark performance does not measure every variable that matters here: subscription quota, prompt shape, repository maturity, MCP access, human playtesting, task duration, or role fit.
 
+## Caelmor procedural-asset reconciliation — 2026-11-02–03
+
+The [PR #85 case](../models/codex/cases/2026-11-02-caelmor-procedural-architecture.md) adds an owner-observed Sol High + Luna High workflow to the dated October prior below. **Relationship: adds operational nuance** for role fit; **not comparable** for per-model benchmark capability or cost superiority. Actual Blender access, bounded contracts, independent review and owner visual intervention mattered, while green geometry checks still missed the art objective. All 15 workers were Luna High; Medium routing remains untested. Recovered counters include cached processing and a usage-limit termination, not an API bill or a controlled cost comparison. No public baseline numbers are refreshed by this case.
+
 ## Benchmark interpretation rules
 
 - Prefer independent benchmark runs over provider claims.

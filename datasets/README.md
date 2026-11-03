@@ -120,3 +120,5 @@ python scripts/validate_harness_baselines.py
 ```
 
 Future personal matched tests should be stored in `datasets/harness_runs.jsonl` only after real measurements exist. See `research/harnesses/HARNESS_AB_TEST_PROTOCOL.md`. Do not fabricate historical quota/token measurements.
+
+The Caelmor PR #85 case links [sanitized historical telemetry](../evidence/measurements/2026-11-02-caelmor-session-metrics.json) and its [interpretation](../evidence/measurements/2026-11-02-caelmor-development.md). These are uncontrolled development counters, so they are not inserted as a matched `harness_runs.jsonl` experiment. Input/cache/output subsets and allowance/billing unknowns remain explicit. Reproduce counters only with the original private logs using `scripts/extract_caelmor_session_metrics.py`; raw sessions are not part of this public corpus.
