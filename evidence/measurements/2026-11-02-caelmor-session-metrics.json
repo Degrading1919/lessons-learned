@@ -1,0 +1,2468 @@
+{
+  "schema_version": 1,
+  "case_id": "2026-11-02-caelmor-procedural-architecture",
+  "interpretation": "Observed development telemetry; not billing, not a controlled harness experiment. Cached input is a subset of input; reasoning output is a subset of output. Repeated context is real processed input, not unique source content.",
+  "child_attribution": [
+    {
+      "task": "facades",
+      "session_id": "01a19d8d-36df-7be0-9de0-fd066e2f0216",
+      "model": "gpt-6-luna",
+      "effort": "high",
+      "completion_line": 435,
+      "reported_result": "Facades compiled and passed 20-case closure then 60-case facade/roof topology checks; ridge material assignment limitation noted."
+    },
+    {
+      "task": "blender_addon",
+      "session_id": "01a19d8d-755e-73e0-84de-d1c6b07d6200",
+      "model": "gpt-6-luna",
+      "effort": "high",
+      "completion_line": 749,
+      "reported_result": "Backend/add-on completed and frozen; final render and GLB material/UV validation delegated."
+    },
+    {
+      "task": "verification",
+      "session_id": "01a19d8d-ad90-7611-879c-99f1eb522d6f",
+      "model": "gpt-6-luna",
+      "effort": "high",
+      "completion_line": 1478,
+      "reported_result": "14 tests; Blender integration; GLB/UV/material/collision/save-reopen; 10 buildings, 40 views and geometry hashes reported."
+    },
+    {
+      "task": "frame_quality",
+      "session_id": "01a19da8-1e70-7ad3-ba5d-24491ddec5f9",
+      "model": "gpt-6-luna",
+      "effort": "high",
+      "completion_line": 919,
+      "reported_result": "Structural frame layout and roof clearance; 20-case function/footprint matrix and vertex/edge clearance audit reported."
+    },
+    {
+      "task": "surface_quality",
+      "session_id": "01a19da8-6835-7452-8c6c-7a2e6d6d3bc3",
+      "model": "gpt-6-luna",
+      "effort": "high",
+      "completion_line": 676,
+      "reported_result": "Procedural material maps/weathering, legacy-safe revision-aware materials and Blender/GLB color validation."
+    },
+    {
+      "task": "exterior_qa",
+      "session_id": "01a19da8-af5a-79c1-835f-887fdf8f5c11",
+      "model": "gpt-6-luna",
+      "effort": "high",
+      "completion_line": 2457,
+      "reported_result": "Gallery, closeups, editable scene and manifests; final Blender, surface export, pure Python and root stress checks reported."
+    },
+    {
+      "task": "regional_models",
+      "session_id": "01a19ed5-affa-78e0-a3a0-efba38981361",
+      "model": "gpt-6-luna",
+      "effort": "high",
+      "completion_line": 356,
+      "reported_result": "Four regional profiles/20 types; 1,020 fixtures; corrected roof-height, type metadata and grammar overrides."
+    },
+    {
+      "task": "expanded_facades",
+      "session_id": "01a19ed6-0d12-7751-aa77-a57e2564f6ca",
+      "model": "gpt-6-luna",
+      "effort": "high",
+      "completion_line": 2225,
+      "reported_result": "Opening clearances, regional circulation, efficient cladding; 96-case stress and deterministic checks reported."
+    },
+    {
+      "task": "regional_ui_materials",
+      "session_id": "01a19ed6-6dce-7c50-9d8c-68168e6d05e0",
+      "model": "gpt-6-luna",
+      "effort": "high",
+      "completion_line": 799,
+      "reported_result": "UI/material/backend/docs and Blender smoke; fixed grammar validation for overridden dimensions."
+    },
+    {
+      "task": "world_generator_qa",
+      "session_id": "01a19ed8-9119-7bb1-a4f6-f41a3ce484ed",
+      "model": "gpt-6-luna",
+      "effort": "high",
+      "completion_line": 3211,
+      "reported_result": "37 pure tests, 96-case stress, 21 Blender roof fixtures, BVH/integration/surface checks and 29-row render manifest reported."
+    },
+    {
+      "task": "traditions_research",
+      "session_id": "01a19f2a-9b17-78b1-aa0b-f02d56cc2882",
+      "model": "gpt-6-luna",
+      "effort": "high",
+      "completion_line": 777,
+      "reported_result": "Regional-language document and Emberholt generation; corrected API/context errors; 60/60 matrix reported."
+    },
+    {
+      "task": "rural_highland_language",
+      "session_id": "01a19f2f-dfca-7be2-9201-d4f00cc839a9",
+      "model": "gpt-6-luna",
+      "effort": "high",
+      "completion_line": 634,
+      "reported_result": "Lowmark/Thornfell generation; all 60 type/wealth cases reported; Blender and legacy integration smoke."
+    },
+    {
+      "task": "mire_language",
+      "session_id": "01a19f30-3097-7ea2-bab2-743c7e7614e4",
+      "model": "gpt-6-luna",
+      "effort": "high",
+      "completion_line": 535,
+      "reported_result": "Mire longhouse/pavilion grammar; low/high-detail geometry sweep and Sorrowmere connector fix."
+    },
+    {
+      "task": "world_qa",
+      "session_id": "01a19f3a-8f04-7933-b10e-77146b7848ed",
+      "model": "gpt-6-luna",
+      "effort": "high",
+      "completion_line": 1751,
+      "reported_result": "240-case matrix; 304 archived geometry hashes matched; Blender checks and source-hashed hero renders reported."
+    },
+    {
+      "task": "blind_architecture_review",
+      "session_id": "01a19f59-bf57-74d1-8284-9c2409338850",
+      "model": "gpt-6-luna",
+      "effort": "high",
+      "completion_line": 55,
+      "reported_result": "Neutral visual review found Mire/Emberholt cues strongest; Lowmark/Thornfell or Emberholt generic-massing ambiguity remained in a pass."
+    }
+  ],
+  "orchestration": {
+    "count": 15,
+    "all_model_effort": "gpt-6-luna/high",
+    "task_names": [
+      "facades",
+      "blender_addon",
+      "verification",
+      "frame_quality",
+      "surface_quality",
+      "exterior_qa",
+      "regional_models",
+      "expanded_facades",
+      "regional_ui_materials",
+      "world_generator_qa",
+      "traditions_research",
+      "rural_highland_language",
+      "mire_language",
+      "world_qa",
+      "blind_architecture_review"
+    ],
+    "followup_task_calls": 36,
+    "send_message_calls": 109,
+    "list_agents_calls": 3,
+    "wait_agent_calls": 3,
+    "spawn_lines": [
+      66,
+      72,
+      80,
+      830,
+      836,
+      842,
+      1918,
+      1924,
+      1930,
+      1958,
+      3437,
+      3479,
+      3485,
+      3686,
+      4078
+    ],
+    "successful_spawn_count": 15,
+    "failed_spawn_count": 0,
+    "status_evidence": "All 15 spawn_agent calls had completed outputs with task_name; all 15 direct child session files were present. No thread-limit spawn failure observed."
+  },
+  "compactions": [
+    {
+      "line": 2379,
+      "timestamp": "2026-11-03T01:06:37.706Z",
+      "window": 1
+    },
+    {
+      "line": 4619,
+      "timestamp": "2026-11-03T03:57:53.760Z",
+      "window": 2
+    }
+  ],
+  "interrupted_turns": [
+    {
+      "line": 1807,
+      "timestamp": "2026-11-03T00:02:27.931Z",
+      "reason": "interrupted"
+    }
+  ],
+  "root_milestone_snapshots": [
+    {
+      "source_line": 746,
+      "total": 11149426,
+      "input": 11104498,
+      "cached_input": 10969728,
+      "output": 44928,
+      "reasoning": 18408,
+      "before_task_event_line": 748,
+      "event_kind": "successful_task_complete"
+    },
+    {
+      "source_line": 1791,
+      "total": 46487046,
+      "input": 46368552,
+      "cached_input": 46098944,
+      "output": 118494,
+      "reasoning": 68315,
+      "before_task_event_line": 1797,
+      "event_kind": "usage_limit_exceeded"
+    },
+    {
+      "source_line": 1839,
+      "total": 47820379,
+      "input": 47700559,
+      "cached_input": 47426688,
+      "output": 119820,
+      "reasoning": 68907,
+      "before_task_event_line": 1841,
+      "event_kind": "successful_task_complete"
+    },
+    {
+      "source_line": 3408,
+      "total": 78341054,
+      "input": 78158636,
+      "cached_input": 77672448,
+      "output": 182418,
+      "reasoning": 94809,
+      "before_task_event_line": 3410,
+      "event_kind": "successful_task_complete"
+    },
+    {
+      "source_line": 4806,
+      "total": 110351373,
+      "input": 110048518,
+      "cached_input": 109081856,
+      "output": 302855,
+      "reasoning": 168031,
+      "before_task_event_line": 4808,
+      "event_kind": "successful_task_complete"
+    }
+  ],
+  "failure_retry_caveats": {
+    "exec_outputs_with_nonzero_nested_exit_codes": 18,
+    "paired_exec_outputs": 280,
+    "git_main_push": {
+      "line": 737,
+      "exit_code": 1,
+      "reason": "non-fast-forward; remote main was ahead"
+    },
+    "git_fetch_origin_main": {
+      "line": 765,
+      "exit_code": 0
+    },
+    "isolated_unit_test_import_error": {
+      "line": 791,
+      "exit_code": 1,
+      "error": "ModuleNotFoundError: No module named caelmor_architecture"
+    },
+    "generator_branch_pushes": {
+      "lines": [
+        809,
+        1783,
+        3374,
+        4783
+      ],
+      "observed_exit_codes": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "spawn_failures": 0,
+    "taxonomy_caveat": "Other nonzero results were mixed validation, patch, probe and command failures; compound exec calls prevent a reliable mutually exclusive taxonomy. They are not 18 independent defects.",
+    "usage_limit_failure_observed": true,
+    "usage_limit_task_event": {
+      "root_source_line": 1797,
+      "timestamp": "2026-11-02T19:51:29.528Z",
+      "error_code": "usage_limit_exceeded",
+      "duration_ms": 2858730
+    }
+  },
+  "extraction": {
+    "method": "Unique response_id usage records before cutoff; cumulative snapshots not summed.",
+    "cutoff_exclusive": "2026-11-03T04:09:25.235Z",
+    "global_unique_responses": 2809,
+    "duplicates_skipped": 0,
+    "combined_logged_processing": {
+      "input_tokens": 364474133,
+      "cached_input_tokens": 360243584,
+      "output_tokens": 1198196,
+      "reasoning_output_tokens": 580750,
+      "total_tokens": 365672329
+    },
+    "sessions": [
+      {
+        "task": "orchestrator",
+        "source_file": "rollout-2026-11-02T13-34-16-01a19d8a-69dc-75b2-a578-ef6a604e13d7.jsonl",
+        "source_prefix_sha256": "bdccbd36741a0286e45461eb033449ecc39eb679d7c4d4b8a3c714ab808ccbbe",
+        "records_before_cutoff": 4811,
+        "last_included_line": 4811,
+        "observed_model_effort": [
+          {
+            "model": "gpt-6.1-sol",
+            "effort": "high"
+          }
+        ],
+        "unique_responses": 514,
+        "duplicate_response_ids_skipped": 0,
+        "usage_sum": {
+          "input_tokens": 110048518,
+          "cached_input_tokens": 109081856,
+          "output_tokens": 302855,
+          "reasoning_output_tokens": 168031,
+          "total_tokens": 110351373
+        },
+        "last_thread_snapshot": {
+          "input_tokens": 110048518,
+          "cached_input_tokens": 109081856,
+          "output_tokens": 302855,
+          "reasoning_output_tokens": 168031,
+          "total_tokens": 110351373
+        },
+        "usage_sum_matches_snapshot": true,
+        "completed_turns": [
+          {
+            "source_line": 748,
+            "timestamp": "2026-11-02T19:00:22.557Z",
+            "duration_ms": 1498729,
+            "error_code": null,
+            "has_error": false
+          },
+          {
+            "source_line": 1797,
+            "timestamp": "2026-11-02T19:51:29.528Z",
+            "duration_ms": 2858730,
+            "error_code": "usage_limit_exceeded",
+            "has_error": true
+          },
+          {
+            "source_line": 1841,
+            "timestamp": "2026-11-03T00:03:49.590Z",
+            "duration_ms": 68607,
+            "error_code": null,
+            "has_error": false
+          },
+          {
+            "source_line": 3410,
+            "timestamp": "2026-11-03T01:47:38.529Z",
+            "duration_ms": 4762352,
+            "error_code": null,
+            "has_error": false
+          },
+          {
+            "source_line": 4808,
+            "timestamp": "2026-11-03T04:03:05.936Z",
+            "duration_ms": 6980445,
+            "error_code": null,
+            "has_error": false
+          }
+        ],
+        "rate_windows": [
+          {
+            "kind": "primary",
+            "window_minutes": 300,
+            "resets_at": 1793662524,
+            "first": {
+              "timestamp": "2026-11-02T18:35:30.310Z",
+              "source_line": 25,
+              "used_percent": 0.0
+            },
+            "last": {
+              "timestamp": "2026-11-02T18:35:30.310Z",
+              "source_line": 25,
+              "used_percent": 0.0
+            }
+          },
+          {
+            "kind": "secondary",
+            "window_minutes": 10080,
+            "resets_at": 1794166266,
+            "first": {
+              "timestamp": "2026-11-02T18:35:30.310Z",
+              "source_line": 25,
+              "used_percent": 57.0
+            },
+            "last": {
+              "timestamp": "2026-11-03T01:19:56.830Z",
+              "source_line": 2878,
+              "used_percent": 81.0
+            }
+          },
+          {
+            "kind": "primary",
+            "window_minutes": 300,
+            "resets_at": 1793662526,
+            "first": {
+              "timestamp": "2026-11-02T18:35:37.291Z",
+              "source_line": 30,
+              "used_percent": 0.0
+            },
+            "last": {
+              "timestamp": "2026-11-02T19:51:29.248Z",
+              "source_line": 1795,
+              "used_percent": 100.0
+            }
+          },
+          {
+            "kind": "secondary",
+            "window_minutes": 10080,
+            "resets_at": 1794166267,
+            "first": {
+              "timestamp": "2026-11-02T19:36:44.608Z",
+              "source_line": 1494,
+              "used_percent": 69.0
+            },
+            "last": {
+              "timestamp": "2026-11-03T02:25:47.019Z",
+              "source_line": 3675,
+              "used_percent": 87.0
+            }
+          },
+          {
+            "kind": "primary",
+            "window_minutes": 300,
+            "resets_at": 1793682140,
+            "first": {
+              "timestamp": "2026-11-03T00:02:27.900Z",
+              "source_line": 1805,
+              "used_percent": 0.0
+            },
+            "last": {
+              "timestamp": "2026-11-03T00:02:27.900Z",
+              "source_line": 1805,
+              "used_percent": 0.0
+            }
+          },
+          {
+            "kind": "secondary",
+            "window_minutes": 10080,
+            "resets_at": 1794166268,
+            "first": {
+              "timestamp": "2026-11-03T00:02:27.900Z",
+              "source_line": 1805,
+              "used_percent": 73.0
+            },
+            "last": {
+              "timestamp": "2026-11-03T02:37:15.792Z",
+              "source_line": 3848,
+              "used_percent": 88.0
+            }
+          },
+          {
+            "kind": "primary",
+            "window_minutes": 300,
+            "resets_at": 1793682163,
+            "first": {
+              "timestamp": "2026-11-03T00:02:54.013Z",
+              "source_line": 1820,
+              "used_percent": 0.0
+            },
+            "last": {
+              "timestamp": "2026-11-03T00:02:54.013Z",
+              "source_line": 1820,
+              "used_percent": 0.0
+            }
+          },
+          {
+            "kind": "primary",
+            "window_minutes": 300,
+            "resets_at": 1793682176,
+            "first": {
+              "timestamp": "2026-11-03T00:03:09.032Z",
+              "source_line": 1829,
+              "used_percent": 0.0
+            },
+            "last": {
+              "timestamp": "2026-11-03T02:37:15.792Z",
+              "source_line": 3848,
+              "used_percent": 98.0
+            }
+          },
+          {
+            "kind": "primary",
+            "window_minutes": 300,
+            "resets_at": 1793682177,
+            "first": {
+              "timestamp": "2026-11-03T00:38:15.164Z",
+              "source_line": 1947,
+              "used_percent": 9.0
+            },
+            "last": {
+              "timestamp": "2026-11-03T02:17:22.128Z",
+              "source_line": 3537,
+              "used_percent": 82.0
+            }
+          },
+          {
+            "kind": "primary",
+            "window_minutes": 300,
+            "resets_at": 1793682175,
+            "first": {
+              "timestamp": "2026-11-03T00:49:02.484Z",
+              "source_line": 2128,
+              "used_percent": 20.0
+            },
+            "last": {
+              "timestamp": "2026-11-03T01:39:31.891Z",
+              "source_line": 3272,
+              "used_percent": 69.0
+            }
+          },
+          {
+            "kind": "secondary",
+            "window_minutes": 10080,
+            "resets_at": 1794166269,
+            "first": {
+              "timestamp": "2026-11-03T01:45:17.159Z",
+              "source_line": 3371,
+              "used_percent": 84.0
+            },
+            "last": {
+              "timestamp": "2026-11-03T01:45:17.159Z",
+              "source_line": 3371,
+              "used_percent": 84.0
+            }
+          },
+          {
+            "kind": "primary",
+            "window_minutes": 300,
+            "resets_at": 1793682179,
+            "first": {
+              "timestamp": "2026-11-03T02:24:45.419Z",
+              "source_line": 3665,
+              "used_percent": 88.0
+            },
+            "last": {
+              "timestamp": "2026-11-03T02:24:45.419Z",
+              "source_line": 3665,
+              "used_percent": 88.0
+            }
+          },
+          {
+            "kind": "secondary",
+            "window_minutes": 10080,
+            "resets_at": 1794166271,
+            "first": {
+              "timestamp": "2026-11-03T02:24:45.419Z",
+              "source_line": 3665,
+              "used_percent": 86.0
+            },
+            "last": {
+              "timestamp": "2026-11-03T02:24:45.419Z",
+              "source_line": 3665,
+              "used_percent": 86.0
+            }
+          },
+          {
+            "kind": "primary",
+            "window_minutes": 300,
+            "resets_at": 1793682186,
+            "first": {
+              "timestamp": "2026-11-03T02:30:31.563Z",
+              "source_line": 3754,
+              "used_percent": 93.0
+            },
+            "last": {
+              "timestamp": "2026-11-03T02:30:31.563Z",
+              "source_line": 3754,
+              "used_percent": 93.0
+            }
+          },
+          {
+            "kind": "secondary",
+            "window_minutes": 10080,
+            "resets_at": 1794166277,
+            "first": {
+              "timestamp": "2026-11-03T02:30:31.563Z",
+              "source_line": 3754,
+              "used_percent": 87.0
+            },
+            "last": {
+              "timestamp": "2026-11-03T02:30:31.563Z",
+              "source_line": 3754,
+              "used_percent": 87.0
+            }
+          },
+          {
+            "kind": "primary",
+            "window_minutes": 300,
+            "resets_at": 1793691420,
+            "first": {
+              "timestamp": "2026-11-03T02:37:36.255Z",
+              "source_line": 3857,
+              "used_percent": 0.0
+            },
+            "last": {
+              "timestamp": "2026-11-03T03:36:13.571Z",
+              "source_line": 4436,
+              "used_percent": 34.0
+            }
+          },
+          {
+            "kind": "secondary",
+            "window_minutes": 10080,
+            "resets_at": 1794278220,
+            "first": {
+              "timestamp": "2026-11-03T02:37:36.255Z",
+              "source_line": 3857,
+              "used_percent": 0.0
+            },
+            "last": {
+              "timestamp": "2026-11-03T03:36:13.571Z",
+              "source_line": 4436,
+              "used_percent": 5.0
+            }
+          },
+          {
+            "kind": "primary",
+            "window_minutes": 300,
+            "resets_at": 1793691421,
+            "first": {
+              "timestamp": "2026-11-03T02:50:29.906Z",
+              "source_line": 4017,
+              "used_percent": 9.0
+            },
+            "last": {
+              "timestamp": "2026-11-03T03:57:53.772Z",
+              "source_line": 4623,
+              "used_percent": 43.0
+            }
+          },
+          {
+            "kind": "secondary",
+            "window_minutes": 10080,
+            "resets_at": 1794278221,
+            "first": {
+              "timestamp": "2026-11-03T02:50:29.906Z",
+              "source_line": 4017,
+              "used_percent": 1.0
+            },
+            "last": {
+              "timestamp": "2026-11-03T03:57:53.772Z",
+              "source_line": 4623,
+              "used_percent": 7.0
+            }
+          },
+          {
+            "kind": "primary",
+            "window_minutes": 300,
+            "resets_at": 1793691422,
+            "first": {
+              "timestamp": "2026-11-03T02:50:46.034Z",
+              "source_line": 4024,
+              "used_percent": 9.0
+            },
+            "last": {
+              "timestamp": "2026-11-03T02:50:46.034Z",
+              "source_line": 4024,
+              "used_percent": 9.0
+            }
+          },
+          {
+            "kind": "secondary",
+            "window_minutes": 10080,
+            "resets_at": 1794278222,
+            "first": {
+              "timestamp": "2026-11-03T02:50:46.034Z",
+              "source_line": 4024,
+              "used_percent": 1.0
+            },
+            "last": {
+              "timestamp": "2026-11-03T02:50:46.034Z",
+              "source_line": 4024,
+              "used_percent": 1.0
+            }
+          },
+          {
+            "kind": "primary",
+            "window_minutes": 300,
+            "resets_at": 1793691419,
+            "first": {
+              "timestamp": "2026-11-03T03:31:14.263Z",
+              "source_line": 4358,
+              "used_percent": 30.0
+            },
+            "last": {
+              "timestamp": "2026-11-03T04:03:05.905Z",
+              "source_line": 4807,
+              "used_percent": 50.0
+            }
+          },
+          {
+            "kind": "secondary",
+            "window_minutes": 10080,
+            "resets_at": 1794278219,
+            "first": {
+              "timestamp": "2026-11-03T03:31:14.263Z",
+              "source_line": 4358,
+              "used_percent": 5.0
+            },
+            "last": {
+              "timestamp": "2026-11-03T04:03:05.905Z",
+              "source_line": 4807,
+              "used_percent": 8.0
+            }
+          },
+          {
+            "kind": "primary",
+            "window_minutes": 300,
+            "resets_at": 1793691423,
+            "first": {
+              "timestamp": "2026-11-03T03:32:02.769Z",
+              "source_line": 4372,
+              "used_percent": 30.0
+            },
+            "last": {
+              "timestamp": "2026-11-03T03:32:02.769Z",
+              "source_line": 4372,
+              "used_percent": 30.0
+            }
+          },
+          {
+            "kind": "secondary",
+            "window_minutes": 10080,
+            "resets_at": 1794278223,
+            "first": {
+              "timestamp": "2026-11-03T03:32:02.769Z",
+              "source_line": 4372,
+              "used_percent": 5.0
+            },
+            "last": {
+              "timestamp": "2026-11-03T03:32:02.769Z",
+              "source_line": 4372,
+              "used_percent": 5.0
+            }
+          },
+          {
+            "kind": "primary",
+            "window_minutes": 300,
+            "resets_at": 1793691418,
+            "first": {
+              "timestamp": "2026-11-03T03:58:14.421Z",
+              "source_line": 4638,
+              "used_percent": 47.0
+            },
+            "last": {
+              "timestamp": "2026-11-03T04:02:50.051Z",
+              "source_line": 4801,
+              "used_percent": 50.0
+            }
+          },
+          {
+            "kind": "secondary",
+            "window_minutes": 10080,
+            "resets_at": 1794278218,
+            "first": {
+              "timestamp": "2026-11-03T03:58:14.421Z",
+              "source_line": 4638,
+              "used_percent": 7.0
+            },
+            "last": {
+              "timestamp": "2026-11-03T04:02:50.051Z",
+              "source_line": 4801,
+              "used_percent": 8.0
+            }
+          }
+        ]
+      },
+      {
+        "task": "facades",
+        "source_file": "rollout-2026-11-02T13-37-20-01a19d8d-36df-7be0-9de0-fd066e2f0216.jsonl",
+        "source_prefix_sha256": "9e45e0318099ca6a7499dd7ce7df1564433b69028c5e29e84d9aefae1627463f",
+        "records_before_cutoff": 435,
+        "last_included_line": 435,
+        "observed_model_effort": [
+          {
+            "model": "gpt-6-luna",
+            "effort": "high"
+          }
+        ],
+        "unique_responses": 52,
+        "duplicate_response_ids_skipped": 0,
+        "usage_sum": {
+          "input_tokens": 2941789,
+          "cached_input_tokens": 2838400,
+          "output_tokens": 46102,
+          "reasoning_output_tokens": 23017,
+          "total_tokens": 2987891
+        },
+        "last_thread_snapshot": {
+          "input_tokens": 2941789,
+          "cached_input_tokens": 2838400,
+          "output_tokens": 46102,
+          "reasoning_output_tokens": 23017,
+          "total_tokens": 2987891
+        },
+        "usage_sum_matches_snapshot": true,
+        "completed_turns": [
+          {
+            "source_line": 200,
+            "timestamp": "2026-11-02T18:40:40.214Z",
+            "duration_ms": 200013,
+            "error_code": null,
+            "has_error": false
+          },
+          {
+            "source_line": 435,
+            "timestamp": "2026-11-02T18:46:50.340Z",
+            "duration_ms": 303914,
+            "error_code": null,
+            "has_error": false
+          }
+        ],
+        "rate_windows": [
+          {
+            "kind": "primary",
+            "window_minutes": 300,
+            "resets_at": 1793662526,
+            "first": {
+              "timestamp": "2026-11-02T18:37:25.487Z",
+              "source_line": 22,
+              "used_percent": 2.0
+            },
+            "last": {
+              "timestamp": "2026-11-02T18:46:50.313Z",
+              "source_line": 434,
+              "used_percent": 13.0
+            }
+          },
+          {
+            "kind": "secondary",
+            "window_minutes": 10080,
+            "resets_at": 1794166266,
+            "first": {
+              "timestamp": "2026-11-02T18:37:25.487Z",
+              "source_line": 22,
+              "used_percent": 57.0
+            },
+            "last": {
+              "timestamp": "2026-11-02T18:46:50.313Z",
+              "source_line": 434,
+              "used_percent": 59.0
+            }
+          }
+        ]
+      },
+      {
+        "task": "blender_addon",
+        "source_file": "rollout-2026-11-02T13-37-36-01a19d8d-755e-73e0-84de-d1c6b07d6200.jsonl",
+        "source_prefix_sha256": "d973a46ca1e952c8d44d6950634270d05a0d098ecb45ef100fb8b8555e39c52b",
+        "records_before_cutoff": 749,
+        "last_included_line": 749,
+        "observed_model_effort": [
+          {
+            "model": "gpt-6-luna",
+            "effort": "high"
+          }
+        ],
+        "unique_responses": 101,
+        "duplicate_response_ids_skipped": 0,
+        "usage_sum": {
+          "input_tokens": 6231909,
+          "cached_input_tokens": 6072192,
+          "output_tokens": 49664,
+          "reasoning_output_tokens": 19703,
+          "total_tokens": 6281573
+        },
+        "last_thread_snapshot": {
+          "input_tokens": 6231909,
+          "cached_input_tokens": 6072192,
+          "output_tokens": 49664,
+          "reasoning_output_tokens": 19703,
+          "total_tokens": 6281573
+        },
+        "usage_sum_matches_snapshot": true,
+        "completed_turns": [
+          {
+            "source_line": 749,
+            "timestamp": "2026-11-02T18:56:40.526Z",
+            "duration_ms": 1144314,
+            "error_code": null,
+            "has_error": false
+          }
+        ],
+        "rate_windows": [
+          {
+            "kind": "primary",
+            "window_minutes": 300,
+            "resets_at": 1793662526,
+            "first": {
+              "timestamp": "2026-11-02T18:37:40.925Z",
+              "source_line": 22,
+              "used_percent": 2.0
+            },
+            "last": {
+              "timestamp": "2026-11-02T18:56:40.402Z",
+              "source_line": 748,
+              "used_percent": 25.0
+            }
+          },
+          {
+            "kind": "secondary",
+            "window_minutes": 10080,
+            "resets_at": 1794166266,
+            "first": {
+              "timestamp": "2026-11-02T18:37:40.925Z",
+              "source_line": 22,
+              "used_percent": 57.0
+            },
+            "last": {
+              "timestamp": "2026-11-02T18:56:40.402Z",
+              "source_line": 748,
+              "used_percent": 61.0
+            }
+          }
+        ]
+      },
+      {
+        "task": "verification",
+        "source_file": "rollout-2026-11-02T13-37-50-01a19d8d-ad90-7611-879c-99f1eb522d6f.jsonl",
+        "source_prefix_sha256": "459135e4e4f72fd183604ad5c50d230ad44f211f877e98eeab4176e7ab02b207",
+        "records_before_cutoff": 1478,
+        "last_included_line": 1478,
+        "observed_model_effort": [
+          {
+            "model": "gpt-6-luna",
+            "effort": "high"
+          }
+        ],
+        "unique_responses": 202,
+        "duplicate_response_ids_skipped": 0,
+        "usage_sum": {
+          "input_tokens": 22757843,
+          "cached_input_tokens": 22478208,
+          "output_tokens": 79960,
+          "reasoning_output_tokens": 32830,
+          "total_tokens": 22837803
+        },
+        "last_thread_snapshot": {
+          "input_tokens": 22757843,
+          "cached_input_tokens": 22478208,
+          "output_tokens": 79960,
+          "reasoning_output_tokens": 32830,
+          "total_tokens": 22837803
+        },
+        "usage_sum_matches_snapshot": true,
+        "completed_turns": [
+          {
+            "source_line": 1478,
+            "timestamp": "2026-11-02T18:58:35.066Z",
+            "duration_ms": 1244465,
+            "error_code": null,
+            "has_error": false
+          }
+        ],
+        "rate_windows": [
+          {
+            "kind": "primary",
+            "window_minutes": 300,
+            "resets_at": 1793662526,
+            "first": {
+              "timestamp": "2026-11-02T18:37:55.231Z",
+              "source_line": 22,
+              "used_percent": 2.0
+            },
+            "last": {
+              "timestamp": "2026-11-02T18:58:34.924Z",
+              "source_line": 1477,
+              "used_percent": 29.0
+            }
+          },
+          {
+            "kind": "secondary",
+            "window_minutes": 10080,
+            "resets_at": 1794166266,
+            "first": {
+              "timestamp": "2026-11-02T18:37:55.231Z",
+              "source_line": 22,
+              "used_percent": 57.0
+            },
+            "last": {
+              "timestamp": "2026-11-02T18:58:34.924Z",
+              "source_line": 1477,
+              "used_percent": 61.0
+            }
+          },
+          {
+            "kind": "primary",
+            "window_minutes": 300,
+            "resets_at": 1793662527,
+            "first": {
+              "timestamp": "2026-11-02T18:44:53.923Z",
+              "source_line": 565,
+              "used_percent": 10.0
+            },
+            "last": {
+              "timestamp": "2026-11-02T18:44:53.923Z",
+              "source_line": 565,
+              "used_percent": 10.0
+            }
+          },
+          {
+            "kind": "secondary",
+            "window_minutes": 10080,
+            "resets_at": 1794166267,
+            "first": {
+              "timestamp": "2026-11-02T18:44:53.923Z",
+              "source_line": 565,
+              "used_percent": 59.0
+            },
+            "last": {
+              "timestamp": "2026-11-02T18:54:51.742Z",
+              "source_line": 1224,
+              "used_percent": 60.0
+            }
+          }
+        ]
+      },
+      {
+        "task": "frame_quality",
+        "source_file": "rollout-2026-11-02T14-06-43-01a19da8-1e70-7ad3-ba5d-24491ddec5f9.jsonl",
+        "source_prefix_sha256": "8076df2f28af5e75d00dd3e578a3c2c673bac3b13746f0c26bfe2b2dd47c4a74",
+        "records_before_cutoff": 919,
+        "last_included_line": 919,
+        "observed_model_effort": [
+          {
+            "model": "gpt-6-luna",
+            "effort": "high"
+          }
+        ],
+        "unique_responses": 118,
+        "duplicate_response_ids_skipped": 0,
+        "usage_sum": {
+          "input_tokens": 10238350,
+          "cached_input_tokens": 10109312,
+          "output_tokens": 57947,
+          "reasoning_output_tokens": 23358,
+          "total_tokens": 10296297
+        },
+        "last_thread_snapshot": {
+          "input_tokens": 10238350,
+          "cached_input_tokens": 10109312,
+          "output_tokens": 57947,
+          "reasoning_output_tokens": 23358,
+          "total_tokens": 10296297
+        },
+        "usage_sum_matches_snapshot": true,
+        "completed_turns": [
+          {
+            "source_line": 279,
+            "timestamp": "2026-11-02T19:12:40.718Z",
+            "duration_ms": 357300,
+            "error_code": null,
+            "has_error": false
+          },
+          {
+            "source_line": 412,
+            "timestamp": "2026-11-02T19:15:16.085Z",
+            "duration_ms": 132329,
+            "error_code": null,
+            "has_error": false
+          },
+          {
+            "source_line": 774,
+            "timestamp": "2026-11-02T19:28:17.394Z",
+            "duration_ms": 489432,
+            "error_code": null,
+            "has_error": false
+          },
+          {
+            "source_line": 919,
+            "timestamp": "2026-11-02T19:40:35.332Z",
+            "duration_ms": 265860,
+            "error_code": null,
+            "has_error": false
+          }
+        ],
+        "rate_windows": [
+          {
+            "kind": "primary",
+            "window_minutes": 300,
+            "resets_at": 1793662526,
+            "first": {
+              "timestamp": "2026-11-02T19:06:48.461Z",
+              "source_line": 22,
+              "used_percent": 35.0
+            },
+            "last": {
+              "timestamp": "2026-11-02T19:40:35.308Z",
+              "source_line": 918,
+              "used_percent": 84.0
+            }
+          },
+          {
+            "kind": "secondary",
+            "window_minutes": 10080,
+            "resets_at": 1794166266,
+            "first": {
+              "timestamp": "2026-11-02T19:06:48.461Z",
+              "source_line": 22,
+              "used_percent": 62.0
+            },
+            "last": {
+              "timestamp": "2026-11-02T19:40:35.308Z",
+              "source_line": 918,
+              "used_percent": 70.0
+            }
+          }
+        ]
+      },
+      {
+        "task": "surface_quality",
+        "source_file": "rollout-2026-11-02T14-07-02-01a19da8-6835-7452-8c6c-7a2e6d6d3bc3.jsonl",
+        "source_prefix_sha256": "9451c41ad7f4e42ebbf87ad10123f0254b822c9eec51f5b9d7a2953c48d76f7c",
+        "records_before_cutoff": 676,
+        "last_included_line": 676,
+        "observed_model_effort": [
+          {
+            "model": "gpt-6-luna",
+            "effort": "high"
+          }
+        ],
+        "unique_responses": 89,
+        "duplicate_response_ids_skipped": 0,
+        "usage_sum": {
+          "input_tokens": 5287733,
+          "cached_input_tokens": 5153792,
+          "output_tokens": 30739,
+          "reasoning_output_tokens": 15012,
+          "total_tokens": 5318472
+        },
+        "last_thread_snapshot": {
+          "input_tokens": 5287733,
+          "cached_input_tokens": 5153792,
+          "output_tokens": 30739,
+          "reasoning_output_tokens": 15012,
+          "total_tokens": 5318472
+        },
+        "usage_sum_matches_snapshot": true,
+        "completed_turns": [
+          {
+            "source_line": 379,
+            "timestamp": "2026-11-02T19:12:25.509Z",
+            "duration_ms": 323218,
+            "error_code": null,
+            "has_error": false
+          },
+          {
+            "source_line": 505,
+            "timestamp": "2026-11-02T19:16:05.395Z",
+            "duration_ms": 154345,
+            "error_code": null,
+            "has_error": false
+          },
+          {
+            "source_line": 676,
+            "timestamp": "2026-11-02T19:24:03.679Z",
+            "duration_ms": 224816,
+            "error_code": null,
+            "has_error": false
+          }
+        ],
+        "rate_windows": [
+          {
+            "kind": "primary",
+            "window_minutes": 300,
+            "resets_at": 1793662526,
+            "first": {
+              "timestamp": "2026-11-02T19:07:07.578Z",
+              "source_line": 22,
+              "used_percent": 35.0
+            },
+            "last": {
+              "timestamp": "2026-11-02T19:24:03.647Z",
+              "source_line": 675,
+              "used_percent": 62.0
+            }
+          },
+          {
+            "kind": "secondary",
+            "window_minutes": 10080,
+            "resets_at": 1794166266,
+            "first": {
+              "timestamp": "2026-11-02T19:07:07.578Z",
+              "source_line": 22,
+              "used_percent": 62.0
+            },
+            "last": {
+              "timestamp": "2026-11-02T19:24:03.647Z",
+              "source_line": 675,
+              "used_percent": 67.0
+            }
+          }
+        ]
+      },
+      {
+        "task": "exterior_qa",
+        "source_file": "rollout-2026-11-02T14-07-20-01a19da8-af5a-79c1-835f-887fdf8f5c11.jsonl",
+        "source_prefix_sha256": "90cf737933f7f6f4fefbff94ffb840e147a42560bccaabb4a81fe4f724ace3df",
+        "records_before_cutoff": 2457,
+        "last_included_line": 2457,
+        "observed_model_effort": [
+          {
+            "model": "gpt-6-luna",
+            "effort": "high"
+          }
+        ],
+        "unique_responses": 339,
+        "duplicate_response_ids_skipped": 0,
+        "usage_sum": {
+          "input_tokens": 37879356,
+          "cached_input_tokens": 37402752,
+          "output_tokens": 109006,
+          "reasoning_output_tokens": 51935,
+          "total_tokens": 37988362
+        },
+        "last_thread_snapshot": {
+          "input_tokens": 37879356,
+          "cached_input_tokens": 37402752,
+          "output_tokens": 109006,
+          "reasoning_output_tokens": 51935,
+          "total_tokens": 37988362
+        },
+        "usage_sum_matches_snapshot": true,
+        "completed_turns": [
+          {
+            "source_line": 2457,
+            "timestamp": "2026-11-02T19:48:46.044Z",
+            "duration_ms": 2485411,
+            "error_code": null,
+            "has_error": false
+          }
+        ],
+        "rate_windows": [
+          {
+            "kind": "primary",
+            "window_minutes": 300,
+            "resets_at": 1793662526,
+            "first": {
+              "timestamp": "2026-11-02T19:07:24.853Z",
+              "source_line": 20,
+              "used_percent": 35.0
+            },
+            "last": {
+              "timestamp": "2026-11-02T19:48:46.019Z",
+              "source_line": 2456,
+              "used_percent": 96.0
+            }
+          },
+          {
+            "kind": "secondary",
+            "window_minutes": 10080,
+            "resets_at": 1794166266,
+            "first": {
+              "timestamp": "2026-11-02T19:07:24.853Z",
+              "source_line": 20,
+              "used_percent": 62.0
+            },
+            "last": {
+              "timestamp": "2026-11-02T19:48:46.019Z",
+              "source_line": 2456,
+              "used_percent": 72.0
+            }
+          }
+        ]
+      },
+      {
+        "task": "regional_models",
+        "source_file": "rollout-2026-11-02T19-36-06-01a19ed5-affa-78e0-a3a0-efba38981361.jsonl",
+        "source_prefix_sha256": "8676d68b34321b9a44456af51a4b12fe6a161666a338c9acc62c5b47b3aef27f",
+        "records_before_cutoff": 356,
+        "last_included_line": 356,
+        "observed_model_effort": [
+          {
+            "model": "gpt-6-luna",
+            "effort": "high"
+          }
+        ],
+        "unique_responses": 48,
+        "duplicate_response_ids_skipped": 0,
+        "usage_sum": {
+          "input_tokens": 3470670,
+          "cached_input_tokens": 3386368,
+          "output_tokens": 17338,
+          "reasoning_output_tokens": 4629,
+          "total_tokens": 3488008
+        },
+        "last_thread_snapshot": {
+          "input_tokens": 3470670,
+          "cached_input_tokens": 3386368,
+          "output_tokens": 17338,
+          "reasoning_output_tokens": 4629,
+          "total_tokens": 3488008
+        },
+        "usage_sum_matches_snapshot": true,
+        "completed_turns": [
+          {
+            "source_line": 208,
+            "timestamp": "2026-11-03T00:38:23.474Z",
+            "duration_ms": 136430,
+            "error_code": null,
+            "has_error": false
+          },
+          {
+            "source_line": 317,
+            "timestamp": "2026-11-03T00:42:19.114Z",
+            "duration_ms": 81144,
+            "error_code": null,
+            "has_error": false
+          },
+          {
+            "source_line": 356,
+            "timestamp": "2026-11-03T00:47:41.285Z",
+            "duration_ms": 23869,
+            "error_code": null,
+            "has_error": false
+          }
+        ],
+        "rate_windows": [
+          {
+            "kind": "primary",
+            "window_minutes": 300,
+            "resets_at": 1793682175,
+            "first": {
+              "timestamp": "2026-11-03T00:36:11.698Z",
+              "source_line": 20,
+              "used_percent": 7.0
+            },
+            "last": {
+              "timestamp": "2026-11-03T00:47:41.261Z",
+              "source_line": 355,
+              "used_percent": 20.0
+            }
+          },
+          {
+            "kind": "secondary",
+            "window_minutes": 10080,
+            "resets_at": 1794166266,
+            "first": {
+              "timestamp": "2026-11-03T00:36:11.698Z",
+              "source_line": 20,
+              "used_percent": 74.0
+            },
+            "last": {
+              "timestamp": "2026-11-03T00:47:41.261Z",
+              "source_line": 355,
+              "used_percent": 76.0
+            }
+          }
+        ]
+      },
+      {
+        "task": "expanded_facades",
+        "source_file": "rollout-2026-11-02T19-36-30-01a19ed6-0d12-7751-aa77-a57e2564f6ca.jsonl",
+        "source_prefix_sha256": "454c0b4f7110ca4fba1095d32498ba92ac088c6ddb22f583beed624812ad0bfc",
+        "records_before_cutoff": 2225,
+        "last_included_line": 2225,
+        "observed_model_effort": [
+          {
+            "model": "gpt-6-luna",
+            "effort": "high"
+          }
+        ],
+        "unique_responses": 292,
+        "duplicate_response_ids_skipped": 0,
+        "usage_sum": {
+          "input_tokens": 43717749,
+          "cached_input_tokens": 43426176,
+          "output_tokens": 134597,
+          "reasoning_output_tokens": 71649,
+          "total_tokens": 43852346
+        },
+        "last_thread_snapshot": {
+          "input_tokens": 43717749,
+          "cached_input_tokens": 43426176,
+          "output_tokens": 134597,
+          "reasoning_output_tokens": 71649,
+          "total_tokens": 43852346
+        },
+        "usage_sum_matches_snapshot": true,
+        "completed_turns": [
+          {
+            "source_line": 1150,
+            "timestamp": "2026-11-03T00:57:55.313Z",
+            "duration_ms": 1284419,
+            "error_code": null,
+            "has_error": false
+          },
+          {
+            "source_line": 2010,
+            "timestamp": "2026-11-03T01:21:11.661Z",
+            "duration_ms": 1308848,
+            "error_code": null,
+            "has_error": false
+          },
+          {
+            "source_line": 2120,
+            "timestamp": "2026-11-03T01:28:52.073Z",
+            "duration_ms": 224852,
+            "error_code": null,
+            "has_error": false
+          },
+          {
+            "source_line": 2225,
+            "timestamp": "2026-11-03T01:32:55.769Z",
+            "duration_ms": 157593,
+            "error_code": null,
+            "has_error": false
+          }
+        ],
+        "rate_windows": [
+          {
+            "kind": "primary",
+            "window_minutes": 300,
+            "resets_at": 1793682175,
+            "first": {
+              "timestamp": "2026-11-03T00:36:35.614Z",
+              "source_line": 22,
+              "used_percent": 8.0
+            },
+            "last": {
+              "timestamp": "2026-11-03T01:32:55.736Z",
+              "source_line": 2224,
+              "used_percent": 67.0
+            }
+          },
+          {
+            "kind": "secondary",
+            "window_minutes": 10080,
+            "resets_at": 1794166266,
+            "first": {
+              "timestamp": "2026-11-03T00:36:35.614Z",
+              "source_line": 22,
+              "used_percent": 74.0
+            },
+            "last": {
+              "timestamp": "2026-11-03T01:32:55.736Z",
+              "source_line": 2224,
+              "used_percent": 83.0
+            }
+          },
+          {
+            "kind": "secondary",
+            "window_minutes": 10080,
+            "resets_at": 1794166267,
+            "first": {
+              "timestamp": "2026-11-03T00:39:22.371Z",
+              "source_line": 231,
+              "used_percent": 74.0
+            },
+            "last": {
+              "timestamp": "2026-11-03T00:39:22.371Z",
+              "source_line": 231,
+              "used_percent": 74.0
+            }
+          },
+          {
+            "kind": "primary",
+            "window_minutes": 300,
+            "resets_at": 1793682177,
+            "first": {
+              "timestamp": "2026-11-03T01:26:09.512Z",
+              "source_line": 2066,
+              "used_percent": 61.0
+            },
+            "last": {
+              "timestamp": "2026-11-03T01:26:09.512Z",
+              "source_line": 2066,
+              "used_percent": 61.0
+            }
+          },
+          {
+            "kind": "secondary",
+            "window_minutes": 10080,
+            "resets_at": 1794166268,
+            "first": {
+              "timestamp": "2026-11-03T01:26:09.512Z",
+              "source_line": 2066,
+              "used_percent": 82.0
+            },
+            "last": {
+              "timestamp": "2026-11-03T01:26:09.512Z",
+              "source_line": 2066,
+              "used_percent": 82.0
+            }
+          }
+        ]
+      },
+      {
+        "task": "regional_ui_materials",
+        "source_file": "rollout-2026-11-02T19-36-55-01a19ed6-6dce-7c50-9d8c-68168e6d05e0.jsonl",
+        "source_prefix_sha256": "a94ac31b34b8e18e88a5b74022206512425493ab0ffb40108987bb93eebedc2c",
+        "records_before_cutoff": 799,
+        "last_included_line": 799,
+        "observed_model_effort": [
+          {
+            "model": "gpt-6-luna",
+            "effort": "high"
+          }
+        ],
+        "unique_responses": 106,
+        "duplicate_response_ids_skipped": 0,
+        "usage_sum": {
+          "input_tokens": 8769237,
+          "cached_input_tokens": 8632832,
+          "output_tokens": 41599,
+          "reasoning_output_tokens": 17876,
+          "total_tokens": 8810836
+        },
+        "last_thread_snapshot": {
+          "input_tokens": 8769237,
+          "cached_input_tokens": 8632832,
+          "output_tokens": 41599,
+          "reasoning_output_tokens": 17876,
+          "total_tokens": 8810836
+        },
+        "usage_sum_matches_snapshot": true,
+        "completed_turns": [
+          {
+            "source_line": 255,
+            "timestamp": "2026-11-03T00:39:39.524Z",
+            "duration_ms": 163878,
+            "error_code": null,
+            "has_error": false
+          },
+          {
+            "source_line": 356,
+            "timestamp": "2026-11-03T00:55:30.593Z",
+            "duration_ms": 86892,
+            "error_code": null,
+            "has_error": false
+          },
+          {
+            "source_line": 503,
+            "timestamp": "2026-11-03T01:03:05.676Z",
+            "duration_ms": 414699,
+            "error_code": null,
+            "has_error": false
+          },
+          {
+            "source_line": 617,
+            "timestamp": "2026-11-03T01:08:59.623Z",
+            "duration_ms": 91488,
+            "error_code": null,
+            "has_error": false
+          },
+          {
+            "source_line": 737,
+            "timestamp": "2026-11-03T01:11:25.957Z",
+            "duration_ms": 88540,
+            "error_code": null,
+            "has_error": false
+          },
+          {
+            "source_line": 799,
+            "timestamp": "2026-11-03T01:12:49.863Z",
+            "duration_ms": 38579,
+            "error_code": null,
+            "has_error": false
+          }
+        ],
+        "rate_windows": [
+          {
+            "kind": "primary",
+            "window_minutes": 300,
+            "resets_at": 1793682175,
+            "first": {
+              "timestamp": "2026-11-03T00:37:01.119Z",
+              "source_line": 20,
+              "used_percent": 9.0
+            },
+            "last": {
+              "timestamp": "2026-11-03T01:12:49.834Z",
+              "source_line": 798,
+              "used_percent": 48.0
+            }
+          },
+          {
+            "kind": "secondary",
+            "window_minutes": 10080,
+            "resets_at": 1794166266,
+            "first": {
+              "timestamp": "2026-11-03T00:37:01.119Z",
+              "source_line": 20,
+              "used_percent": 74.0
+            },
+            "last": {
+              "timestamp": "2026-11-03T01:12:49.834Z",
+              "source_line": 798,
+              "used_percent": 80.0
+            }
+          },
+          {
+            "kind": "secondary",
+            "window_minutes": 10080,
+            "resets_at": 1794166267,
+            "first": {
+              "timestamp": "2026-11-03T00:37:04.236Z",
+              "source_line": 27,
+              "used_percent": 74.0
+            },
+            "last": {
+              "timestamp": "2026-11-03T00:38:14.315Z",
+              "source_line": 111,
+              "used_percent": 74.0
+            }
+          }
+        ]
+      },
+      {
+        "task": "world_generator_qa",
+        "source_file": "rollout-2026-11-02T19-39-15-01a19ed8-9119-7bb1-a4f6-f41a3ce484ed.jsonl",
+        "source_prefix_sha256": "3621cccab38a8d1d112328f72305260ce845d314a3a5b0f9b72a330b034b4446",
+        "records_before_cutoff": 3211,
+        "last_included_line": 3211,
+        "observed_model_effort": [
+          {
+            "model": "gpt-6-luna",
+            "effort": "high"
+          }
+        ],
+        "unique_responses": 445,
+        "duplicate_response_ids_skipped": 0,
+        "usage_sum": {
+          "input_tokens": 53761635,
+          "cached_input_tokens": 53357056,
+          "output_tokens": 115213,
+          "reasoning_output_tokens": 51750,
+          "total_tokens": 53876848
+        },
+        "last_thread_snapshot": {
+          "input_tokens": 53761635,
+          "cached_input_tokens": 53357056,
+          "output_tokens": 115213,
+          "reasoning_output_tokens": 51750,
+          "total_tokens": 53876848
+        },
+        "usage_sum_matches_snapshot": true,
+        "completed_turns": [
+          {
+            "source_line": 3211,
+            "timestamp": "2026-11-03T01:44:43.550Z",
+            "duration_ms": 3927690,
+            "error_code": null,
+            "has_error": false
+          }
+        ],
+        "rate_windows": [
+          {
+            "kind": "primary",
+            "window_minutes": 300,
+            "resets_at": 1793682175,
+            "first": {
+              "timestamp": "2026-11-03T00:39:20.259Z",
+              "source_line": 20,
+              "used_percent": 10.0
+            },
+            "last": {
+              "timestamp": "2026-11-03T01:38:54.724Z",
+              "source_line": 3074,
+              "used_percent": 69.0
+            }
+          },
+          {
+            "kind": "secondary",
+            "window_minutes": 10080,
+            "resets_at": 1794166266,
+            "first": {
+              "timestamp": "2026-11-03T00:39:20.259Z",
+              "source_line": 20,
+              "used_percent": 74.0
+            },
+            "last": {
+              "timestamp": "2026-11-03T01:24:28.183Z",
+              "source_line": 2659,
+              "used_percent": 82.0
+            }
+          },
+          {
+            "kind": "primary",
+            "window_minutes": 300,
+            "resets_at": 1793682176,
+            "first": {
+              "timestamp": "2026-11-03T01:08:28.517Z",
+              "source_line": 2047,
+              "used_percent": 42.0
+            },
+            "last": {
+              "timestamp": "2026-11-03T01:44:43.522Z",
+              "source_line": 3210,
+              "used_percent": 73.0
+            }
+          },
+          {
+            "kind": "secondary",
+            "window_minutes": 10080,
+            "resets_at": 1794166268,
+            "first": {
+              "timestamp": "2026-11-03T01:08:28.517Z",
+              "source_line": 2047,
+              "used_percent": 79.0
+            },
+            "last": {
+              "timestamp": "2026-11-03T01:44:43.522Z",
+              "source_line": 3210,
+              "used_percent": 84.0
+            }
+          },
+          {
+            "kind": "secondary",
+            "window_minutes": 10080,
+            "resets_at": 1794166267,
+            "first": {
+              "timestamp": "2026-11-03T01:08:35.826Z",
+              "source_line": 2056,
+              "used_percent": 79.0
+            },
+            "last": {
+              "timestamp": "2026-11-03T01:44:05.476Z",
+              "source_line": 3195,
+              "used_percent": 84.0
+            }
+          },
+          {
+            "kind": "primary",
+            "window_minutes": 300,
+            "resets_at": 1793682177,
+            "first": {
+              "timestamp": "2026-11-03T01:11:12.717Z",
+              "source_line": 2142,
+              "used_percent": 46.0
+            },
+            "last": {
+              "timestamp": "2026-11-03T01:44:34.966Z",
+              "source_line": 3202,
+              "used_percent": 73.0
+            }
+          },
+          {
+            "kind": "primary",
+            "window_minutes": 300,
+            "resets_at": 1793682183,
+            "first": {
+              "timestamp": "2026-11-03T01:14:14.458Z",
+              "source_line": 2232,
+              "used_percent": 49.0
+            },
+            "last": {
+              "timestamp": "2026-11-03T01:14:14.458Z",
+              "source_line": 2232,
+              "used_percent": 49.0
+            }
+          },
+          {
+            "kind": "secondary",
+            "window_minutes": 10080,
+            "resets_at": 1794166275,
+            "first": {
+              "timestamp": "2026-11-03T01:14:14.458Z",
+              "source_line": 2232,
+              "used_percent": 80.0
+            },
+            "last": {
+              "timestamp": "2026-11-03T01:14:14.458Z",
+              "source_line": 2232,
+              "used_percent": 80.0
+            }
+          },
+          {
+            "kind": "primary",
+            "window_minutes": 300,
+            "resets_at": 1793682178,
+            "first": {
+              "timestamp": "2026-11-03T01:14:55.118Z",
+              "source_line": 2263,
+              "used_percent": 50.0
+            },
+            "last": {
+              "timestamp": "2026-11-03T01:14:55.118Z",
+              "source_line": 2263,
+              "used_percent": 50.0
+            }
+          },
+          {
+            "kind": "secondary",
+            "window_minutes": 10080,
+            "resets_at": 1794166269,
+            "first": {
+              "timestamp": "2026-11-03T01:14:55.118Z",
+              "source_line": 2263,
+              "used_percent": 80.0
+            },
+            "last": {
+              "timestamp": "2026-11-03T01:44:34.966Z",
+              "source_line": 3202,
+              "used_percent": 84.0
+            }
+          }
+        ]
+      },
+      {
+        "task": "traditions_research",
+        "source_file": "rollout-2026-11-02T21-08-52-01a19f2a-9b17-78b1-aa0b-f02d56cc2882.jsonl",
+        "source_prefix_sha256": "fd1122f091585a2fc9f886561652137ed5b89f0f68499474f2d518b4d8d2fcea",
+        "records_before_cutoff": 777,
+        "last_included_line": 777,
+        "observed_model_effort": [
+          {
+            "model": "gpt-6-luna",
+            "effort": "high"
+          }
+        ],
+        "unique_responses": 96,
+        "duplicate_response_ids_skipped": 0,
+        "usage_sum": {
+          "input_tokens": 13215145,
+          "cached_input_tokens": 12942208,
+          "output_tokens": 62045,
+          "reasoning_output_tokens": 32228,
+          "total_tokens": 13277190
+        },
+        "last_thread_snapshot": {
+          "input_tokens": 13215145,
+          "cached_input_tokens": 12942208,
+          "output_tokens": 62045,
+          "reasoning_output_tokens": 32228,
+          "total_tokens": 13277190
+        },
+        "usage_sum_matches_snapshot": true,
+        "completed_turns": [
+          {
+            "source_line": 141,
+            "timestamp": "2026-11-03T02:10:35.305Z",
+            "duration_ms": 103065,
+            "error_code": null,
+            "has_error": false
+          },
+          {
+            "source_line": 395,
+            "timestamp": "2026-11-03T02:19:36.224Z",
+            "duration_ms": 255624,
+            "error_code": null,
+            "has_error": false
+          },
+          {
+            "source_line": 574,
+            "timestamp": "2026-11-03T02:23:02.288Z",
+            "duration_ms": 170623,
+            "error_code": null,
+            "has_error": false
+          },
+          {
+            "source_line": 629,
+            "timestamp": "2026-11-03T02:25:14.620Z",
+            "duration_ms": 53844,
+            "error_code": null,
+            "has_error": false
+          },
+          {
+            "source_line": 777,
+            "timestamp": "2026-11-03T02:47:02.282Z",
+            "duration_ms": 183696,
+            "error_code": null,
+            "has_error": false
+          }
+        ],
+        "rate_windows": [
+          {
+            "kind": "primary",
+            "window_minutes": 300,
+            "resets_at": 1793682175,
+            "first": {
+              "timestamp": "2026-11-03T02:08:56.919Z",
+              "source_line": 22,
+              "used_percent": 77.0
+            },
+            "last": {
+              "timestamp": "2026-11-03T02:25:14.589Z",
+              "source_line": 628,
+              "used_percent": 90.0
+            }
+          },
+          {
+            "kind": "secondary",
+            "window_minutes": 10080,
+            "resets_at": 1794166266,
+            "first": {
+              "timestamp": "2026-11-03T02:08:56.919Z",
+              "source_line": 22,
+              "used_percent": 85.0
+            },
+            "last": {
+              "timestamp": "2026-11-03T02:25:14.589Z",
+              "source_line": 628,
+              "used_percent": 87.0
+            }
+          },
+          {
+            "kind": "primary",
+            "window_minutes": 300,
+            "resets_at": 1793691419,
+            "first": {
+              "timestamp": "2026-11-03T02:44:20.792Z",
+              "source_line": 648,
+              "used_percent": 5.0
+            },
+            "last": {
+              "timestamp": "2026-11-03T02:47:02.163Z",
+              "source_line": 776,
+              "used_percent": 8.0
+            }
+          },
+          {
+            "kind": "secondary",
+            "window_minutes": 10080,
+            "resets_at": 1794278219,
+            "first": {
+              "timestamp": "2026-11-03T02:44:20.792Z",
+              "source_line": 648,
+              "used_percent": 1.0
+            },
+            "last": {
+              "timestamp": "2026-11-03T02:47:02.163Z",
+              "source_line": 776,
+              "used_percent": 1.0
+            }
+          },
+          {
+            "kind": "primary",
+            "window_minutes": 300,
+            "resets_at": 1793691418,
+            "first": {
+              "timestamp": "2026-11-03T02:44:23.041Z",
+              "source_line": 655,
+              "used_percent": 6.0
+            },
+            "last": {
+              "timestamp": "2026-11-03T02:46:52.331Z",
+              "source_line": 758,
+              "used_percent": 8.0
+            }
+          },
+          {
+            "kind": "secondary",
+            "window_minutes": 10080,
+            "resets_at": 1794278218,
+            "first": {
+              "timestamp": "2026-11-03T02:44:23.041Z",
+              "source_line": 655,
+              "used_percent": 1.0
+            },
+            "last": {
+              "timestamp": "2026-11-03T02:46:52.331Z",
+              "source_line": 758,
+              "used_percent": 1.0
+            }
+          }
+        ]
+      },
+      {
+        "task": "rural_highland_language",
+        "source_file": "rollout-2026-11-02T21-14-37-01a19f2f-dfca-7be2-9201-d4f00cc839a9.jsonl",
+        "source_prefix_sha256": "22b72db30db49dccad09c892ebe89fa3dc7180d98c918691999c08db6138e365",
+        "records_before_cutoff": 634,
+        "last_included_line": 634,
+        "observed_model_effort": [
+          {
+            "model": "gpt-6-luna",
+            "effort": "high"
+          }
+        ],
+        "unique_responses": 83,
+        "duplicate_response_ids_skipped": 0,
+        "usage_sum": {
+          "input_tokens": 7509568,
+          "cached_input_tokens": 7378944,
+          "output_tokens": 42614,
+          "reasoning_output_tokens": 19505,
+          "total_tokens": 7552182
+        },
+        "last_thread_snapshot": {
+          "input_tokens": 7509568,
+          "cached_input_tokens": 7378944,
+          "output_tokens": 42614,
+          "reasoning_output_tokens": 19505,
+          "total_tokens": 7552182
+        },
+        "usage_sum_matches_snapshot": true,
+        "completed_turns": [
+          {
+            "source_line": 289,
+            "timestamp": "2026-11-03T02:18:08.044Z",
+            "duration_ms": 210518,
+            "error_code": null,
+            "has_error": false
+          },
+          {
+            "source_line": 350,
+            "timestamp": "2026-11-03T02:25:19.543Z",
+            "duration_ms": 86573,
+            "error_code": null,
+            "has_error": false
+          },
+          {
+            "source_line": 634,
+            "timestamp": "2026-11-03T02:34:22.848Z",
+            "duration_ms": 433214,
+            "error_code": null,
+            "has_error": false
+          }
+        ],
+        "rate_windows": [
+          {
+            "kind": "primary",
+            "window_minutes": 300,
+            "resets_at": 1793682175,
+            "first": {
+              "timestamp": "2026-11-03T02:14:44.079Z",
+              "source_line": 22,
+              "used_percent": 79.0
+            },
+            "last": {
+              "timestamp": "2026-11-03T02:34:22.690Z",
+              "source_line": 633,
+              "used_percent": 96.0
+            }
+          },
+          {
+            "kind": "secondary",
+            "window_minutes": 10080,
+            "resets_at": 1794166266,
+            "first": {
+              "timestamp": "2026-11-03T02:14:44.079Z",
+              "source_line": 22,
+              "used_percent": 85.0
+            },
+            "last": {
+              "timestamp": "2026-11-03T02:34:22.690Z",
+              "source_line": 633,
+              "used_percent": 88.0
+            }
+          }
+        ]
+      },
+      {
+        "task": "mire_language",
+        "source_file": "rollout-2026-11-02T21-14-58-01a19f30-3097-7ea2-bab2-743c7e7614e4.jsonl",
+        "source_prefix_sha256": "4991aa7ade5b174547f0edc67de70ed538a57fbd2e1b11009ffe7486f8dcba27",
+        "records_before_cutoff": 535,
+        "last_included_line": 535,
+        "observed_model_effort": [
+          {
+            "model": "gpt-6-luna",
+            "effort": "high"
+          }
+        ],
+        "unique_responses": 70,
+        "duplicate_response_ids_skipped": 0,
+        "usage_sum": {
+          "input_tokens": 4294518,
+          "cached_input_tokens": 4218112,
+          "output_tokens": 25690,
+          "reasoning_output_tokens": 13312,
+          "total_tokens": 4320208
+        },
+        "last_thread_snapshot": {
+          "input_tokens": 4294518,
+          "cached_input_tokens": 4218112,
+          "output_tokens": 25690,
+          "reasoning_output_tokens": 13312,
+          "total_tokens": 4320208
+        },
+        "usage_sum_matches_snapshot": true,
+        "completed_turns": [
+          {
+            "source_line": 108,
+            "timestamp": "2026-11-03T02:16:14.822Z",
+            "duration_ms": 76657,
+            "error_code": null,
+            "has_error": false
+          },
+          {
+            "source_line": 478,
+            "timestamp": "2026-11-03T02:26:50.322Z",
+            "duration_ms": 610124,
+            "error_code": null,
+            "has_error": false
+          },
+          {
+            "source_line": 535,
+            "timestamp": "2026-11-03T02:36:16.678Z",
+            "duration_ms": 69586,
+            "error_code": null,
+            "has_error": false
+          }
+        ],
+        "rate_windows": [
+          {
+            "kind": "primary",
+            "window_minutes": 300,
+            "resets_at": 1793682175,
+            "first": {
+              "timestamp": "2026-11-03T02:15:03.568Z",
+              "source_line": 22,
+              "used_percent": 79.0
+            },
+            "last": {
+              "timestamp": "2026-11-03T02:36:16.567Z",
+              "source_line": 534,
+              "used_percent": 98.0
+            }
+          },
+          {
+            "kind": "secondary",
+            "window_minutes": 10080,
+            "resets_at": 1794166266,
+            "first": {
+              "timestamp": "2026-11-03T02:15:03.568Z",
+              "source_line": 22,
+              "used_percent": 85.0
+            },
+            "last": {
+              "timestamp": "2026-11-03T02:36:16.567Z",
+              "source_line": 534,
+              "used_percent": 88.0
+            }
+          },
+          {
+            "kind": "secondary",
+            "window_minutes": 10080,
+            "resets_at": 1794166267,
+            "first": {
+              "timestamp": "2026-11-03T02:35:30.297Z",
+              "source_line": 507,
+              "used_percent": 88.0
+            },
+            "last": {
+              "timestamp": "2026-11-03T02:35:30.297Z",
+              "source_line": 507,
+              "used_percent": 88.0
+            }
+          }
+        ]
+      },
+      {
+        "task": "world_qa",
+        "source_file": "rollout-2026-11-02T21-26-17-01a19f3a-8f04-7933-b10e-77146b7848ed.jsonl",
+        "source_prefix_sha256": "ce24c58700ef1f118233db48312ba966f80133fe7730ae107e0adec06bd939f8",
+        "records_before_cutoff": 1751,
+        "last_included_line": 1751,
+        "observed_model_effort": [
+          {
+            "model": "gpt-6-luna",
+            "effort": "high"
+          }
+        ],
+        "unique_responses": 248,
+        "duplicate_response_ids_skipped": 0,
+        "usage_sum": {
+          "input_tokens": 34183728,
+          "cached_input_tokens": 33612928,
+          "output_tokens": 81276,
+          "reasoning_output_tokens": 35306,
+          "total_tokens": 34265004
+        },
+        "last_thread_snapshot": {
+          "input_tokens": 34183728,
+          "cached_input_tokens": 33612928,
+          "output_tokens": 81276,
+          "reasoning_output_tokens": 35306,
+          "total_tokens": 34265004
+        },
+        "usage_sum_matches_snapshot": true,
+        "completed_turns": [
+          {
+            "source_line": 1565,
+            "timestamp": "2026-11-03T03:25:55.289Z",
+            "duration_ms": 3577513,
+            "error_code": null,
+            "has_error": false
+          },
+          {
+            "source_line": 1751,
+            "timestamp": "2026-11-03T03:32:18.736Z",
+            "duration_ms": 259777,
+            "error_code": null,
+            "has_error": false
+          }
+        ],
+        "rate_windows": [
+          {
+            "kind": "primary",
+            "window_minutes": 300,
+            "resets_at": 1793682175,
+            "first": {
+              "timestamp": "2026-11-03T02:26:22.633Z",
+              "source_line": 20,
+              "used_percent": 90.0
+            },
+            "last": {
+              "timestamp": "2026-11-03T02:36:58.598Z",
+              "source_line": 516,
+              "used_percent": 98.0
+            }
+          },
+          {
+            "kind": "secondary",
+            "window_minutes": 10080,
+            "resets_at": 1794166266,
+            "first": {
+              "timestamp": "2026-11-03T02:26:22.633Z",
+              "source_line": 20,
+              "used_percent": 87.0
+            },
+            "last": {
+              "timestamp": "2026-11-03T02:36:58.598Z",
+              "source_line": 516,
+              "used_percent": 88.0
+            }
+          },
+          {
+            "kind": "secondary",
+            "window_minutes": 10080,
+            "resets_at": 1794166267,
+            "first": {
+              "timestamp": "2026-11-03T02:28:03.916Z",
+              "source_line": 146,
+              "used_percent": 87.0
+            },
+            "last": {
+              "timestamp": "2026-11-03T02:28:03.916Z",
+              "source_line": 146,
+              "used_percent": 87.0
+            }
+          },
+          {
+            "kind": "primary",
+            "window_minutes": 300,
+            "resets_at": 1793691418,
+            "first": {
+              "timestamp": "2026-11-03T02:37:03.054Z",
+              "source_line": 523,
+              "used_percent": 0.0
+            },
+            "last": {
+              "timestamp": "2026-11-03T03:32:18.713Z",
+              "source_line": 1750,
+              "used_percent": 32.0
+            }
+          },
+          {
+            "kind": "secondary",
+            "window_minutes": 10080,
+            "resets_at": 1794278218,
+            "first": {
+              "timestamp": "2026-11-03T02:37:03.054Z",
+              "source_line": 523,
+              "used_percent": 0.0
+            },
+            "last": {
+              "timestamp": "2026-11-03T03:32:18.713Z",
+              "source_line": 1750,
+              "used_percent": 5.0
+            }
+          },
+          {
+            "kind": "primary",
+            "window_minutes": 300,
+            "resets_at": 1793691419,
+            "first": {
+              "timestamp": "2026-11-03T02:37:42.044Z",
+              "source_line": 563,
+              "used_percent": 1.0
+            },
+            "last": {
+              "timestamp": "2026-11-03T03:32:15.439Z",
+              "source_line": 1744,
+              "used_percent": 32.0
+            }
+          },
+          {
+            "kind": "secondary",
+            "window_minutes": 10080,
+            "resets_at": 1794278219,
+            "first": {
+              "timestamp": "2026-11-03T02:37:42.044Z",
+              "source_line": 563,
+              "used_percent": 0.0
+            },
+            "last": {
+              "timestamp": "2026-11-03T03:32:15.439Z",
+              "source_line": 1744,
+              "used_percent": 5.0
+            }
+          },
+          {
+            "kind": "primary",
+            "window_minutes": 300,
+            "resets_at": 1793691420,
+            "first": {
+              "timestamp": "2026-11-03T03:28:46.248Z",
+              "source_line": 1578,
+              "used_percent": 26.0
+            },
+            "last": {
+              "timestamp": "2026-11-03T03:29:09.485Z",
+              "source_line": 1590,
+              "used_percent": 26.0
+            }
+          },
+          {
+            "kind": "secondary",
+            "window_minutes": 10080,
+            "resets_at": 1794278220,
+            "first": {
+              "timestamp": "2026-11-03T03:28:46.248Z",
+              "source_line": 1578,
+              "used_percent": 4.0
+            },
+            "last": {
+              "timestamp": "2026-11-03T03:29:09.485Z",
+              "source_line": 1590,
+              "used_percent": 4.0
+            }
+          },
+          {
+            "kind": "primary",
+            "window_minutes": 300,
+            "resets_at": 1793691421,
+            "first": {
+              "timestamp": "2026-11-03T03:28:58.327Z",
+              "source_line": 1585,
+              "used_percent": 26.0
+            },
+            "last": {
+              "timestamp": "2026-11-03T03:30:04.631Z",
+              "source_line": 1610,
+              "used_percent": 26.0
+            }
+          },
+          {
+            "kind": "secondary",
+            "window_minutes": 10080,
+            "resets_at": 1794278221,
+            "first": {
+              "timestamp": "2026-11-03T03:28:58.327Z",
+              "source_line": 1585,
+              "used_percent": 4.0
+            },
+            "last": {
+              "timestamp": "2026-11-03T03:30:04.631Z",
+              "source_line": 1610,
+              "used_percent": 4.0
+            }
+          }
+        ]
+      },
+      {
+        "task": "blind_architecture_review",
+        "source_file": "rollout-2026-11-02T22-00-21-01a19f59-bf57-74d1-8284-9c2409338850.jsonl",
+        "source_prefix_sha256": "c47daa95fa765cea59f5108ec783047972d007acc54115fadee48b67b8e28b2e",
+        "records_before_cutoff": 55,
+        "last_included_line": 55,
+        "observed_model_effort": [
+          {
+            "model": "gpt-6-luna",
+            "effort": "high"
+          }
+        ],
+        "unique_responses": 6,
+        "duplicate_response_ids_skipped": 0,
+        "usage_sum": {
+          "input_tokens": 166385,
+          "cached_input_tokens": 152448,
+          "output_tokens": 1551,
+          "reasoning_output_tokens": 609,
+          "total_tokens": 167936
+        },
+        "last_thread_snapshot": {
+          "input_tokens": 166385,
+          "cached_input_tokens": 152448,
+          "output_tokens": 1551,
+          "reasoning_output_tokens": 609,
+          "total_tokens": 167936
+        },
+        "usage_sum_matches_snapshot": true,
+        "completed_turns": [
+          {
+            "source_line": 32,
+            "timestamp": "2026-11-03T03:00:36.440Z",
+            "duration_ms": 14769,
+            "error_code": null,
+            "has_error": false
+          },
+          {
+            "source_line": 55,
+            "timestamp": "2026-11-03T03:15:33.690Z",
+            "duration_ms": 10367,
+            "error_code": null,
+            "has_error": false
+          }
+        ],
+        "rate_windows": [
+          {
+            "kind": "primary",
+            "window_minutes": 300,
+            "resets_at": 1793691418,
+            "first": {
+              "timestamp": "2026-11-03T03:00:25.142Z",
+              "source_line": 20,
+              "used_percent": 13.0
+            },
+            "last": {
+              "timestamp": "2026-11-03T03:15:33.669Z",
+              "source_line": 54,
+              "used_percent": 21.0
+            }
+          },
+          {
+            "kind": "secondary",
+            "window_minutes": 10080,
+            "resets_at": 1794278218,
+            "first": {
+              "timestamp": "2026-11-03T03:00:25.142Z",
+              "source_line": 20,
+              "used_percent": 2.0
+            },
+            "last": {
+              "timestamp": "2026-11-03T03:15:33.669Z",
+              "source_line": 54,
+              "used_percent": 3.0
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "not_measured": {
+    "api_dollars": null,
+    "task_attributable_subscription_percent": null,
+    "human_attention_minutes": null,
+    "active_model_compute_wall_seconds": null,
+    "controlled_model_comparison": null
+  },
+  "observed_scheduling_examples": [
+    {
+      "root_source_lines": [
+        4680,
+        4687
+      ],
+      "event": "Trailing blank-line cleanup triggered final package rebuild, both native install runs and full geometry replay."
+    },
+    {
+      "root_source_lines": [
+        4711,
+        4718,
+        4729,
+        4742,
+        4749,
+        4755,
+        4761
+      ],
+      "event": "Short waits on still-running replay; no measured counterfactual saving."
+    }
+  ]
+}

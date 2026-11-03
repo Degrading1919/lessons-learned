@@ -11,7 +11,9 @@ https://github.com/Degrading1919/Caelmor-Repo
 
 There is extensive Codex/AI-shaped commit and PR history, including recent economy architecture work and older runtime/combat changes.
 
-The current audit has enough artifact evidence to know it is relevant, but the retrieved ChatGPT history does not yet provide a clean prompt-before / reaction-after chain for the most important PRs. Treat model conclusions as provisional until those conversations are correlated.
+PR #85 now has a [correlated development case](../models/codex/cases/2026-11-02-caelmor-procedural-architecture.md): original/revised prompts, actual Sol/Luna labels, commits, tests/renders, direct owner corrections and sanitized session counters. This closes that specific chain, not the broader project history.
+
+Still missing: final owner art acceptance, a matched model/effort/harness comparison, task-attributable quota delta, API dollars, measured human attention and target-engine validation (outside this retrospective's scope). Wealth readability and regional authenticity remain partially resolved. Other economy/runtime/combat PRs still lack clean prompt-before / reaction-after correlation; keep their model conclusions provisional.
 
 ### Mystery Pallet Simulator
 
