@@ -66,6 +66,8 @@ These benchmarks **disagree**. This is useful: human-pleasing prose, short-story
 | **Claude Fable 5.1 High** | Complex intertwined quests, region chronologies, revision under conflicting canon | Strong constrained/longform metrics; high cost and availability dependent | **High-priority narrative-structure challenger** |
 | **GPT-6 Astra High** | Original independent lore author / prose and choice critic | Leads EQ-Bench v3; much weaker human Arena placement, high quota cost; risk of purple prose or unsolicited lore | **Independent style challenger** |
 | **Claude Opus 5 or 4.6** | Literary benchmark/control; especially continuity with favored historical Claude voice | Strong longform or human taste; older API/surface availability and cost vary | **Optional stability/control arm** |
+| **Meta Muse Wonder Max** | Optional cross-provider literary challenger | [Officially released October 12](https://research.meta.ai/blog/muse-wonder); human Arena creative-writing snapshot ~1492 ±13, below Argon/Opus but a meaningful competitor; not owner-validated for canon work | **Optional independent prose challenger** |
+| **Gemini 4 Carbon High** | Restricted-access exploratory challenger | [Announced October 28](https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-carbon/), selectively available to trusted cyber partners; creative-writing Arena ~1514 ±20 **preliminary** and overlapping leaders; no broad developer rollout yet | **Watchlist, not default** |
 | **Kimi K3.1 Pro** | Exploratory independent story ideation/prose | [Officially available](https://www.kimi.com/en/blog/kimi-k3-1-pro); strong recent model-judged creative result but limited Caelmor-specific/human preference evidence | **Optional dark horse** |
 | **Claude Sonnet 5.5 Medium/High** | Economical dialogue variants, quest-log copy, polish after director approval | Strong general implementation; lower Arena prose preference; narrative causality/voice must be checked | **Production worker only if pilot passes** |
 | **Claude Haiku 5.5** | Extract approved facts/flags, route materials, produce candidate metadata | Very cheap under 100k-token prompts; not a final writer/canon authority | **Utility, not primary author** |
@@ -126,3 +128,5 @@ Run the [existing narrative evaluation](CAELMOR_NARRATIVE_EVAL_PROTOCOL.md) with
 - [Constrained short-story benchmark](https://github.com/lechmazur/writing)
 - [Gemini Argon worldwide release](https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-argon/)
 - [Haiku 5.5 release](https://www.anthropic.com/claude-haiku-5-5)
+- [Meta Muse Wonder release](https://research.meta.ai/blog/muse-wonder)
+- [Gemini 4 Carbon announcement](https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-carbon/)
