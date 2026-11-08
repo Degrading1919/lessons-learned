@@ -132,6 +132,10 @@ For the current post-September releases, see the [2026-10-04 new-model release u
 
 [2026-11-08 Opus 5.5 behavior controversy and Caelmor narrative alternatives](research/writing/2026-11-08-opus-5-5-regression-and-caelmor-options.md) rechecks a possible Claude Code/serving change, tests the nerf allegation against longitudinal evidence, and updates the Caelmor prose and quest-writing candidate pool. It is a **public prior**, not a claim of a confirmed model nerf or owner-performed bake-off. The [Caelmor narrative evaluation protocol](research/writing/CAELMOR_NARRATIVE_EVAL_PROTOCOL.md) is the source for matched creative comparisons.
 
+## Current creative-writing subscription research
+
+[Gemini vs Claude subscription yield and affordable Caelmor writing — 2026-11-08](research/writing/2026-11-08-gemini-vs-claude-subscription-and-creative-efficiency.md) compares current plan limits, real user five-hour/weekly reports, lower-priced human creative-writing model scores, and Google Drive-backed Gem lore grounding. It is researched public evidence, not an owner-run head-to-head.
+
 ## Harness efficiency research
 
 Model choice and harness choice are tracked separately.
