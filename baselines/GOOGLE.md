@@ -20,7 +20,7 @@ Announced September 30.
 
 Argon **became globally accessible October 13, 2026** to eligible Google AI Pro/Ultra Gemini subscribers and through paid API/AI Studio. The September 30 restricted release described below is historical. The older watchlist-only conclusion is superseded.
 
-Google initially rolled it out to trusted cyber defenders and selected testers through Fairwind and says broader release will begin with paid API customers and Google AI Ultra subscribers.
+Historically, Google first limited Argon to trusted cyber defenders and selected testers through Fairwind before the broader October 13 paid-app/API launch.
 
 Its public user evidence has grown since the original restricted phase. For narrative work, the relevant new evidence is Arena's blinded human creative-writing voting; this is not a Caelmor canon-fidelity test.
 
@@ -72,7 +72,7 @@ There is no mature quality consensus yet.
 
 The strongest early-release reaction was access frustration, but **that no longer describes current Argon availability**. A November Arena creative-writing snapshot puts Argon High and Opus 5.5 High near the top with overlapping uncertainty. That establishes a credible public *writing challenger*, not a clear winner for canon-heavy quests.
 
-Users criticize the restricted Fairwind/Ultra rollout and are skeptical of launch benchmarks until normal developers can test it.
+Earlier users criticized the restricted Fairwind rollout; the current question is practical writing and task quality now that eligible users can test Argon.
 
 Limited first-impression discussion is mixed: impressive demos, but some users see agent/coding behavior closer to GPT-6.1 Sol/Sonnet 5.5 than a runaway new leader.
 
@@ -80,7 +80,7 @@ Limited first-impression discussion is mixed: impressive demos, but some users s
 
 **Accessible, high-priority independent lore/dialogue challenger.** Do not make it the Caelmor default until identical source-bundle tests and director preference confirm its performance.
 
-When accessible, priority owner tests:
+Current priority owner tests:
 
 1. Argon vs GPT-6.1 Sol on long-horizon coding.
 2. Argon vs Opus/Sonnet 5.5 on terminal/agent work.
@@ -98,7 +98,7 @@ Its role is unchanged:
 - debugging/second opinion;
 - high-volume processing with supervision.
 
-Argon does not obsolete 3.8 Flash until Argon is actually broadly accessible and its economics/quality are validated.
+Argon is now broadly accessible, but it does not automatically displace 3.8 Flash's cheaper high-volume worker role; compare economics and accepted results.
 
 
 ## Gemini 4 Carbon — October 28, 2026
