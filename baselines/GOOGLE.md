@@ -108,3 +108,8 @@ Google announced Carbon as a stronger frontier model with limited cyber-defense/
 ## November 8 narrative update
 
 [Caelmor narrative and Opus behavior evidence](../research/writing/2026-11-08-opus-5-5-regression-and-caelmor-options.md) recommends blind testing Argon High against the incumbent Opus High/XHigh and an independent style challenger, with source-canon accuracy a hard acceptance gate. [Official October 13 global release](https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-argon/).
+
+
+## November 8: Flash prose economics and subscription usage
+
+[Gemini vs Claude subscription yield and affordable Caelmor narrative](../research/writing/2026-11-08-gemini-vs-claude-subscription-and-creative-efficiency.md) documents Gemini 3.8 Flash High's strong human Arena creative-writing performance at $0.75/$3.75 per million API input/output tokens, the lower Flash 3.5 and Flash-Lite alternatives, the higher canon-risk of lightly grounded writing, and the *separate* Gemini app vs Antigravity subscription pools. Favor a Google AI Pro trial before assuming Ultra is required or that Google categorically has longer coding sessions than Claude.
