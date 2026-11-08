@@ -1,6 +1,6 @@
 # Meta Baseline
 
-_Last researched: 2026-09-22_
+_Last researched: 2026-11-08_
 
 Meta currently has two very different model stories:
 
@@ -8,6 +8,10 @@ Meta currently has two very different model stories:
 2. **Llama 4 Scout/Maverick** — older open-weight multimodal models whose intelligence has fallen far behind the 2026 frontier.
 
 Do not conflate them.
+
+## Current narrative alternative: Muse Wonder
+
+Meta [released Muse Wonder and Muse Wonder Full on October 12, 2026](https://research.meta.ai/blog/muse-wonder). Muse Wonder is accessible on Meta Model API and Muse Code. In the November human-voted Arena Creative Writing results, **Muse Wonder Max** appears among the leading alternatives, below the overlapping Argon/Opus 5.5 front-runners. This makes it worth a *second-stage prose trial*, not a confirmed Caelmor narrator or canon authority. See the [November 8 narrative baseline](../research/writing/2026-11-08-opus-5-5-regression-and-caelmor-options.md). Avoid treating Muse Wonder as the same model as earlier Muse Spark generations.
 
 ## Current routing summary
 
