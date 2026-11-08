@@ -88,3 +88,12 @@ Current public hypothesis:
 Avoid treating Sonnet 5.5 Max as the economical worker setting; independent testing shows extreme token use there.
 
 See [2026-10-04 model release update](../../research/models/2026-10-04-new-model-release-update.md).
+
+
+## November 8, 2026 — Opus 5.5 behavior investigation
+
+The [current research review](../../research/writing/2026-11-08-opus-5-5-regression-and-caelmor-options.md) documents early-November complaints of shorter apparent reasoning, repeated decisions, and incomplete tool tasks. An observational Claude Code session analysis suggests a Nov 3 behavior shift, but **does not prove Opus 5.5 weights or Caelmor narrative quality changed**; independent longitudinal general-accuracy data did not detect a broad earlier decline.
+
+A change in CLI tool use, thinking display, default effort, caching, or account experiment must be distinguished from a model-quality change. In particular, the API's unconfigured Opus 5.5 default effort is Medium; do not assume High/XHigh silently. Keep exact model, harness, session age, and effort in any Caelmor writing comparison.
+
+Narrative work should follow the [canon-gated Caelmor evaluation](../../research/writing/CAELMOR_NARRATIVE_EVAL_PROTOCOL.md): fresh Opus 5.5 High/XHigh diagnostic, independent Gemini 4 Argon/Astra/Fable author candidates, and Creative Director blind preference. This is public research, not observed personal model regression.
