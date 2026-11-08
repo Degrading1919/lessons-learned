@@ -1,11 +1,16 @@
 # Moonshot / Kimi Baseline
 
-_Last researched: 2026-09-22_
+_Last researched: 2026-11-08_
+
+## Current Kimi release: K3.1 Pro
+
+**Kimi K3.1 Pro** is [available via Kimi.com, Kimi Work, Kimi Code and API](https://www.kimi.com/en/blog/kimi-k3-1-pro). Moonshot also announced a Highspeed serving variant and open weights. It is worth a **limited independent ideation/prose trial** because recent model-judged creative-writing results are competitive, but there is not yet sufficient human Caelmor-like narrative preference evidence to promote it over Opus 5.5 or Gemini Argon. K3.1 Pro's stronger coding/agentic claims do not themselves prove improved fiction.
 
 ## Current routing summary
 
 | Model | Baseline role | Strong suits | Main weaknesses / cautions |
 |---|---|---|---|
+| Kimi K3.1 Pro | Available frontier open-weight candidate; optional narrative/ideation challenger | large context and provider-reported improved coding/agent performance; possible creative-writing utility | evidence on long-running lore canon and player dialogue remains sparse |
 | Kimi K3 | Frontier-adjacent open-weight planner/agent/knowledge model | Excellent open-weight intelligence, strong agentic knowledge work, 1M context, vision, coding, open weights | Huge model, slow/expensive to self-host, expensive/slow per task, harness-sensitive thinking history, can be excessively proactive |
 | Kimi K2.7 Code | Coding-focused open-weight implementer | Strong long-horizon coding, MCP/agent improvements, more concise than prior K2 generation | General intelligence well below K3/frontier closed models; slower than average; community reports mixed execution consistency |
 
