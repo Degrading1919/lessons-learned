@@ -128,6 +128,10 @@ For Anthropic, see the [2026-09-24 Anthropic Reddit/efficiency field guide](rese
 
 For the current post-September releases, see the [2026-10-04 new-model release update](research/models/2026-10-04-new-model-release-update.md), covering GPT-6.1 Sol, Claude Sonnet 5.5, and Gemini 4 Argon, plus unreleased-model watchlist checks.
 
+## Current narrative-writing / Opus 5.5 research
+
+[2026-11-08 Opus 5.5 behavior controversy and Caelmor narrative alternatives](research/writing/2026-11-08-opus-5-5-regression-and-caelmor-options.md) rechecks a possible Claude Code/serving change, tests the nerf allegation against longitudinal evidence, and updates the Caelmor prose and quest-writing candidate pool. It is a **public prior**, not a claim of a confirmed model nerf or owner-performed bake-off. The [Caelmor narrative evaluation protocol](research/writing/CAELMOR_NARRATIVE_EVAL_PROTOCOL.md) is the source for matched creative comparisons.
+
 ## Harness efficiency research
 
 Model choice and harness choice are tracked separately.
