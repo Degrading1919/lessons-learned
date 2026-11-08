@@ -67,3 +67,12 @@ Current research hypothesis:
 - **Opus 5:** avoid as normal author unless a specific workflow proves otherwise.
 
 Do not rewrite historical Opus 4.8/Fable cases as conclusions about Opus 5.5.
+
+
+## Current public narrative and Opus 5.5 behavior prior — 2026-11-08
+
+The owner currently uses Opus for Caelmor lore/quest work. Public reports of a November 3 Claude Code behavior change are credible enough to test but **do not establish altered Opus weights or a Caelmor prose regression**. A frozen longitudinal general-accuracy project does not find a broad earlier decline; the post-November-3 window is not yet complete.
+
+[November 8 evidence and prose alternatives](../../research/writing/2026-11-08-opus-5-5-regression-and-caelmor-options.md) identifies Opus 5.5 High/XHigh, now-available Gemini 4 Argon High, GPT-6 Astra High and Fable 5.1 High as the first narrative candidates. Haiku 5.5 is an extraction/triage worker, not a literary author.
+
+The owner must blind-review actual canon-frozen Caelmor outputs before promotion; do not convert Reddit sentiment or leaderboard ranks into an invented personal preference case.
