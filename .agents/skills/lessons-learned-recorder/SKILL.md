@@ -174,6 +174,22 @@ When using Reddit, Hacker News, forums, or social posts:
 
 A high-engagement complaint two days after launch is evidence that a failure mode deserves testing. It is not proof that the model is generally bad.
 
+### Model-drift / apparent-nerf rule
+
+When users report a model becoming "nerfed", "dumber", less accurate or more expensive **without a new model name**, treat that as a testable incident, not proof of modified weights.
+
+Keep these hypotheses distinct: model/version or weights; default/actual effort; system/harness instructions; prompt caching or context/compaction; server/account experiments; fallback model; source retrieval changes; workload/novelty effects; and quota or latency accounting.
+
+- Record **exact as-of date**, visible model label, harness/version, effort, account/surface type, tool exposure and source commit/hash.
+- Look for dated, matched original tasks, *real outputs*, independent repeat samples and objective grading. One account's thousands of turns is useful longitudinal evidence but is not automatically a controlled experiment if workload changes.
+- Do not confuse **visible summarized thinking** or narrative changes with actual internal reasoning budget. Distinguish billed thinking tokens when visible from summaries.
+- Check dated official provider releases and incident reports; absence of an announcement neither proves nor disproves an unannounced change.
+- Preserve both negative and null results. A "no detectable change" result has power and task-domain limitations.
+- For creative/canon work, require blinded **same-source** prose/quest comparisons and a canon hard gate. Code-benchmark drift is **not** an observed literary regression.
+- Keep a possible incident in public research until real owner outputs and reactions establish a personal case; never invent preference pairs.
+
+The November 8 Opus 5.5 investigation in `research/writing/2026-11-08-opus-5-5-regression-and-caelmor-options.md` is the exemplar.
+
 ### Completed-task efficiency rule
 
 Do not reduce efficiency to price per token.
