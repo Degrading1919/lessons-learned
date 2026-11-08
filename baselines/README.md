@@ -1,6 +1,6 @@
 # Public Model Baselines
 
-_Last researched: 2026-10-04_
+_Last researched: 2026-11-08_
 
 This directory records **research priors** for model routing before the project owner has enough direct evidence to form a personal conclusion.
 
@@ -18,7 +18,8 @@ Personal evidence is allowed to override a baseline.
 
 ## Task-specific public priors
 
-- [Caelmor creative writing, lore, and dialogue baseline](../research/writing/2026-11-01-caelmor-creative-writing-model-baseline.md) — 2026-11-01 research across human Arena, short/long LLM-judged writing tests and mixed first-person reviews. Canon adherence requires a separate [matched Caelmor bake-off](../research/writing/CAELMOR_NARRATIVE_EVAL_PROTOCOL.md). Not an owner-observed case.
+- [Caelmor creative writing, lore, and dialogue baseline](../research/writing/2026-11-01-caelmor-creative-writing-model-baseline.md) — historical 2026-11-01 research.
+- [Opus 5.5 change investigation and current narrative alternatives](../research/writing/2026-11-08-opus-5-5-regression-and-caelmor-options.md) — current disputed-regression assessment, Gemini Argon access, and Caelmor test priorities. Neither report is a personal bake-off; use the [matched Caelmor protocol](../research/writing/CAELMOR_NARRATIVE_EVAL_PROTOCOL.md).
 
 ## Providers covered
 
@@ -38,11 +39,11 @@ The initial baseline includes models that are current enough, distinctive enough
 | Provider | Models / families covered |
 |---|---|
 | OpenAI | GPT-6 Astra, GPT-6.1 Sol, GPT-6 Luna; historical GPT-6/5.6 tiers |
-| Anthropic | Claude Opus 5.5, Sonnet 5.5, Fable 5.1, Opus 4.8, Haiku 4.5; historical/specialized tiers |
-| Google | Gemini 4 Argon (restricted watchlist); Gemini 3.8 Flash |
+| Anthropic | Claude Opus 5.5, Sonnet 5.5, Fable 5.1, Haiku 5.5, Opus 4.8; historical/specialized tiers |
+| Google | Gemini 4 Argon (globally accessible); Gemini 3.8 Flash |
 | Meta | Muse Spark 1.3; Llama 4 Maverick; Llama 4 Scout |
 | DeepSeek | DeepSeek V4.1 Flash; V4 Pro as an outgoing/reference tier |
-| Moonshot / Kimi | Kimi K3; Kimi K2.7 Code |
+| Moonshot / Kimi | Kimi K3.1 Pro; Kimi K3; Kimi K2.7 Code |
 
 ## Evidence labels
 
