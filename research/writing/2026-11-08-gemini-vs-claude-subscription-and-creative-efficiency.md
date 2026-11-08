@@ -68,7 +68,7 @@ Source: [Arena creative writing, blind human votes](https://arena.ai/leaderboard
 | Claude Opus 4.6 High | 1498 ±6 | $5 / $25 | older Claude literary style control |
 | **Gemini 3.8 Flash High** | **1489 ±7** | **$0.75 / $3.75** | **low-cost high-quality prose and drafts** |
 | Gemini 3.7 Flash High | 1487 ±8 | $0.75 / $3.75 | lower-cost historical comparator |
-| Gemini 3.5 Flash Medium | 1470 ±7 | $0.75 / $4.50 | lower-effort draft/revision candidate |
+| Gemini 3.5 Flash Medium | 1469 ±7 | $0.75 / $4.50 | lower-effort draft/revision candidate |
 | Claude Sonnet 5.5 XHigh | 1465 ±12 | $2 / $10 | dialogue/quest rewrite worker; not automatically a better writer than Flash |
 | Gemini 3.5 Flash High | 1465 ±7 | $0.75 / $4.50 | lower-cost historical comparator |
 | Gemini 3.5 Flash-Lite | 1436 ±8 | $0.15 / $1.25 | summaries/metadata, not primary prose |
