@@ -1,6 +1,6 @@
 # Google / Gemini Baseline
 
-_Last researched: 2026-10-04_
+_Last researched: 2026-11-08_
 
 For the latest release delta, see [2026-10-04 model release update](../research/models/2026-10-04-new-model-release-update.md).
 
@@ -8,7 +8,8 @@ For the latest release delta, see [2026-10-04 model release update](../research/
 
 | Model | Public-prior role | Strong suits | Main cautions | Confidence |
 |---|---|---|---|---|
-| **Gemini 4 Argon** | Restricted frontier watchlist | long-horizon coding, automation, multimodal professional work, cyber, low hallucination tendency | restricted rollout; little genuine user evidence | Low |
+| **Gemini 4 Argon** | Available frontier model; Caelmor prose challenger | human-rated creative writing, long-horizon coding, automation, multimodal work | source/canon fidelity untested, restraint requires owner evaluation | Medium |
+| **Gemini 4 Carbon** | Restricted frontier watchlist | stronger frontier agentic benchmark claims; preliminary writing votes | selective trusted-partner access, little representative user evidence | Low |
 | **Gemini 3.8 Flash** | Generally available fast worker | high throughput, multimodal work, inexpensive coding/execution | below frontier broad intelligence; instruction/harness complaints | High |
 
 ## Gemini 4 Argon
@@ -17,11 +18,11 @@ Announced September 30.
 
 ### Availability
 
-Argon is **not yet broadly available**.
+Argon **became globally accessible October 13, 2026** to eligible Google AI Pro/Ultra Gemini subscribers and through paid API/AI Studio. The September 30 restricted release described below is historical. The older watchlist-only conclusion is superseded.
 
 Google initially rolled it out to trusted cyber defenders and selected testers through Fairwind and says broader release will begin with paid API customers and Google AI Ultra subscribers.
 
-This severely limits community evidence.
+Its public user evidence has grown since the original restricted phase. For narrative work, the relevant new evidence is Arena's blinded human creative-writing voting; this is not a Caelmor canon-fidelity test.
 
 Official source:
 
@@ -69,9 +70,7 @@ That could be valuable for research/review, but it is not the same thing as know
 
 There is no mature quality consensus yet.
 
-The strongest repeated user reaction is simply:
-
-> **"Why can't we access it?"**
+The strongest early-release reaction was access frustration, but **that no longer describes current Argon availability**. A November Arena creative-writing snapshot puts Argon High and Opus 5.5 High near the top with overlapping uncertainty. That establishes a credible public *writing challenger*, not a clear winner for canon-heavy quests.
 
 Users criticize the restricted Fairwind/Ultra rollout and are skeptical of launch benchmarks until normal developers can test it.
 
@@ -79,9 +78,7 @@ Limited first-impression discussion is mixed: impressive demos, but some users s
 
 ### Routing prior
 
-**Watchlist only.**
-
-Do not make Argon a default until real access and real-user evidence exist.
+**Accessible, high-priority independent lore/dialogue challenger.** Do not make it the Caelmor default until identical source-bundle tests and director preference confirm its performance.
 
 When accessible, priority owner tests:
 
@@ -102,3 +99,12 @@ Its role is unchanged:
 - high-volume processing with supervision.
 
 Argon does not obsolete 3.8 Flash until Argon is actually broadly accessible and its economics/quality are validated.
+
+
+## Gemini 4 Carbon — October 28, 2026
+
+Google announced Carbon as a stronger frontier model with limited cyber-defense/trusted-partner rollout. Its preliminary human creative-writing result is promising, but overlaps Argon and Opus 5.5 within uncertainty, and broad access is not established. Keep it **watchlist only** until availability and human evidence mature. [Google announcement](https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-carbon/).
+
+## November 8 narrative update
+
+[Caelmor narrative and Opus behavior evidence](../research/writing/2026-11-08-opus-5-5-regression-and-caelmor-options.md) recommends blind testing Argon High against the incumbent Opus High/XHigh and an independent style challenger, with source-canon accuracy a hard acceptance gate. [Official October 13 global release](https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-argon/).
