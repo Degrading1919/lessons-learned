@@ -2,10 +2,11 @@
 
 _Last researched: 2026-11-08_
 
-Meta currently has two very different model stories:
+Meta currently has three distinct model lines worth distinguishing:
 
-1. **Muse Spark 1.3** — a competitive proprietary reasoning/coding model.
-2. **Llama 4 Scout/Maverick** — older open-weight multimodal models whose intelligence has fallen far behind the 2026 frontier.
+1. **Muse Wonder / Wonder Full** — newer frontier proprietary agent and optional creative-writing models.
+2. **Muse Spark 1.3** — an earlier proprietary reasoning/coding model.
+3. **Llama 4 Scout/Maverick** — older open-weight multimodal models whose intelligence has fallen far behind the 2026 frontier.
 
 Do not conflate them.
 
