@@ -131,3 +131,8 @@ Run the [existing narrative evaluation](CAELMOR_NARRATIVE_EVAL_PROTOCOL.md) with
 - [Haiku 5.5 release](https://www.anthropic.com/claude-haiku-5-5)
 - [Meta Muse Wonder release](https://research.meta.ai/blog/muse-wonder)
 - [Gemini 4 Carbon announcement](https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-carbon/)
+
+
+## Follow-up: affordable authors and subscription limits
+
+See [the November 8 Gemini vs Claude subscription and creative-efficiency study](2026-11-08-gemini-vs-claude-subscription-and-creative-efficiency.md). The strongest inexpensive human-rated author candidate is now **Gemini 3.8 Flash High**, not Haiku 5.5. For Caelmor, test it on identical approved lore packets alongside Opus and Argon; the cheaper model's utility depends on canon fidelity and revision burden, not only Arena style ranking.
