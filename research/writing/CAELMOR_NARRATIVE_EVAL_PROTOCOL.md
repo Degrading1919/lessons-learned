@@ -4,6 +4,8 @@
 **Status:** Proposed experiment; no observed runs or winner  
 **Goal:** Select the best *practical setup* for writing Caelmor material without violating canon.
 
+**November 8 update:** [Opus 5.5 behavior and narrative challengers](2026-11-08-opus-5-5-regression-and-caelmor-options.md). Gemini 4 Argon is now available. Before the broader blind comparison, do a small matched **Opus 5.5 High vs XHigh** diagnostic because November coding-session reports raise (but do not establish) a serving/effort-level change. Freeze the same approved Caelmor source bundle and task prompt, start fresh sessions, log exact harness/model/effort/date/quota, and compare canon violations plus blind narrative quality. A prior long chat cannot be treated as matched evidence unless its original inputs are fully reconstructed. Visible thinking summaries must not be interpreted as actual hidden reasoning-token counts. Keep the complete four-task canon-gated bake-off unchanged.
+
 ## Authority and inputs
 
 Use current approved Caelmor sources, not recollection or a bundled snapshot presumed current. Freeze **the same repository commit**, relevant Phase 1 canon, relevant region dossiers, and current conflict notes across all compared runs. Record the exact source bundle/hash and any unresolved same-tier conflict before writing. If a task depends on a disputed fact, require the model to flag it rather than choose a side. Source packages must be identical across models.
