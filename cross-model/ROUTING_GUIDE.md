@@ -2,7 +2,21 @@
 
 This is a current routing heuristic derived from the user's own project evidence. It is not a permanent ranking.
 
-## Caelmor writing / narrative public-prior overlay — 2026-11-01
+## Caelmor narrative routing update — 2026-11-08
+
+This is a **public research prior, not a personal bake-off**. The alleged November Opus 5.5 nerf is disputed: Claude Code observational reports show changed behavior, while independent longitudinal general-accuracy tests have not established a broad model regression. See the [full evidence assessment](../research/writing/2026-11-08-opus-5-5-regression-and-caelmor-options.md).
+
+| Caelmor narrative bottleneck | Current candidates |
+|---|---|
+| Atmospheric lore and NPC voice | **Opus 5.5 High** incumbent; **Gemini 4 Argon High** now-accessible external challenger; **GPT-6 Astra High** independent alternative |
+| Complex quest causality and source-constrained arcs | **Fable 5.1 High** challenger; Opus 5.5 **High versus XHigh** diagnostic |
+| Budget revision and dialogue variants | Sonnet 5.5 Medium/High **only if** canon-gated output passes |
+| Canon extraction/triage | Haiku 5.5 or deterministic retrieval; independent source-citing review required |
+| Unapproved lore proposals | Never treat model invention as established canon without Creative Director approval |
+
+Start with a clean Opus High/XHigh comparison on the same frozen source packet, followed by blind author tests. **Canon conflicts are pass/fail**, and public prose-leaderboard preference is not evidence of Caelmor source accuracy. The 2026-11-01 overlay below is kept for historical context.
+
+## Historical Caelmor writing / narrative public-prior overlay — 2026-11-01
 
 This is **public research, not an owner-tested Caelmor model choice**. [Evidence and discrepancies](../research/writing/2026-11-01-caelmor-creative-writing-model-baseline.md); [matched evaluation](../research/writing/CAELMOR_NARRATIVE_EVAL_PROTOCOL.md).
 
