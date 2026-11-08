@@ -1,8 +1,10 @@
 # Creative writing and canon fidelity — public model baseline
 
-**As of:** 2026-11-01  
+**As of:** 2026-11-01 (historical snapshot; see November 8 update)  
 **Status:** Public research prior, NOT a Caelmor model bake-off or owner-observed result  
 **Scope:** Fantasy lore, narrative structure, NPC conversations, atmospheric prose, and revision against Caelmor canon.
+
+> **Current evidence update (2026-11-08):** The reported Opus 5.5 behavioral shift is unproven as a model-capability regression, but deserves a matched High/XHigh test. Gemini 4 Argon is now broadly accessible and is a first-line independent prose challenger. See the [Opus regression and narrative-options assessment](2026-11-08-opus-5-5-regression-and-caelmor-options.md) before treating this November 1 candidate order as current.
 
 ## Executive finding
 
