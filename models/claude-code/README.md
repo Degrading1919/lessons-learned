@@ -97,3 +97,8 @@ The [current research review](../../research/writing/2026-11-08-opus-5-5-regress
 A change in CLI tool use, thinking display, default effort, caching, or account experiment must be distinguished from a model-quality change. In particular, the API's unconfigured Opus 5.5 default effort is Medium; do not assume High/XHigh silently. Keep exact model, harness, session age, and effort in any Caelmor writing comparison.
 
 Narrative work should follow the [canon-gated Caelmor evaluation](../../research/writing/CAELMOR_NARRATIVE_EVAL_PROTOCOL.md): fresh Opus 5.5 High/XHigh diagnostic, independent Gemini 4 Argon/Astra/Fable author candidates, and Creative Director blind preference. This is public research, not observed personal model regression.
+
+
+## Fable 5.2 routing — November 11, 2026
+
+[Research baseline](../../research/models/2026-11-11-claude-fable-5-2-release-baseline.md): Fable 5.2 is the premium hard-problem advisor/orchestrator candidate, not the routine Claude Code implementer. Prefer Opus 5.5 or Sonnet 5.5 for normal work; escalate to Fable 5.2 **Medium/High** for difficult architecture, source conflict and stubborn failures. Independent broad v5 index High scored 62 at ~$9.08 benchmark task cost versus Max 65 at ~$26.54. The exact Claude Code effort, subagent model, tool catalog and usage window must be recorded: early reports of heavy burn may reflect both genuine reasoning cost and launch bugs/accounting issues; Anthropic confirmed fixing unspecified usage-overconsumption issues Nov 10. Do not treat Fable 5.2's 1M model context as proof that every Claude Chat/Code session receives 1M without compaction.
