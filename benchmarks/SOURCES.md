@@ -54,7 +54,7 @@ https://benchmark.towardsai.com/
 - **Date:** 2026-11-10
 - **Type:** third-party author-run, multi-judge task-specific benchmark
 - **Why useful:** per-effort story/script quality, tone compliance and token/cost comparisons, with an explicit Opus 5.5 cost-efficiency counterexample.
-- **Caution:** LLM-judge-sensitive, one typed human judge, not independent blind Caelmor canon work.
+- **Caution:** LLM-judge-sensitive, one non-human TypeSafe typed judge alongside three LLM judges; not blind human Caelmor canon work.
 
 ### Fable subscription access / accounting
 
