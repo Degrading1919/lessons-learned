@@ -10,7 +10,7 @@
 - **Provider narrative:** major step forward from Fable 5.1 on coding, difficult reasoning, science and visual analysis, with up to 30% faster output and 20% lower list input/output prices. Anthropic itself recommends **Opus 5.5 for most everyday coding/knowledge tasks**, escalating to Fable when complexity justifies it.
 - **Independent result:** Artificial Analysis Intelligence Index **v5.0.1** scores **65 at Max (#1 on the retrieved board)**. Low 54, Medium 56, High 62, XHigh 62, Max 65, but benchmark task cost rises sharply. **These scores cannot be numerically compared to the prior repository's v4.3 Fable 5.1 scores.**
 - **Community:** striking first-hand examples of better planning and difficult debugging, but also reports of half answers, confident wrong assumptions, frequent compaction and usage windows disappearing within minutes. Positive and negative anecdotes are both new and self-selected; no stable consensus after two days.
-- **Creative writing:** a new author-run ToneBench reports better scripted writing at High/XHigh than Fable 5.1 and improved structure/length control, **but not better tone adherence**. Its own test favors **Opus 5.5 XHigh for equivalent writing quality at lower cost**. This is one private benchmark, not a blind Caelmor result.
+- **Creative writing:** a new author-run ToneBench reports better scripted writing at High/XHigh than Fable 5.1 and improved structure/length control, **but not better tone adherence**. Its own test favors **Opus 5.5 XHigh for equivalent writing quality at lower cost**. This is one narrow blind model-judged script benchmark, not a human-preference or Caelmor result.
 - **Subscription caution:** Fable availability is plan-specific; launch promotion and resets are temporary and do not increase steady-state included allowance. See official terms below.
 
 ## Verified product specification
@@ -113,7 +113,7 @@ A [writer's Nov. 10 ToneBench report](https://www.reddit.com/r/ClaudeAI/comments
 | XHigh | **2676** | $2.22 | 7 min |
 | Max | 2651 | $5.75 | 20 min |
 
-Their account: Fable 5.2 was less generically wordy, gave clearer visual cues, better script structure and length control than 5.1, **but did not improve tone compliance**. In their own result, **Opus 5.5 XHigh tied Fable 5.2 XHigh at $1.00 versus $2.22 per script**. Importantly, the score uplift was driven heavily by one LLM judge (GPT-6.1 Sol), and their sole human-typed judge scored 5.2 below 5.1.
+Their account: Fable 5.2 was less generically wordy, gave clearer visual cues, better script structure and length control than 5.1, **but did not improve tone compliance**. In their own result, **Opus 5.5 XHigh tied Fable 5.2 XHigh at $1.00 versus $2.22 per script**. Importantly, the score uplift was driven heavily by one LLM judge (GPT-6.1 Sol), and the TypeSafe **typed (non-human) judge, Jev**, scored 5.2 below 5.1.
 
 This is a valuable **task-specific** comparison but not a blinded human preference study and not Caelmor canon verification. The general AA index says **High** is the efficiency sweet spot; this private script benchmark says **XHigh** may be worth it for a particular creative rubric. Both can be true.
 
