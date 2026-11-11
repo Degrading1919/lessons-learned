@@ -1,8 +1,73 @@
 # Benchmark and Public-Prior Sources
 
-_Last reviewed: 2026-10-04_
+_Last reviewed: 2026-11-11_
 
 These sources are used only to establish public priors and context. They do not override the project owner's direct evidence.
+
+## November 2026: Fable 5.2 and Mythos 5.2
+
+### Official Anthropic launch and model specification
+
+https://www.anthropic.com/claude-fable-and-mythos-5-2
+
+https://platform.claude.com/docs/en/models/fable-5-2/overview
+
+https://platform.claude.com/docs/en/models/fable-5-2/whats-new-fable-5-2
+
+- **Release:** 2026-11-09
+- **Type:** provider documentation / provider self-reported benchmark
+- **Why useful:** model identity, 1M context, High default API effort, exact cache/API/fast-mode prices, migration caveats, Anthropic-selected FrontierCode/Science/Research comparisons and intended Opus-vs-Fable roles.
+- **Caution:** provider-selected multiagent test setups are not ordinary subscription workloads.
+
+### Independent Fable 5.2 technical and cost index
+
+https://artificialanalysis.ai/models/releases/claude-fable-5-2
+
+https://artificialanalysis.ai/models/claude-fable-5-2
+
+- **Date:** 2026-11-09–11
+- **Type:** independent benchmark
+- **Why useful:** Intelligence Index v5.0.1 effort curve, very high Max task cost and output tokens, important difference between High and XHigh/Max.
+- **Caution:** index version changed from previous v4.3; this is not a direct Fable 5.1 delta.
+
+### Reddit — Fable 5.2 launch experiences
+
+https://www.reddit.com/r/claude/comments/1xskbif/hows_everyone_finding_claude_fable_52_so_far/
+
+https://www.reddit.com/r/ClaudeCode/comments/1xte4kz/fable_52_vs_fable_51_in_cc/
+
+https://www.reddit.com/r/ClaudeAI/comments/1xsv2s0/unconvinced_by_claude_fable_52/
+
+https://www.reddit.com/r/claude/comments/1xsf10k/fable_51_vs_52/
+
+- **Date:** 2026-11-09–11
+- **Type:** first-person self-selected community evidence
+- **Why useful:** praise for specific difficult-task results alongside usage-limit depletion, compaction problems and conflicting practical-quality experiences.
+- **Caution:** only two days of use; do not infer stable quotas or prove model weight change.
+
+### Reddit — creative-writing script benchmark
+
+https://www.reddit.com/r/ClaudeAI/comments/1xsk4qj/claude_fable_52_is_a_big_upgrade_over_51/
+
+https://benchmark.towardsai.com/
+
+- **Date:** 2026-11-10
+- **Type:** third-party author-run, multi-judge task-specific benchmark
+- **Why useful:** per-effort story/script quality, tone compliance and token/cost comparisons, with an explicit Opus 5.5 cost-efficiency counterexample.
+- **Caution:** LLM-judge-sensitive, one typed human judge, not independent blind Caelmor canon work.
+
+### Fable subscription access / accounting
+
+https://support.claude.com/en/articles/15424964-claude-fable-models-on-your-plan
+
+https://support.claude.com/en/articles/17506494-claude-fable-5-2-launch-offers
+
+https://x.com/ClaudeDevs/status/2120275296637321476
+
+- **Date:** 2026-11-09–10
+- **Type:** official plan guidance / developer-account announcement
+- **Why useful:** Fable is pay-as-you-go on Pro outside launch promotion; Max/Ultra Fable share cap; specific reset terms; Anthropic acknowledged correcting some issues that over-consumed usage.
+- **Caution:** resets are temporary and distinct from normal quota accounting.
 
 ## October 2026 release-update sources
 
