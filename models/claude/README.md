@@ -76,3 +76,8 @@ The owner currently uses Opus for Caelmor lore/quest work. Public reports of a N
 [November 8 evidence and prose alternatives](../../research/writing/2026-11-08-opus-5-5-regression-and-caelmor-options.md) identifies Opus 5.5 High/XHigh, now-available Gemini 4 Argon High, GPT-6 Astra High and Fable 5.1 High as the first narrative candidates. Haiku 5.5 is an extraction/triage worker, not a literary author.
 
 The owner must blind-review actual canon-frozen Caelmor outputs before promotion; do not convert Reddit sentiment or leaderboard ranks into an invented personal preference case.
+
+
+## Fable 5.2 release — November 11, 2026
+
+Anthropic released **Claude Fable 5.2** and restricted **Mythos 5.2** on Nov 9. The [source-backed public baseline](../../research/models/2026-11-11-claude-fable-5-2-release-baseline.md) records high technical capability, extreme Max-effort task cost and contradictory launch-week usage reports. As a Caelmor creative option, test Fable 5.2 **Medium/High for intricate quest structure/canon conflict**, not as an automatic literary author. A private script benchmark reports better structural results but not better tone adherence than Fable 5.1; the same test favors Opus 5.5 XHigh on cost at similar quality. Existing Fable 5.1 and Opus 5.5 cases stay historical/personal evidence as originally labeled.
