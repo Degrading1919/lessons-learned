@@ -136,3 +136,8 @@ Run the [existing narrative evaluation](CAELMOR_NARRATIVE_EVAL_PROTOCOL.md) with
 ## Follow-up: affordable authors and subscription limits
 
 See [the November 8 Gemini vs Claude subscription and creative-efficiency study](2026-11-08-gemini-vs-claude-subscription-and-creative-efficiency.md). The strongest inexpensive human-rated author candidate is now **Gemini 3.8 Flash High**, not Haiku 5.5. For Caelmor, test it on identical approved lore packets alongside Opus and Argon; the cheaper model's utility depends on canon fidelity and revision burden, not only Arena style ranking.
+
+
+## November 11 Fable 5.2 follow-up
+
+Anthropic released Fable 5.2 on November 9. The [separate launch baseline](../models/2026-11-11-claude-fable-5-2-release-baseline.md) gives it a strong technical-planning prior, **but not a proven advantage for Caelmor literary voice or canon adherence**. A privately run writing benchmark suggests better scripted structure but unchanged tone adherence, and prefers Opus 5.5 XHigh on cost. Early Fable subscription reports include extreme usage burn and conflicting quality claims. This is a new-model release, **not evidence that Opus was deliberately nerfed**; keep the prior Opus regression investigation distinct.
