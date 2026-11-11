@@ -4,6 +4,8 @@
 **Status:** Proposed experiment; no observed runs or winner  
 **Goal:** Select the best *practical setup* for writing Caelmor material without violating canon.
 
+**November 11 Fable 5.2 update:** The [new Fable 5.2 evidence](../models/2026-11-11-claude-fable-5-2-release-baseline.md) warrants adding **Fable 5.2 Medium and High** as optional quest-structure / canon-conflict challengers. Do not treat its #1 *technical* intelligence benchmark or early ToneBench scripts as proof of literary/canon superiority. If testing it, use one frozen approved source packet and score hard canon gates, author-blind prose preference and quota/correction burden. Keep Fable 5.1 as a historical control rather than automatically adding both at full expensive effort.
+
 **November 8 update:** [Opus 5.5 behavior and narrative challengers](2026-11-08-opus-5-5-regression-and-caelmor-options.md). Gemini 4 Argon is now available. Before the broader blind comparison, do a small matched **Opus 5.5 High vs XHigh** diagnostic because November coding-session reports raise (but do not establish) a serving/effort-level change. Freeze the same approved Caelmor source bundle and task prompt, start fresh sessions, log exact harness/model/effort/date/quota, and compare canon violations plus blind narrative quality. A prior long chat cannot be treated as matched evidence unless its original inputs are fully reconstructed. Visible thinking summaries must not be interpreted as actual hidden reasoning-token counts. Keep the complete four-task canon-gated bake-off unchanged.
 
 ## Authority and inputs
