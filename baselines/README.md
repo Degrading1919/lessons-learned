@@ -1,6 +1,6 @@
 # Public Model Baselines
 
-_Last researched: 2026-11-08_
+_Last researched: 2026-11-11_
 
 This directory records **research priors** for model routing before the project owner has enough direct evidence to form a personal conclusion.
 
@@ -15,6 +15,10 @@ A personal case answers:
 > What actually happened when the project owner used this model/tool on a real task?
 
 Personal evidence is allowed to override a baseline.
+
+## Newly released high-end model
+
+- [Claude Fable 5.2 — November 11 provider, independent, Reddit and creative-writing baseline](../research/models/2026-11-11-claude-fable-5-2-release-baseline.md). Includes subscription restrictions, effort economics, disagreement in early user experience and a Caelmor role recommendation. Public evidence only.
 
 ## Task-specific public priors
 
@@ -39,7 +43,7 @@ The initial baseline includes models that are current enough, distinctive enough
 | Provider | Models / families covered |
 |---|---|
 | OpenAI | GPT-6 Astra, GPT-6.1 Sol, GPT-6 Luna; historical GPT-6/5.6 tiers |
-| Anthropic | Claude Opus 5.5, Sonnet 5.5, Fable 5.1, Haiku 5.5, Opus 4.8; historical/specialized tiers |
+| Anthropic | Claude Fable 5.2, Opus 5.5, Sonnet 5.5, Haiku 5.5, Opus 4.8; historical Fable 5.1 and restricted Mythos 5.2 |
 | Google | Gemini 4 Argon (globally accessible); Gemini 3.8 Flash |
 | Meta | Muse Spark 1.3; Llama 4 Maverick; Llama 4 Scout |
 | DeepSeek | DeepSeek V4.1 Flash; V4 Pro as an outgoing/reference tier |
