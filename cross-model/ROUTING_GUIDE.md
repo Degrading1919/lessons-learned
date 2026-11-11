@@ -2,6 +2,17 @@
 
 This is a current routing heuristic derived from the user's own project evidence. It is not a permanent ranking.
 
+## Fable 5.2 release routing — 2026-11-11
+
+**Public prior only, not owner-observed.** [Full research](../research/models/2026-11-11-claude-fable-5-2-release-baseline.md).
+
+- **Routine high-end coding, writing, source-grounded narrative:** start Opus 5.5 or an appropriately priced Gemini/Claude worker. Anthropic itself recommends Opus 5.5 as the normal daily driver.
+- **Unusually difficult architecture / research / Caelmor branching causality and contradictory lore:** Fable 5.2 Medium/High is the new challenger; High scored 62 on independent **v5.0.1** broad index at ~$9.08 per measured task. The older Fable 5.1 figure was from **v4.3**, and cannot be subtracted from this one.
+- **Fable 5.2 XHigh/Max:** only if a frozen task requires it. Broad-index XHigh also scored 62 yet cost ~$14.83; Max 65 at ~$26.54.
+- **Writing quality:** a private multi-judge script-writing evaluation supports stronger structure at XHigh but *not* improved tone compliance. Its author still preferred Opus 5.5 XHigh on cost/quality; no blinded Caelmor result exists.
+- **Subscription:** Reddit reports rapid burn and some compaction issues. Anthropic confirmed correcting certain over-consumption issues and issuing a reset; launch reports cannot establish steady-state quota multipliers.
+- **Mythos 5.2:** restricted cybersecurity/biomed use only, not a Caelmor or default general-purpose option.
+
 ## Caelmor narrative routing update — 2026-11-08
 
 This is a **public research prior, not a personal bake-off**. The alleged November Opus 5.5 nerf is disputed: Claude Code observational reports show changed behavior, while independent longitudinal general-accuracy tests have not established a broad model regression. See the [full evidence assessment](../research/writing/2026-11-08-opus-5-5-regression-and-caelmor-options.md).
@@ -9,7 +20,7 @@ This is a **public research prior, not a personal bake-off**. The alleged Novemb
 | Caelmor narrative bottleneck | Current candidates |
 |---|---|
 | Atmospheric lore and NPC voice | **Opus 5.5 High** incumbent; **Gemini 4 Argon High** now-accessible external challenger; **GPT-6 Astra High** independent alternative |
-| Complex quest causality and source-constrained arcs | **Fable 5.1 High** challenger; Opus 5.5 **High versus XHigh** diagnostic |
+| Complex quest causality and source-constrained arcs | **Fable 5.2 Medium/High** challenger; Opus 5.5 **High versus XHigh** diagnostic |
 | Budget revision and dialogue variants | Sonnet 5.5 Medium/High **only if** canon-gated output passes |
 | Canon extraction/triage | Haiku 5.5 or deterministic retrieval; independent source-citing review required |
 | Unapproved lore proposals | Never treat model invention as established canon without Creative Director approval |
