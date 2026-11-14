@@ -13,6 +13,8 @@ There is extensive Codex/AI-shaped commit and PR history, including recent econo
 
 PR #85 now has a [correlated development case](../models/codex/cases/2026-11-02-caelmor-procedural-architecture.md): original/revised prompts, actual Sol/Luna labels, commits, tests/renders, direct owner corrections and sanitized session counters. This closes that specific chain, not the broader project history.
 
+The [Brookoak construction-first material case](../models/codex/cases/2026-11-14-caelmor-brookoak-material-bake.md) now correlates source commits, prompt revisions, direct material rejections and the owner’s later “much better” preference. This closes the **process-breakthrough evidence chain**, not final artistic acceptance. Still missing for this material: exact Sol build/harness and resource counters, independently rerun Blender bake, final production texture registration, in-situ roof approval and Unity runtime/material performance.
+
 Still missing: final owner art acceptance, a matched model/effort/harness comparison, task-attributable quota delta, API dollars, measured human attention and target-engine validation (outside this retrospective's scope). Wealth readability and regional authenticity remain partially resolved. Other economy/runtime/combat PRs still lack clean prompt-before / reaction-after correlation; keep their model conclusions provisional.
 
 ### Mystery Pallet Simulator
