@@ -10,7 +10,7 @@ This index separates authored AI-assisted projects from reference/fork repositor
 | Margins | https://github.com/Degrading1919/margins | Codex implementation, ChatGPT review/orchestration, Claude Code/Blender MCP, Tripo 3D | **A** | Core cost, playtest, skill, 3D, and reviewer-role cases |
 | The Bible Video Game | https://github.com/Degrading1919/The_Bible_Video_Game | Multi-model research, skill/governance design | **A/B** | Core model-judgment and skill-governance case |
 | Trading / SwingRank | https://github.com/Degrading1919/trading | ChatGPT review and repo implementation | **B** | Useful architecture/review example |
-| Caelmor | https://github.com/Degrading1919/Caelmor-Repo | Codex/Sol High orchestration, Luna High workers, ChatGPT task design and owner visual correction | **A for PR #85; broader history incomplete** | Procedural-architecture prompt/artifact/feedback chain, measured session counters and separate technical/art acceptance |
+| Caelmor | https://github.com/Degrading1919/Caelmor-Repo | Codex/Sol orchestration, Blender/Material Maker technical art, ChatGPT task design and owner visual correction | **A for PR #85 and Brookoak material case; broader history incomplete** | Procedural architecture and construction-first shingle baking; prompt lineage, measured or qualified verification, separate technical/art acceptance |
 | Folio | local `C:\Dev\budget-app\` | Autonomous Codex implementation + human playtest | **B** | Strong human-QC lesson; no GitHub artifact currently linked |
 | Resonant | local `C:\Dev\resonant\` | Folio-style Codex build workflow | **C** | Task design known; outcome evidence incomplete |
 | Bitburner | https://github.com/Degrading1919/bitburner-src | ChatGPT coding grounded against fork API | **B/C** | Useful repo-grounding lesson; fork itself is not authored product evidence |
@@ -30,6 +30,8 @@ They may be cited as research inputs when a case documents how they influenced a
 
 ### Caelmor
 
+- [Brookoak construction-first PBR case](../models/codex/cases/2026-11-14-caelmor-brookoak-material-bake.md) — rejected graph-only iterations → physically modeled shingles → 2K baked maps; owner said “much better,” but final artistic/Unity acceptance is pending.
+- [Brookoak prompt/feedback lineage](../evidence/prompt-lineage/2026-11-14-caelmor-brookoak-material-bake.md) — captures reference comparison, owner criticism, agent diagnosis and change of representation.
 - [PR #85 development retrospective](../models/codex/cases/2026-11-02-caelmor-procedural-architecture.md) — prototype → corrected construction → regional profiles → world construction; includes rejected similarity, roof/window defects, mixed-commit recovery and resource limitations.
 - [Prompt lineage](../evidence/prompt-lineage/2026-11-02-caelmor-procedural-architecture.md) and [sanitized development measurements](../evidence/measurements/2026-11-02-caelmor-development.md).
 - [Reusable procedural asset baseline](../research/procedural-assets/PROCEDURAL_ASSET_BASELINE.md) — proposed transfer to terrain, vegetation, equipment and props, not evidence those families were implemented.
