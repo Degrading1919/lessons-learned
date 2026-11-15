@@ -80,7 +80,7 @@ Margins PR #42 is especially important: substantial automated verification exist
 
 ### Caelmor procedural materials — 2026-11-14
 
-[Brookoak construction-first bake case](cases/2026-11-14-caelmor-brookoak-material-bake.md) records a distinct **owner-preferred material result**, not a model comparison. Repeated graph-only height/grain refinements passed technical checks but failed the desired timber-construction read. The owner’s reference-led questions forced a correction in the working hypothesis; a later solo Sol pass modeled individual shingles in Blender and baked the assembled source, producing the first output the owner called “much better.” The exact Sol release and task-attributable cost are unverified; production art and Unity gates remain open. See the [transferable procedural-material protocol](../../research/procedural-assets/PROCEDURAL_ASSET_BASELINE.md#construction-first-procedural-material-authoring--observed-caelmor-lesson).
+[Brookoak construction-first bake case](cases/2026-11-14-caelmor-brookoak-material-bake.md) records a distinct **owner-preferred material result**, not a model comparison. Repeated graph-only height/grain refinements passed technical checks but failed the desired timber-construction read. The owner’s reference-led questions forced a correction in the working hypothesis; a later solo Sol pass modeled individual shingles in Blender and baked the assembled source, producing the first output the owner called “much better.” The exact Sol release and task-attributable cost are unverified; production art and Unity gates remain open. See the [transferable procedural-material protocol](../../research/procedural-assets/CONSTRUCTION_FIRST_PBR_MATERIALS.md).
 
 ## Current public model prior — 2026-09-24
 

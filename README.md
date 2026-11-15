@@ -162,6 +162,8 @@ The rule is simple: public benchmarks establish a prior; the owner's observed pr
 
 For procedural 3D generators, start with the [Caelmor development retrospective](models/codex/cases/2026-11-02-caelmor-procedural-architecture.md) and [reusable procedural asset baseline](research/procedural-assets/PROCEDURAL_ASSET_BASELINE.md). They separate geometry validity, Blender/package verification, actual visual quality and resource accounting.
 
+For procedural roofing materials, the [Brookoak construction-first case](models/codex/cases/2026-11-14-caelmor-brookoak-material-bake.md) and its [prompt/feedback lineage](evidence/prompt-lineage/2026-11-14-caelmor-brookoak-material-bake.md) explain the failed graph-only iterations, the owner's corrections, and the later modeled-and-baked result. The [reusable PBR-material workflow](research/procedural-assets/CONSTRUCTION_FIRST_PBR_MATERIALS.md) is kept separate from the broader procedural-asset baseline. The bake was explicitly preferred, but final artistic sign-off and Unity validation were not recorded.
+
 `datasets/cases.jsonl` mirrors owner-observed prose cases. `datasets/model_baselines.jsonl` stores researched model priors. `datasets/harness_baselines.jsonl` separately stores researched harness priors. Keeping these datasets separate prevents benchmark/forum expectations from being mistaken for personal evidence.
 
 The dataset intentionally records **observed outcomes and human preference signals** rather than turning them into universal model scores.

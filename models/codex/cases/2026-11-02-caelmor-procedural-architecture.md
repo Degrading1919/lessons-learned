@@ -1,7 +1,7 @@
 # Case: Caelmor — procedural architecture passed tests before it met the art brief
 
 - **Development:** 2026-11-02–03 UTC; commits are dated November 2 in the owner's local timezone.
-- **Project/artifact:** [Caelmor PR #85](https://github.com/Degrading1919/Caelmor-Repo/pull/85), reviewed through `c5772d6a5cdf3721a5599e03aefcf3e9728a7c9e`. Open, unmerged at retrospective capture.
+- **Project/artifact:** [Caelmor PR #85](https://github.com/Degrading1919/Caelmor-Repo/pull/85), reviewed through `c5772d6a5cdf3721a5599e03aefcf3e9728a7c9e`. The PR was open during the documented review and subsequently merged on 2026-11-04; that merge does not establish final production-art acceptance.
 - **Observed configuration:** Codex desktop/local shell and Blender 5.0.1; root `gpt-6.1-sol`, `high`; requested worker routing `gpt-6-luna`, `high`. See the [session evidence](../../../evidence/measurements/2026-11-02-caelmor-development.md) for actual calls, outcomes and counter limitations.
 - **Task categories:** procedural 3D, architecture, orchestration, debugging, technical art, Blender integration, testing, source-control recovery.
 - **Evidence:** **A for the development/feedback chain**; weaker for causal model comparisons and final artistic acceptance. This is one evolving, mixed-agent project, not a controlled model benchmark.
